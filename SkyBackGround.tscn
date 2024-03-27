@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnmw2g5yaon2s"]
+
+[ext_resource type="Texture2D" uid="uid://dv81vg1a8myo2" path="res://Grassland_Tileset/Sky.png" id="1_ennjl"]
+[ext_resource type="Texture2D" uid="uid://bcjcoid24meig" path="res://Grassland_Tileset/Mountain.png" id="2_651hb"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(-1, -61)
+
+[node name="Sky" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(352, 432)
+scale = Vector2(1.67619, 3.6)
+texture = ExtResource("1_ennjl")
+
+[node name="Sky2" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(1284, 432)
+scale = Vector2(2.7619, 3.6)
+texture = ExtResource("1_ennjl")
+flip_h = true
+
+[node name="Mountain" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(210, 648)
+scale = Vector2(0.966919, 1.63944)
+texture = ExtResource("2_651hb")
+
+[node name="Mountain2" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(669, 656)
+scale = Vector2(0.91658, 1.58179)
+texture = ExtResource("2_651hb")
+
+[node name="Mountain4" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(438, 788)
+scale = Vector2(0.710243, 0.578774)
+texture = ExtResource("2_651hb")
+flip_h = true
+
+[node name="Mountain5" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(885, 788)
+scale = Vector2(0.710243, 0.578774)
+texture = ExtResource("2_651hb")
+
+[node name="Mountain3" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(1142, 596.5)
+scale = Vector2(0.960937, 2.02651)
+texture = ExtResource("2_651hb")
+flip_h = true
+
+[node name="Mountain6" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(1618, 678.5)
+scale = Vector2(1.16016, 1.4053)
+texture = ExtResource("2_651hb")
+flip_h = true
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+visible = false
+motion_mirroring = Vector2(1104, 2.08165e-12)
