@@ -146,7 +146,7 @@ animations = [{
 radius = 80.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0sldy"]
-size = Vector2(20, 42)
+size = Vector2(15.5, 54.25)
 
 [node name="Cultist_Priest" type="CharacterBody2D"]
 script = ExtResource("1_57bvx")
@@ -156,8 +156,8 @@ visible = false
 shape = SubResource("CapsuleShape2D_bcnd3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(5.42101e-20, 0)
-scale = Vector2(0.21, 0.27)
+position = Vector2(0, -9.53674e-07)
+scale = Vector2(0.35, 0.425)
 sprite_frames = SubResource("SpriteFrames_k248d")
 animation = &"Idle"
 
@@ -173,7 +173,7 @@ shape = SubResource("CircleShape2D_gdq7a")
 position = Vector2(176, 128)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
-position = Vector2(-176, -129)
+position = Vector2(-176.75, -120.125)
 shape = SubResource("RectangleShape2D_0sldy")
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]

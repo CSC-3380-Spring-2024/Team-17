@@ -1,0 +1,8 @@
+Node
+Sprite2D
+Node2D
+CharacterBody2D
+DirectionalLight2D
+AnimationPlayer
+CollisionShape2D
+AnimatableBody2D

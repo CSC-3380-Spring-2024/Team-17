@@ -5,7 +5,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pitxg"]
 radius = 16.0
-height = 52.0
+height = 40.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pk54n"]
 atlas = ExtResource("2_47oux")
@@ -269,13 +269,14 @@ position = Vector2(0, 11)
 shape = SubResource("CapsuleShape2D_pitxg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -3)
 scale = Vector2(1.17857, 1.15625)
 sprite_frames = SubResource("SpriteFrames_sbwxs")
 animation = &"Run"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 ignore_rotation = false
-zoom = Vector2(4, 4)
+zoom = Vector2(5, 5)
 limit_left = 0
 limit_top = 0
 limit_bottom = 528

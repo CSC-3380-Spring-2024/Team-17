@@ -1,16 +1,24 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711691894
+::res://::1712254320
 Cultist_Priest.gd::GDScript::-1::1711691735::0::1::::<>CharacterBody2D<>::
-cultist_priest.tscn::PackedScene::3155826156258214639::1711691739::0::1::::<><>::res://Cultist_Priest.gd<>uid://cp0b0fbx60knl::::res://cultist_priest_sprite_pack/cultist_priest_attack_1.png<>uid://ch58plj4s338s::::res://cultist_priest_sprite_pack/cultist_priest_attack_2.png<>uid://v000itwip82m::::res://cultist_priest_sprite_pack/cultist_priest_attack_3.png<>uid://b7anr6oax4wk5::::res://cultist_priest_sprite_pack/cultist_priest_attack_4.png<>uid://dn7vpaikyq7pg::::res://cultist_priest_sprite_pack/cultist_priest_attack_5.png<>uid://bgl15owcn1rnr::::res://cultist_priest_sprite_pack/cultist_priest_die_1.png<>uid://bq7asfxkqn46h::::res://cultist_priest_sprite_pack/cultist_priest_die_2.png<>uid://bjngibp4t1uiw::::res://cultist_priest_sprite_pack/cultist_priest_die_3.png<>uid://cylfqrmv4thia::::res://cultist_priest_sprite_pack/cultist_priest_die_4.png<>uid://dxi5dxpletfva::::res://cultist_priest_sprite_pack/cultist_priest_die_5.png<>uid://ce2gwhdb0gbsk::::res://cultist_priest_sprite_pack/cultist_priest_die_6.png<>uid://dfq2uiv2kxru3::::res://cultist_priest_sprite_pack/cultist_priest_idle_1.png<>uid://ba7o1ke0xu5yj::::res://cultist_priest_sprite_pack/cultist_priest_idle_2.png<>uid://bwn5cm4047lfy::::res://cultist_priest_sprite_pack/cultist_priest_idle_3.png<>uid://cev8mxtr4b185::::res://cultist_priest_sprite_pack/cultist_priest_takehit_4.png<>uid://bmetq7ljlp8nw::::res://cultist_priest_sprite_pack/cultist_priest_idle_5.png<>uid://dkic6bl5tkp36::::res://cultist_priest_sprite_pack/cultist_priest_idle_4.png<>uid://deiroslqmatt8::::res://cultist_priest_sprite_pack/cultist_priest_walk_1.png<>uid://diamdtykb05j8::::res://cultist_priest_sprite_pack/cultist_priest_walk_2.png<>uid://diypqjjpfnfxj::::res://cultist_priest_sprite_pack/cultist_priest_walk_3.png<>uid://d1iy5r0e8ure6::::res://cultist_priest_sprite_pack/cultist_priest_walk_4.png<>uid://cua0tiqv44pck::::res://cultist_priest_sprite_pack/cultist_priest_walk_5.png<>uid://b8wp8m0jbjged::::res://cultist_priest_sprite_pack/cultist_priest_walk_6.png
+cultist_priest.tscn::PackedScene::3155826156258214639::1712254320::0::1::::<><>::res://Cultist_Priest.gd<>uid://cp0b0fbx60knl::::res://cultist_priest_sprite_pack/cultist_priest_attack_1.png<>uid://ch58plj4s338s::::res://cultist_priest_sprite_pack/cultist_priest_attack_2.png<>uid://v000itwip82m::::res://cultist_priest_sprite_pack/cultist_priest_attack_3.png<>uid://b7anr6oax4wk5::::res://cultist_priest_sprite_pack/cultist_priest_attack_4.png<>uid://dn7vpaikyq7pg::::res://cultist_priest_sprite_pack/cultist_priest_attack_5.png<>uid://bgl15owcn1rnr::::res://cultist_priest_sprite_pack/cultist_priest_die_1.png<>uid://bq7asfxkqn46h::::res://cultist_priest_sprite_pack/cultist_priest_die_2.png<>uid://bjngibp4t1uiw::::res://cultist_priest_sprite_pack/cultist_priest_die_3.png<>uid://cylfqrmv4thia::::res://cultist_priest_sprite_pack/cultist_priest_die_4.png<>uid://dxi5dxpletfva::::res://cultist_priest_sprite_pack/cultist_priest_die_5.png<>uid://ce2gwhdb0gbsk::::res://cultist_priest_sprite_pack/cultist_priest_die_6.png<>uid://dfq2uiv2kxru3::::res://cultist_priest_sprite_pack/cultist_priest_idle_1.png<>uid://ba7o1ke0xu5yj::::res://cultist_priest_sprite_pack/cultist_priest_idle_2.png<>uid://bwn5cm4047lfy::::res://cultist_priest_sprite_pack/cultist_priest_idle_3.png<>uid://cev8mxtr4b185::::res://cultist_priest_sprite_pack/cultist_priest_takehit_4.png<>uid://bmetq7ljlp8nw::::res://cultist_priest_sprite_pack/cultist_priest_idle_5.png<>uid://dkic6bl5tkp36::::res://cultist_priest_sprite_pack/cultist_priest_idle_4.png<>uid://deiroslqmatt8::::res://cultist_priest_sprite_pack/cultist_priest_walk_1.png<>uid://diamdtykb05j8::::res://cultist_priest_sprite_pack/cultist_priest_walk_2.png<>uid://diypqjjpfnfxj::::res://cultist_priest_sprite_pack/cultist_priest_walk_3.png<>uid://d1iy5r0e8ure6::::res://cultist_priest_sprite_pack/cultist_priest_walk_4.png<>uid://cua0tiqv44pck::::res://cultist_priest_sprite_pack/cultist_priest_walk_5.png<>uid://b8wp8m0jbjged::::res://cultist_priest_sprite_pack/cultist_priest_walk_6.png
 earth_realm.tscn::PackedScene::3968132897599061893::1711691747::0::1::::<><>::res://SkyBackGround.tscn<>uid://pfvctad1wu68::::res://Grassland_Tileset/Grassland_Tileset.png<>uid://cx25aavujwgo8::::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/Mossy - TileSet.png<>uid://dc8v2eiv51bwj::::res://oak_woods_v1.0/oak_woods_tileset.png<>uid://bhtd30ci3xdej::::res://TestCharacter/TestCharacter.tscn
 icon.svg::CompressedTexture2D::2995219347521462331::1709750338::1711691897::1::::<><>::
 Main.gd::GDScript::-1::1711691735::0::1::::<>Node2D<>::
-main.tscn::PackedScene::2509215929056746046::1711691756::0::1::::<><>::res://Main.gd
+main.tscn::PackedScene::2509215929056746046::1712159091::0::1::::<><>::res://Main.gd
 Mystic Forest.gd::GDScript::-1::1711691735::0::1::::<>ParallaxBackground<>::
-mystic_forest.tscn::PackedScene::5162453901501970199::1711691758::0::1::::<><>::res://Mystic Forest.gd<>uid://el3bqck5i52::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_2/BG_2.png<>uid://bydu6rxy1wnkm::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_3/BG_3.png<>uid://bn1hg77rihfkg::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_1/BG_1.png
-Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1711691283::0::1::::<><>::uid://bhtd30ci3xdej::::res://TestCharacter/TestCharacter.tscn<>uid://doufmmt7sqx1y::::res://mystic_forest.tscn<>uid://syydig3re5u0::::res://Mossy Tileset/Mossy - TileSet.png<>uid://bdnwkren72dlu::::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/Mossy - FloatingPlatforms.png<>uid://pfvctad1wu68::::res://Grassland_Tileset/Grassland_Tileset.png<>uid://rlx1txhvu1ru::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://b7ovonsh5bo58::::res://cultist_priest.tscn
+mystic_forest.tscn::PackedScene::5162453901501970199::1712159099::0::1::::<><>::res://Mystic Forest.gd<>uid://el3bqck5i52::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_2/BG_2.png<>uid://bydu6rxy1wnkm::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_3/BG_3.png<>uid://bn1hg77rihfkg::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_1/BG_1.png
+Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1712254320::0::1::::<><>::uid://bhtd30ci3xdej::::res://TestCharacter/TestCharacter.tscn<>uid://cfsy4j565ash8::::res://mystic_forest.tscn<>uid://syydig3re5u0::::res://Mossy Tileset/Mossy - TileSet.png<>uid://bdnwkren72dlu::::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/Mossy - FloatingPlatforms.png<>uid://pfvctad1wu68::::res://Grassland_Tileset/Grassland_Tileset.png<>uid://rlx1txhvu1ru::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://bk7x84b3ven1x::::res://cultist_priest.tscn<>uid://xyb3vsabuedp::::res://MovingPlatforms/moving_platforms.tscn<>uid://hfdi4did4yf7::::res://MovingPlatforms/moving_platform_updown.tscn<>uid://b82qvhwh5a2ti::::res://MovingPlatforms/moving_platform_r_down_up.tscn
 SkyBackGround.tscn::PackedScene::1806600145402690438::1711691757::0::1::::<><>::uid://dv81vg1a8myo2::::res://Grassland_Tileset/Sky.png<>uid://bcjcoid24meig::::res://Grassland_Tileset/Mountain.png
-::res://cultist_priest_sprite_pack/::1711685269
+::res://Assets/::1712254925
+::res://Assets/NightBorne/::1712256434
+NightBorne copy.png::CompressedTexture2D::3446694605571100813::1712255640::1712255643::1::::<><>::
+NightBorne.png::CompressedTexture2D::6164879266597409064::1712200057::1712200058::1::::<><>::
+::res://Assets/NightBorne/weapon PNG/::1712256434
+arm_projectile.png::CompressedTexture2D::2299785439857936263::1712256434::1712256435::1::::<><>::
+arm_projectile_glowing.png::CompressedTexture2D::68227226499779890::1712256434::1712256435::1::::<><>::
+Laser_sheet.png::CompressedTexture2D::5474812721338453242::1712256434::1712256435::1::::<><>::
+::res://cultist_priest_sprite_pack/::1711691906
 cultist_priest_attack_1.png::CompressedTexture2D::5877389092897562053::1711685179::1711691906::1::::<><>::
 cultist_priest_attack_2.png::CompressedTexture2D::5328125646146995524::1711685179::1711691906::1::::<><>::
 cultist_priest_attack_3.png::CompressedTexture2D::1527138180465942174::1711685179::1711691906::1::::<><>::
@@ -41,23 +49,23 @@ cultist_priest_walk_6.png::CompressedTexture2D::4749039189738771419::1711685179:
 ::res://Fantasy Swamp Forest/::1711691554
 LICENSE.txt::TextFile::-1::1711685179::0::1::::<><>::
 README.txt::TextFile::-1::1711685179::0::1::::<><>::
-::res://Fantasy Swamp Forest/Free/::1711691542
+::res://Fantasy Swamp Forest/Free/::1711691904
 Mockup.png::CompressedTexture2D::2222630466628140711::1711685179::1711691904::1::::<><>::
 Terrain-and-Props-OLD.png::CompressedTexture2D::1217362452437446094::1711685179::1711691904::1::::<><>::
 Terrain_and_Props.png::CompressedTexture2D::189476073261804797::1711685179::1711691904::1::::<><>::
-::res://Fantasy Swamp Forest/Free/BG_1/::1711685269
+::res://Fantasy Swamp Forest/Free/BG_1/::1711691904
 BG_1.png::CompressedTexture2D::3352986937270190918::1711685179::1711691904::1::::<><>::
-::res://Fantasy Swamp Forest/Free/BG_2/::1711685269
+::res://Fantasy Swamp Forest/Free/BG_2/::1711691904
 BG_2.png::CompressedTexture2D::8975477511651719::1711685179::1711691904::1::::<><>::
-::res://Fantasy Swamp Forest/Free/BG_3/::1711685269
+::res://Fantasy Swamp Forest/Free/BG_3/::1711691904
 BG_3.png::CompressedTexture2D::4078416693287967652::1711685179::1711691904::1::::<><>::
 BG_3_alt.png::CompressedTexture2D::3628484378191556404::1711685179::1711691904::1::::<><>::
-::res://Grassland_Tileset/::1711686926
+::res://Grassland_Tileset/::1711691898
 Grassland_Tileset.png::CompressedTexture2D::1064434169892282815::1709753624::1711691898::1::::<><>::
 Mountain.png::CompressedTexture2D::2545524631943106422::1709753624::1711691897::1::::<><>::
 Sky.png::CompressedTexture2D::8702968732195501383::1709753624::1711691897::1::::<><>::
 ::res://Grassland_Tileset/Plant Animations/::1711138412
-::res://Grassland_Tileset/Plant Animations/BlueFlower1/::1711685544
+::res://Grassland_Tileset/Plant Animations/BlueFlower1/::1711691908
 BlueFlower_00000.png::CompressedTexture2D::4193002809958512661::1710565030::1711691905::1::::<><>::
 BlueFlower_00001.png::CompressedTexture2D::8583843438740939829::1710565030::1711691905::1::::<><>::
 BlueFlower_00002.png::CompressedTexture2D::6935108212034654300::1710565030::1711691905::1::::<><>::
@@ -118,7 +126,7 @@ BlueFlower_00056.png::CompressedTexture2D::4121540582670570275::1710565030::1711
 BlueFlower_00057.png::CompressedTexture2D::1334263298646598087::1710565030::1711691906::1::::<><>::
 BlueFlower_00058.png::CompressedTexture2D::75783606447076773::1710565030::1711691906::1::::<><>::
 BlueFlower_00059.png::CompressedTexture2D::368261242106049903::1710565030::1711691907::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/BlueFlower2/::1711685544
+::res://Grassland_Tileset/Plant Animations/BlueFlower2/::1711691907
 BluePlantClosed_00000.png::CompressedTexture2D::3512058379109981934::1710565029::1711691907::1::::<><>::
 BluePlantClosed_00001.png::CompressedTexture2D::3894160610541882439::1710565029::1711691907::1::::<><>::
 BluePlantClosed_00002.png::CompressedTexture2D::8846749695186590656::1710565029::1711691907::1::::<><>::
@@ -179,7 +187,7 @@ BluePlantClosed_00056.png::CompressedTexture2D::475900750414279445::1710565029::
 BluePlantClosed_00057.png::CompressedTexture2D::32164596922119378::1710565029::1711691901::1::::<><>::
 BluePlantClosed_00058.png::CompressedTexture2D::3339198009274715790::1710565029::1711691901::1::::<><>::
 BluePlantClosed_00059.png::CompressedTexture2D::9094628476040815080::1710565029::1711691901::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/::1711685543
+::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/::1711691909
 changelog.txt::TextFile::-1::1710565160::0::1::::<><>::
 Contact.txt::TextFile::-1::1710565160::0::1::::<><>::
 license.txt::TextFile::-1::1710565160::0::1::::<><>::
@@ -191,7 +199,7 @@ Mossy - MossyHills.png::CompressedTexture2D::1004354330249953031::1710565211::17
 Mossy - TileSet.png::CompressedTexture2D::6444744513566055189::1710565211::1711691907::1::::<><>::
 readme.txt::TextFile::-1::1710565160::0::1::::<><>::
 ::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/PNG/::1710565062
-::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/PNG/Background layers/::1711685537
+::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/PNG/Background layers/::1711691903
 Layer_0000_9.png::CompressedTexture2D::3610823202426558815::1710565160::1711691901::1::::<><>::
 Layer_0001_8.png::CompressedTexture2D::7501145750025758863::1710565160::1711691902::1::::<><>::
 Layer_0002_7.png::CompressedTexture2D::1089399369945946440::1710565160::1711691902::1::::<><>::
@@ -204,15 +212,15 @@ Layer_0008_3.png::CompressedTexture2D::2522348637018387435::1710565160::17116919
 Layer_0009_2.png::CompressedTexture2D::6390800806919782::1710565160::1711691903::1::::<><>::
 Layer_0010_1.png::CompressedTexture2D::4332114771572343087::1710565160::1711691903::1::::<><>::
 Layer_0011_0.png::CompressedTexture2D::79883186961149994::1710565160::1711691903::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/Preview/::1711685537
+::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/Preview/::1711691903
 Background.png::CompressedTexture2D::6825794022897474460::1710565160::1711691903::1::::<><>::
 ::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/PSD/::1710565160
-::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/You may also like/::1711685537
+::res://Grassland_Tileset/Plant Animations/Free Pixel Art Forest/You may also like/::1711691903
 Pixel Art Forest.png::CompressedTexture2D::1907238643959594853::1710565160::1711691903::1::::<><>::
 Pixel Art Plataformer Painted Style.png::CompressedTexture2D::1919837316064016756::1710565160::1711691903::1::::<><>::
 Pixel Art Runner.png::CompressedTexture2D::8257355108099619722::1710565160::1711691903::1::::<><>::
 Pixel Art Snowy Forest.png::CompressedTexture2D::2828821117468759935::1710565160::1711691903::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Mossy Tileset/::1711685545
+::res://Grassland_Tileset/Plant Animations/Mossy Tileset/::1711691908
 Mossy - BackgroundDecoration.png::CompressedTexture2D::9048715258311489172::1710565133::1711691907::1::::<><>::
 Mossy - Decorations&Hazards.png::CompressedTexture2D::6718728665302567815::1710565133::1711691908::1::::<><>::
 Mossy - FloatingPlatforms.png::CompressedTexture2D::3095170665628517948::1710565133::1711691903::1::::<><>::
@@ -222,18 +230,18 @@ Mossy - TileSet.png::CompressedTexture2D::1314407247540857193::1710565133::17116
 ::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/::1711684406
 LICENSE.txt::TextFile::-1::1710575609::0::1::::<><>::
 README.txt::TextFile::-1::1710567740::0::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/::1711685539
+::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/::1711691901
 Mockup.png::CompressedTexture2D::2222630466628140711::1710567740::1711691901::1::::<><>::
 Terrain-and-Props-OLD.png::CompressedTexture2D::1217362452437446094::1710567740::1711691901::1::::<><>::
 Terrain_and_Props.png::CompressedTexture2D::189476073261804797::1710567740::1711691901::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_1/::1711685537
+::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_1/::1711691904
 BG_1.png::CompressedTexture2D::3352986937270190918::1710567740::1711691904::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_2/::1711685539
+::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_2/::1711691904
 BG_2.png::CompressedTexture2D::8975477511651719::1710567740::1711691904::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_3/::1711685539
+::res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/BG_3/::1711691904
 BG_3.png::CompressedTexture2D::4078416693287967652::1710567740::1711691904::1::::<><>::
 BG_3_alt.png::CompressedTexture2D::3628484378191556404::1710567740::1711691904::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Plant 1/::1711685546
+::res://Grassland_Tileset/Plant Animations/Plant 1/::1711691910
 Plant1_00000.png::CompressedTexture2D::1794536789362559109::1710565029::1711691902::1::::<><>::
 Plant1_00001.png::CompressedTexture2D::6029103015581828247::1710565029::1711691902::1::::<><>::
 Plant1_00002.png::CompressedTexture2D::6224861431022238275::1710565029::1711691902::1::::<><>::
@@ -324,7 +332,7 @@ Plant1_00086.png::CompressedTexture2D::4535605467248967068::1710565029::17116919
 Plant1_00087.png::CompressedTexture2D::9033824587450196444::1710565029::1711691910::1::::<><>::
 Plant1_00088.png::CompressedTexture2D::2289894432216836812::1710565029::1711691910::1::::<><>::
 Plant1_00089.png::CompressedTexture2D::4274182297733617375::1710565029::1711691910::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Plant 2/::1711685546
+::res://Grassland_Tileset/Plant Animations/Plant 2/::1711691910
 Plant2_00000.png::CompressedTexture2D::9079876051834753572::1710565030::1711691910::1::::<><>::
 Plant2_00001.png::CompressedTexture2D::5850319806545979269::1710565030::1711691910::1::::<><>::
 Plant2_00002.png::CompressedTexture2D::4998839713500769443::1710565030::1711691910::1::::<><>::
@@ -415,7 +423,7 @@ Plant2_00086.png::CompressedTexture2D::1698701679563925502::1710565030::17116919
 Plant2_00087.png::CompressedTexture2D::765623658342697442::1710565030::1711691909::1::::<><>::
 Plant2_00088.png::CompressedTexture2D::4481370963848281951::1710565030::1711691909::1::::<><>::
 Plant2_00089.png::CompressedTexture2D::415365189282124328::1710565030::1711691909::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Plant 3/::1711685545
+::res://Grassland_Tileset/Plant Animations/Plant 3/::1711691909
 Plant3_00000.png::CompressedTexture2D::8166582029164311744::1710565030::1711691909::1::::<><>::
 Plant3_00001.png::CompressedTexture2D::1225741166493770968::1710565030::1711691909::1::::<><>::
 Plant3_00002.png::CompressedTexture2D::1480913096766223705::1710565030::1711691909::1::::<><>::
@@ -506,7 +514,7 @@ Plant3_00086.png::CompressedTexture2D::3615147446770975075::1710565030::17116918
 Plant3_00087.png::CompressedTexture2D::8476605907382342283::1710565030::1711691896::1::::<><>::
 Plant3_00088.png::CompressedTexture2D::7567694127555575118::1710565030::1711691896::1::::<><>::
 Plant3_00089.png::CompressedTexture2D::3981813932135604893::1710565030::1711691896::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Plant 4/::1711685535
+::res://Grassland_Tileset/Plant Animations/Plant 4/::1711691897
 Plant4_00000.png::CompressedTexture2D::5352994111963012710::1710565030::1711691896::1::::<><>::
 Plant4_00001.png::CompressedTexture2D::4180327718056248084::1710565030::1711691896::1::::<><>::
 Plant4_00002.png::CompressedTexture2D::6919991387735742044::1710565030::1711691896::1::::<><>::
@@ -567,7 +575,7 @@ Plant4_00056.png::CompressedTexture2D::3519185233486182976::1710565029::17116918
 Plant4_00057.png::CompressedTexture2D::5040950089725210164::1710565029::1711691895::1::::<><>::
 Plant4_00058.png::CompressedTexture2D::246811903902526696::1710565030::1711691895::1::::<><>::
 Plant4_00059.png::CompressedTexture2D::6257985653543724565::1710565030::1711691895::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Plant 5/::1711685534
+::res://Grassland_Tileset/Plant Animations/Plant 5/::1711691896
 Plant5_00000.png::CompressedTexture2D::8446402770470921853::1710565030::1711691895::1::::<><>::
 Plant5_00001.png::CompressedTexture2D::7314616935633037657::1710565030::1711691895::1::::<><>::
 Plant5_00002.png::CompressedTexture2D::1263849640365542183::1710565030::1711691895::1::::<><>::
@@ -628,7 +636,7 @@ Plant5_00056.png::CompressedTexture2D::623539139346308953::1710565030::171169189
 Plant5_00057.png::CompressedTexture2D::4701757893832527248::1710565030::1711691896::1::::<><>::
 Plant5_00058.png::CompressedTexture2D::7073847996184379655::1710565030::1711691896::1::::<><>::
 Plant5_00059.png::CompressedTexture2D::1987868597842743593::1710565030::1711691896::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Plant 6/::1711685536
+::res://Grassland_Tileset/Plant Animations/Plant 6/::1711691899
 Plant6_00000.png::CompressedTexture2D::3056481685896476655::1710565029::1711691896::1::::<><>::
 Plant6_00001.png::CompressedTexture2D::3397628751618110908::1710565029::1711691896::1::::<><>::
 Plant6_00002.png::CompressedTexture2D::2373998001078066504::1710565029::1711691896::1::::<><>::
@@ -689,7 +697,7 @@ Plant6_00056.png::CompressedTexture2D::2894128449777255581::1710565029::17116918
 Plant6_00057.png::CompressedTexture2D::3055055742324494982::1710565029::1711691899::1::::<><>::
 Plant6_00058.png::CompressedTexture2D::5259844848209994537::1710565029::1711691899::1::::<><>::
 Plant6_00059.png::CompressedTexture2D::4784806243494725907::1710565029::1711691899::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Plant 7/::1711685537
+::res://Grassland_Tileset/Plant Animations/Plant 7/::1711691900
 Plant7_00000.png::CompressedTexture2D::3286485584523044845::1710565029::1711691899::1::::<><>::
 Plant7_00001.png::CompressedTexture2D::994379282598498506::1710565029::1711691899::1::::<><>::
 Plant7_00002.png::CompressedTexture2D::7849367694493469158::1710565029::1711691899::1::::<><>::
@@ -750,7 +758,7 @@ Plant7_00056.png::CompressedTexture2D::8032789827283602765::1710565029::17116919
 Plant7_00057.png::CompressedTexture2D::3844788306847567410::1710565029::1711691900::1::::<><>::
 Plant7_00058.png::CompressedTexture2D::8726230572413484330::1710565029::1711691899::1::::<><>::
 Plant7_00059.png::CompressedTexture2D::1955225865164105124::1710565029::1711691899::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Plant 8 Poison/::1711685536
+::res://Grassland_Tileset/Plant Animations/Plant 8 Poison/::1711691900
 PlantPosion_00000.png::CompressedTexture2D::7007399629949909254::1710565029::1711691899::1::::<><>::
 PlantPosion_00001.png::CompressedTexture2D::6007878641266590439::1710565029::1711691899::1::::<><>::
 PlantPosion_00002.png::CompressedTexture2D::8066039637738602913::1710565029::1711691899::1::::<><>::
@@ -781,7 +789,7 @@ PlantPosion_00026.png::CompressedTexture2D::1594037322363478153::1710565029::171
 PlantPosion_00027.png::CompressedTexture2D::6101931671701080068::1710565029::1711691897::1::::<><>::
 PlantPosion_00028.png::CompressedTexture2D::4208494524582852962::1710565029::1711691897::1::::<><>::
 PlantPosion_00029.png::CompressedTexture2D::6376667065713703761::1710565029::1711691897::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/Plant Wind 1/::1711685535
+::res://Grassland_Tileset/Plant Animations/Plant Wind 1/::1711691897
 Plant Wind 1_00000.png::CompressedTexture2D::5274783475481179520::1710565029::1711691897::1::::<><>::
 Plant Wind 1_00001.png::CompressedTexture2D::3828574065791439573::1710565029::1711691897::1::::<><>::
 Plant Wind 1_00002.png::CompressedTexture2D::8164348659700463491::1710565029::1711691897::1::::<><>::
@@ -812,7 +820,7 @@ Plant Wind 1_00026.png::CompressedTexture2D::8257221291905872765::1710565029::17
 Plant Wind 1_00027.png::CompressedTexture2D::3469293375791716108::1710565029::1711691897::1::::<><>::
 Plant Wind 1_00028.png::CompressedTexture2D::8011992307286397704::1710565029::1711691897::1::::<><>::
 Plant Wind 1_00029.png::CompressedTexture2D::3198319410715105465::1710565029::1711691897::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/PlantJump/::1711685536
+::res://Grassland_Tileset/Plant Animations/PlantJump/::1711691897
 JumpPlant_00000.png::CompressedTexture2D::1940337545723140433::1710565029::1711691897::1::::<><>::
 JumpPlant_00001.png::CompressedTexture2D::7133615736916232496::1710565029::1711691897::1::::<><>::
 JumpPlant_00002.png::CompressedTexture2D::6077716375685244903::1710565029::1711691897::1::::<><>::
@@ -833,7 +841,7 @@ JumpPlant_00016.png::CompressedTexture2D::87404785144958148::1710565029::1711691
 JumpPlant_00017.png::CompressedTexture2D::3075880342293137760::1710565029::1711691897::1::::<><>::
 JumpPlant_00018.png::CompressedTexture2D::3411050319569551625::1710565029::1711691897::1::::<><>::
 JumpPlant_00019.png::CompressedTexture2D::4560979467837588802::1710565029::1711691897::1::::<><>::
-::res://Grassland_Tileset/Plant Animations/PlantJump2/::1711685535
+::res://Grassland_Tileset/Plant Animations/PlantJump2/::1711691898
 JumpPlant 2_00000.png::CompressedTexture2D::7416103466968274571::1710565029::1711691897::1::::<><>::
 JumpPlant 2_00001.png::CompressedTexture2D::849290186603909376::1710565029::1711691898::1::::<><>::
 JumpPlant 2_00002.png::CompressedTexture2D::1325461638400891292::1710565029::1711691897::1::::<><>::
@@ -854,23 +862,27 @@ JumpPlant 2_00016.png::CompressedTexture2D::657086210866069326::1710565029::1711
 JumpPlant 2_00017.png::CompressedTexture2D::6100773590380954651::1710565029::1711691898::1::::<><>::
 JumpPlant 2_00018.png::CompressedTexture2D::9075549402929250611::1710565029::1711691898::1::::<><>::
 JumpPlant 2_00019.png::CompressedTexture2D::5506267560388241268::1710565029::1711691898::1::::<><>::
-::res://Mossy Tileset/::1711685273
+::res://Mossy Tileset/::1711691903
 Mossy - BackgroundDecoration.png::CompressedTexture2D::9048715258311489172::1711685179::1711691902::1::::<><>::
 Mossy - Decorations&Hazards.png::CompressedTexture2D::6718728665302567815::1711685179::1711691903::1::::<><>::
 Mossy - FloatingPlatforms.png::CompressedTexture2D::3095170665628517948::1711685179::1711691899::1::::<><>::
 Mossy - Hanging Plants.png::CompressedTexture2D::8825357607581850141::1711685179::1711691899::1::::<><>::
 Mossy - MossyHills.png::CompressedTexture2D::2718421856225792394::1711685179::1711691899::1::::<><>::
 Mossy - TileSet.png::CompressedTexture2D::1314407247540857193::1711685179::1711691901::1::::<><>::
-::res://oak_woods_v1.0/::1711691542
+::res://MovingPlatforms/::1712210410
+moving_platforms.tscn::PackedScene::1664000319793242677::1712200999::0::1::::<><>::uid://cx1v4ub40rll::::res://Fantasy Swamp Forest/Free/Terrain_and_Props.png
+moving_platform_r_down_up.tscn::PackedScene::4759400098671367994::1712210410::0::1::::<><>::uid://cx1v4ub40rll::::res://Fantasy Swamp Forest/Free/Terrain_and_Props.png
+moving_platform_updown.tscn::PackedScene::501841759746291714::1712200999::0::1::::<><>::uid://cx1v4ub40rll::::res://Fantasy Swamp Forest/Free/Terrain_and_Props.png
+::res://oak_woods_v1.0/::1711691897
 oak_woods_tileset.png::CompressedTexture2D::7369087700969962185::1711685179::1711691897::1::::<><>::
 readme.TXT::TextFile::-1::1711685179::0::1::::<><>::
-::res://oak_woods_v1.0/background/::1711685268
+::res://oak_woods_v1.0/background/::1711691897
 background_layer_1.png::CompressedTexture2D::1206556797705296737::1711685179::1711691897::1::::<><>::
 background_layer_2.png::CompressedTexture2D::955178101788593558::1711685179::1711691897::1::::<><>::
 background_layer_3.png::CompressedTexture2D::3423313776926687928::1711685179::1711691897::1::::<><>::
-::res://oak_woods_v1.0/character/::1711685268
+::res://oak_woods_v1.0/character/::1711691897
 char_blue.png::CompressedTexture2D::6439021540927513248::1711685179::1711691897::1::::<><>::
-::res://oak_woods_v1.0/decorations/::1711685268
+::res://oak_woods_v1.0/decorations/::1711691897
 fence_1.png::CompressedTexture2D::330218926807813543::1711685179::1711691897::1::::<><>::
 fence_2.png::CompressedTexture2D::3691242548811908044::1711685179::1711691897::1::::<><>::
 grass_1.png::CompressedTexture2D::1084175811915564026::1711685179::1711691897::1::::<><>::
@@ -885,6 +897,6 @@ shop_anim.png::CompressedTexture2D::106042308307715404::1711685179::1711691897::
 sign.png::CompressedTexture2D::8040747797350679094::1711685179::1711691897::1::::<><>::
 ::res://program.cs/::1711685179
 test.cs::CSharpScript::-1::1711685179::0::1::::<><>::
-::res://TestCharacter/::1711691753
-TestCharacter.gd::GDScript::-1::1711691735::0::1::::<>CharacterBody2D<>::
-TestCharacter.tscn::PackedScene::2917199236269270805::1711691753::0::1::::<><>::res://TestCharacter/TestCharacter.gd<>uid://cx0d0kdhcndky::::res://oak_woods_v1.0/character/char_blue.png
+::res://TestCharacter/::1712159099
+TestCharacter.gd::GDScript::-1::1711706271::0::1::::<>CharacterBody2D<>::
+TestCharacter.tscn::PackedScene::2917199236269270805::1712159099::0::1::::<><>::res://TestCharacter/TestCharacter.gd<>uid://cx0d0kdhcndky::::res://oak_woods_v1.0/character/char_blue.png

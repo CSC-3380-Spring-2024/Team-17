@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=3 uid="uid://b82qvhwh5a2ti"]
+
+[ext_resource type="Texture2D" uid="uid://cx1v4ub40rll" path="res://Grassland_Tileset/Plant Animations/Mossy Tileset/Fantasy Swamp Forest/Free/Terrain_and_Props.png" id="1_onv5n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rtas7"]
+size = Vector2(78, 11)
+
+[sub_resource type="Animation" id="Animation_ltqfv"]
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 2.5, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-183, -1), Vector2(-120, 96), Vector2(2.08165e-12, 2.08165e-12)]
+}
+
+[sub_resource type="Animation" id="Animation_65b40"]
+resource_name = "RightDownUp"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-174, 0), Vector2(-49, 44), Vector2(2.08165e-12, 2.08165e-12)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_acn3k"]
+_data = {
+"RESET": SubResource("Animation_ltqfv"),
+"RightDownUp": SubResource("Animation_65b40")
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="MovingPlatform-RDownUp" type="AnimatableBody2D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="MovingPlatform-RDownUp"]
+texture = ExtResource("1_onv5n")
+region_enabled = true
+region_rect = Rect2(80, 160, 80, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MovingPlatform-RDownUp"]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_rtas7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MovingPlatform-RDownUp"]
+libraries = {
+"": SubResource("AnimationLibrary_acn3k")
+}
+autoplay = "RightDownUp"
