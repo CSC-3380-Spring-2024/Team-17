@@ -1,6 +1,6 @@
 res://Mystic_Forest_Map.tscn
-res://cultist_priest.tscn
-res://TestCharacter/TestCharacter.tscn
 res://MovingPlatforms/moving_platform_r_down_up.tscn
 res://MovingPlatforms/moving_platforms.tscn
 res://MovingPlatforms/moving_platform_updown.tscn
+res://main.tscn
+res://earth_realm.tscn
