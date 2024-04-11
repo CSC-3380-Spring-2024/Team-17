@@ -1,11 +1,7 @@
-res://main.tscn
-res://Main.gd
-res://Mystic_Forest_Map.tscn
-res://MovingPlatforms/moving_platform_r_down_up.tscn
-res://MovingPlatforms/moving_platforms.tscn
-res://MovingPlatforms/moving_platform_updown.tscn
-res://cultist_priest.tscn
+res://worm_2.tscn
 res://Enemies/Worm.tscn
-res://Enemies/Worm.gd
-res://TestCharacter/TestCharacter.tscn
-res://TestCharacter/TestCharacter.gd
+res://Mystic_Forest_Map.tscn
+res://Enemies/worm_2.gd
+res://Enemies/worm_2.tscn
+res://Enemies/EnemyNightBorne.gd
+res://Enemies/enemy_night_borne.tscn

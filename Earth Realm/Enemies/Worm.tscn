@@ -357,10 +357,10 @@ animations = [{
 radius = 104.03
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dlfsa"]
-size = Vector2(19, 24)
+size = Vector2(17, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_llyj5"]
-size = Vector2(55, 25.75)
+size = Vector2(46, 25.75)
 
 [node name="Worm" type="CharacterBody2D"]
 script = ExtResource("1_r3cxg")
@@ -373,7 +373,7 @@ shape = SubResource("RectangleShape2D_vqbae")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -14)
 sprite_frames = SubResource("SpriteFrames_7v5r4")
-animation = &"Idle"
+animation = &"Attack"
 
 [node name="PlayerDetection" type="Area2D" parent="."]
 visible = false
@@ -387,14 +387,14 @@ shape = SubResource("CircleShape2D_0k7en")
 position = Vector2(-2, -16.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
-position = Vector2(11.5, 3.5)
+position = Vector2(10.5, 2.5)
 shape = SubResource("RectangleShape2D_dlfsa")
 
 [node name="PlayerCollision" type="Area2D" parent="."]
-position = Vector2(-2, -16.5)
+position = Vector2(-3, -16.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollision"]
-position = Vector2(-0.5, 2.625)
+position = Vector2(1, 2.5)
 shape = SubResource("RectangleShape2D_llyj5")
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]

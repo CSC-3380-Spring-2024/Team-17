@@ -47,13 +47,13 @@ func _on_player_death_body_entered(body):
 	if body.name == "TestCharacter":
 		velocity.x = 0
 		chase = false
-		death()
+		get_node("AnimatedSprite2D").play("Attack")
 
 func _on_player_collision_body_entered(body):
 	if body.name == "TestCharacter":
 		body.health -= 3
 		chase = false
-		death()
+		get_node("AnimatedSprite2D").play("Attack")
 		
 func death():
 	get_node("AnimatedSprite2D").play("Death")
