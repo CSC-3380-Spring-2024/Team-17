@@ -11,13 +11,34 @@ config_version=5
 [application]
 
 config/name="EarthRealm"
-run/main_scene="res://Mystic_Forest_Map.tscn"
+run/main_scene="res://MysticForest/Mystic_Forest_Map.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [dotnet]
 
 project/assembly_name="EarthRealm"
+
+[file_customization]
+
+folder_colors={
+"res://Assets/": "orange",
+"res://Enemies/": "red",
+"res://MovingPlatforms/": "pink",
+"res://MysticForest/": "purple",
+"res://Plants/": "green",
+"res://TestCharacter/": "blue"
+}
+
+[filesystem]
+
+import/blender/enabled=false
+
+[layer_names]
+
+2d_physics/layer_1="Ground"
+2d_physics/layer_2="Player"
+2d_physics/layer_3="Enemy"
 
 [rendering]
 

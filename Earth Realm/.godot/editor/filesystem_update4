@@ -1,7 +1,4 @@
-res://worm_2.tscn
-res://Enemies/Worm.tscn
-res://Mystic_Forest_Map.tscn
-res://Enemies/worm_2.gd
-res://Enemies/worm_2.tscn
-res://Enemies/EnemyNightBorne.gd
+res://MysticForest/Mystic_Forest_Map.tscn
+res://Enemies/enemy_nightborne_death_effect.tscn
+res://Enemies/cultist_priest.tscn
 res://Enemies/enemy_night_borne.tscn

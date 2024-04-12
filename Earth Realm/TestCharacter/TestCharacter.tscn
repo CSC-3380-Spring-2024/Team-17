@@ -276,7 +276,7 @@ animation = &"Run"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 ignore_rotation = false
-zoom = Vector2(5, 5)
+zoom = Vector2(4, 4)
 limit_left = 0
 limit_top = 0
 limit_bottom = 528

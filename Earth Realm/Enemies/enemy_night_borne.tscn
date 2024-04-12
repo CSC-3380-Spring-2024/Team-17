@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://b8vh62pslfc61"]
+[gd_scene load_steps=61 format=3 uid="uid://b8vh62pslfc61"]
 
 [ext_resource type="Script" path="res://Enemies/EnemyNightBorne.gd" id="1_34r5a"]
 [ext_resource type="Texture2D" uid="uid://ct3kwp55r5bgy" path="res://Assets/NightBorne/NightBorne.png" id="2_18qoj"]
@@ -419,6 +419,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_d4bjr"]
 radius = 37.0135
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_xl6my"]
+radius = 40.0125
+
 [node name="EnemyNightBorne" type="CharacterBody2D"]
 script = ExtResource("1_34r5a")
 
@@ -432,10 +435,19 @@ autoplay = "Idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3, -36)
 shape = SubResource("CircleShape2D_d4bjr")
-debug_color = Color(0.843137, 0.356863, 0.360784, 0.419608)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 autostart = true
 
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(2, -26)
+shape = SubResource("CircleShape2D_xl6my")
+debug_color = Color(0.952941, 0.141176, 0.435294, 0.419608)
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]

@@ -1,13 +1,13 @@
-Timer
-CollisionShape2D
 AnimatedSprite2D
+CollisionShape2D
+Node
+Timer
+Area2D
 CharacterBody2D
 Marker2D
 Node2D
 Label
 CanvasLayer
-Area2D
-Node
 Sprite2D
 DirectionalLight2D
 AnimationPlayer

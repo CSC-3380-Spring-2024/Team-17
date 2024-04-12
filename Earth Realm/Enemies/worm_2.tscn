@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=3 uid="uid://ddu84ugmedagy"]
+[gd_scene load_steps=55 format=3 uid="uid://ddu84ugmedagy"]
 
 [ext_resource type="Texture2D" uid="uid://dq7k4rs3gttgl" path="res://Assets/Fire Worm/Sprites/Worm/Attack.png" id="1_1vqf1"]
 [ext_resource type="Script" path="res://Enemies/worm_2.gd" id="1_vfsut"]
@@ -351,7 +351,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m1mbg"]
-size = Vector2(41, 38)
+size = Vector2(45.5, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aw1lw"]
+size = Vector2(50, 35)
 
 [node name="EnemyWorm2" type="CharacterBody2D"]
 script = ExtResource("1_vfsut")
@@ -363,12 +366,21 @@ animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -19)
+position = Vector2(-2.25, -15)
 shape = SubResource("RectangleShape2D_m1mbg")
-debug_color = Color(0.819608, 0.309804, 0.658824, 0.419608)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
 autostart = true
 
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(-2, -17.5)
+shape = SubResource("RectangleShape2D_aw1lw")
+debug_color = Color(0.933333, 0.211765, 0.380392, 0.419608)
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]

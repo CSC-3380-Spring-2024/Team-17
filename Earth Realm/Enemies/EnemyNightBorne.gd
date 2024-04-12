@@ -1,10 +1,11 @@
 extends CharacterBody2D
 
+var enemy_nightborne_death_effect = preload("res://Enemies/enemy_nightborne_death_effect.tscn")
 
 @export var patrol_points : Node
 @export var speed : int = 1500
 @export var wait_time : int = 3
-
+@export var health_amount: int = 100
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var timer = $Timer
@@ -91,9 +92,19 @@ func enemy_animations():
 	elif current_state == State.Walk && can_walk:
 		animated_sprite_2d.play("Walk")
 
-	
-
-
-
 func _on_timer_timeout():
 	can_walk = true
+
+
+func _on_hurtbox_area_entered(area : Area2D):
+	print("Area Hurtbox entered NightBorne")
+	if area.get_parent().has_method("get_damage_amount"):
+		var node = area.get_parent() as Node
+		health_amount -= node.damage
+		print("Health amount", health_amount)
+		
+		if health_amount <= 0:
+			var enemy_nightborne_death_effect_instance = enemy_nightborne_death_effect.instantiate() as Node2D
+			enemy_nightborne_death_effect_instance.global_position = global_position
+			get_parent().add_child(enemy_nightborne_death_effect_instance)
+			queue_free()
