@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://cfsy4j565ash8"]
 
 [ext_resource type="Script" path="res://MysticForest/Mystic Forest.gd" id="1_rrufa"]
-[ext_resource type="Texture2D" uid="uid://el3bqck5i52" path="res://Fantasy Swamp Forest/Free/BG_2/BG_2.png" id="3_espep"]
-[ext_resource type="Texture2D" uid="uid://bydu6rxy1wnkm" path="res://Fantasy Swamp Forest/Free/BG_3/BG_3.png" id="3_gvwv0"]
-[ext_resource type="Texture2D" uid="uid://bn1hg77rihfkg" path="res://Fantasy Swamp Forest/Free/BG_1/BG_1.png" id="4_vsmxy"]
+[ext_resource type="Texture2D" uid="uid://el3bqck5i52" path="res://Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png" id="3_espep"]
+[ext_resource type="Texture2D" uid="uid://bydu6rxy1wnkm" path="res://Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png" id="3_gvwv0"]
+[ext_resource type="Texture2D" uid="uid://bn1hg77rihfkg" path="res://Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png" id="4_vsmxy"]
 
 [node name="Mystic Forest" type="ParallaxBackground"]
 script = ExtResource("1_rrufa")

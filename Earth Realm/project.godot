@@ -23,6 +23,7 @@ project/assembly_name="EarthRealm"
 
 folder_colors={
 "res://Assets/": "orange",
+"res://EarthRealmlvl2/": "teal",
 "res://Enemies/": "red",
 "res://MovingPlatforms/": "pink",
 "res://MysticForest/": "purple",

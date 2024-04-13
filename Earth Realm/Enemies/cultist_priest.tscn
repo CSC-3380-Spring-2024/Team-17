@@ -25,10 +25,6 @@
 [ext_resource type="Texture2D" uid="uid://cua0tiqv44pck" path="res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_5.png" id="23_10ukg"]
 [ext_resource type="Texture2D" uid="uid://b8wp8m0jbjged" path="res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_6.png" id="24_wrd7i"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bcnd3"]
-radius = 16.0
-height = 48.0
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_2uv1m"]
 atlas = ExtResource("16_daxnk")
 region = Rect2(0, 0, 200, 200)
@@ -142,39 +138,45 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p6ask"]
+size = Vector2(33, 68)
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_gdq7a"]
-radius = 80.0
+radius = 141.057
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0sldy"]
-size = Vector2(15.5, 54.25)
+size = Vector2(26, 55.125)
 
 [node name="Cultist_Priest" type="CharacterBody2D"]
 script = ExtResource("1_57bvx")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-shape = SubResource("CapsuleShape2D_bcnd3")
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -9.53674e-07)
+position = Vector2(-1, -35)
 scale = Vector2(0.35, 0.425)
 sprite_frames = SubResource("SpriteFrames_k248d")
 animation = &"Idle"
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2.5, -34)
+shape = SubResource("RectangleShape2D_p6ask")
+debug_color = Color(0.207843, 0.537255, 0.913725, 0.419608)
+
 [node name="PlayerDetection" type="Area2D" parent="."]
-visible = false
 position = Vector2(176, 128)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
-position = Vector2(-176, -128)
+visible = false
+position = Vector2(-177, -157)
 shape = SubResource("CircleShape2D_gdq7a")
+debug_color = Color(0.568627, 0.545098, 0.305882, 0.419608)
 
 [node name="PlayerDeath" type="Area2D" parent="."]
 position = Vector2(176, 128)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
-position = Vector2(-176.75, -120.125)
+position = Vector2(-178, -155.438)
 shape = SubResource("RectangleShape2D_0sldy")
+debug_color = Color(0.980392, 0.0980392, 0.247059, 0.419608)
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]

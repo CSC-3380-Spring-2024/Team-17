@@ -15,7 +15,7 @@ var enemy_nightborne_death_effect = preload("res://Enemies/enemy_nightborne_deat
 const GRAVITY = 1000
 
 
-enum State{ Idle, Walk, Attack, Death, GetHit}
+enum State {Idle, Walk, Attack, Death, GetHit}
 var current_state : State
 var direction : Vector2 = Vector2.LEFT
 var number_of_points : int

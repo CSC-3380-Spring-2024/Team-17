@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712950341
+::res://::1713006625
 icon.svg::CompressedTexture2D::2995219347521462331::1709750338::1711691897::1::::<><>::
 Main.gd::GDScript::-1::1712465515::0::1::::<>Node2D<>::
 main.tscn::PackedScene::2509215929056746046::1712465523::0::1::::<><>::res://Main.gd<>uid://biw53b0vsuj8v::::res://icon.svg
-::res://Assets/::1712926736
+::res://Assets/::1712970943
 ::res://Assets/cultist_priest_sprite_pack/::1712913751
 cultist_priest_attack_1.png::CompressedTexture2D::5877389092897562053::1711685179::1712913751::1::::<><>::
 cultist_priest_attack_2.png::CompressedTexture2D::5328125646146995524::1711685179::1712913751::1::::<><>::
@@ -31,20 +31,20 @@ cultist_priest_walk_3.png::CompressedTexture2D::7771257681177093763::1711685179:
 cultist_priest_walk_4.png::CompressedTexture2D::9002198721087874907::1711685179::1712913751::1::::<><>::
 cultist_priest_walk_5.png::CompressedTexture2D::6178170540947931106::1711685179::1712913751::1::::<><>::
 cultist_priest_walk_6.png::CompressedTexture2D::4749039189738771419::1711685179::1712913751::1::::<><>::
-::res://Assets/Fantasy Swamp Forest/::1711691554
-LICENSE.txt::TextFile::-1::1711685179::0::1::::<><>::
-README.txt::TextFile::-1::1711685179::0::1::::<><>::
-::res://Assets/Fantasy Swamp Forest/Free/::1712914370
-Mockup.png::CompressedTexture2D::2222630466628140711::1711685179::1712914370::1::::<><>::
-Terrain-and-Props-OLD.png::CompressedTexture2D::1217362452437446094::1711685179::1712914370::1::::<><>::
-Terrain_and_Props.png::CompressedTexture2D::189476073261804797::1711685179::1712914370::1::::<><>::
-::res://Assets/Fantasy Swamp Forest/Free/BG_1/::1712914371
-BG_1.png::CompressedTexture2D::3352986937270190918::1711685179::1712914371::1::::<><>::
-::res://Assets/Fantasy Swamp Forest/Free/BG_2/::1712914371
-BG_2.png::CompressedTexture2D::8975477511651719::1711685179::1712914371::1::::<><>::
-::res://Assets/Fantasy Swamp Forest/Free/BG_3/::1712914370
-BG_3.png::CompressedTexture2D::4078416693287967652::1711685179::1712914370::1::::<><>::
-BG_3_alt.png::CompressedTexture2D::3628484378191556404::1711685179::1712914370::1::::<><>::
+::res://Assets/Fantasy Swamp Forest/::1711684406
+LICENSE.txt::TextFile::-1::1710575609::0::1::::<><>::
+README.txt::TextFile::-1::1710567740::0::1::::<><>::
+::res://Assets/Fantasy Swamp Forest/Free/::1712952632
+Mockup.png::CompressedTexture2D::2222630466628140711::1710567740::1712952632::1::::<><>::
+Terrain-and-Props-OLD.png::CompressedTexture2D::1217362452437446094::1710567740::1712952632::1::::<><>::
+Terrain_and_Props.png::CompressedTexture2D::189476073261804797::1710567740::1712952632::1::::<><>::
+::res://Assets/Fantasy Swamp Forest/Free/BG_1/::1712952632
+BG_1.png::CompressedTexture2D::3352986937270190918::1710567740::1712952632::1::::<><>::
+::res://Assets/Fantasy Swamp Forest/Free/BG_2/::1712952632
+BG_2.png::CompressedTexture2D::8975477511651719::1710567740::1712952632::1::::<><>::
+::res://Assets/Fantasy Swamp Forest/Free/BG_3/::1712952632
+BG_3.png::CompressedTexture2D::4078416693287967652::1710567740::1712952632::1::::<><>::
+BG_3_alt.png::CompressedTexture2D::3628484378191556404::1710567740::1712952632::1::::<><>::
 ::res://Assets/Fire Worm/::1712468588
 ::res://Assets/Fire Worm/Sprites/::1712468516
 ::res://Assets/Fire Worm/Sprites/Fire Ball/::1712468567
@@ -89,274 +89,10 @@ Pixel Art Forest.png::CompressedTexture2D::1907238643959594853::1710565160::1712
 Pixel Art Plataformer Painted Style.png::CompressedTexture2D::1919837316064016756::1710565160::1712926778::1::::<><>::
 Pixel Art Runner.png::CompressedTexture2D::8257355108099619722::1710565160::1712926778::1::::<><>::
 Pixel Art Snowy Forest.png::CompressedTexture2D::2828821117468759935::1710565160::1712926778::1::::<><>::
-::res://Assets/Grassland_Tileset/::1712914428
+::res://Assets/Grassland_Tileset/::1712952595
 Grassland_Tileset.png::CompressedTexture2D::1064434169892282815::1709753624::1712914428::1::::<><>::
 Mountain.png::CompressedTexture2D::2545524631943106422::1709753624::1712914428::1::::<><>::
 Sky.png::CompressedTexture2D::8702968732195501383::1709753624::1712914428::1::::<><>::
-::res://Assets/Grassland_Tileset/Plant Animations/::1712929784
-::res://Assets/Grassland_Tileset/Plant Animations/BlueFlower1/::1712914436
-BlueFlower_00000.png::CompressedTexture2D::4193002809958512661::1710565030::1712914434::1::::<><>::
-BlueFlower_00001.png::CompressedTexture2D::8583843438740939829::1710565030::1712914434::1::::<><>::
-BlueFlower_00002.png::CompressedTexture2D::6935108212034654300::1710565030::1712914434::1::::<><>::
-BlueFlower_00003.png::CompressedTexture2D::1002898362099371299::1710565030::1712914435::1::::<><>::
-BlueFlower_00004.png::CompressedTexture2D::5620924191968269657::1710565030::1712914435::1::::<><>::
-BlueFlower_00005.png::CompressedTexture2D::4242866334252166005::1710565030::1712914435::1::::<><>::
-BlueFlower_00006.png::CompressedTexture2D::5747856650020599975::1710565030::1712914435::1::::<><>::
-BlueFlower_00007.png::CompressedTexture2D::3887300653410304722::1710565030::1712914435::1::::<><>::
-BlueFlower_00008.png::CompressedTexture2D::2150724006261562884::1710565030::1712914435::1::::<><>::
-BlueFlower_00009.png::CompressedTexture2D::1548689226662060494::1710565030::1712914435::1::::<><>::
-BlueFlower_00010.png::CompressedTexture2D::2813855267246728358::1710565030::1712914435::1::::<><>::
-BlueFlower_00011.png::CompressedTexture2D::6259919156402891624::1710565030::1712914435::1::::<><>::
-BlueFlower_00012.png::CompressedTexture2D::2223395623187526747::1710565030::1712914435::1::::<><>::
-BlueFlower_00013.png::CompressedTexture2D::5979987539447370692::1710565030::1712914435::1::::<><>::
-BlueFlower_00014.png::CompressedTexture2D::1745015483113849130::1710565030::1712914435::1::::<><>::
-BlueFlower_00015.png::CompressedTexture2D::8478170855353996968::1710565030::1712914435::1::::<><>::
-BlueFlower_00016.png::CompressedTexture2D::1214485581936394246::1710565030::1712914435::1::::<><>::
-BlueFlower_00017.png::CompressedTexture2D::7401825797451715954::1710565030::1712914435::1::::<><>::
-BlueFlower_00018.png::CompressedTexture2D::7826818656063805003::1710565030::1712914435::1::::<><>::
-BlueFlower_00019.png::CompressedTexture2D::1361024191024589676::1710565030::1712914435::1::::<><>::
-BlueFlower_00020.png::CompressedTexture2D::8506300164788982299::1710565030::1712914435::1::::<><>::
-BlueFlower_00021.png::CompressedTexture2D::2590702441288340801::1710565030::1712914435::1::::<><>::
-BlueFlower_00022.png::CompressedTexture2D::11606215422898746::1710565030::1712914435::1::::<><>::
-BlueFlower_00023.png::CompressedTexture2D::8960458280175387303::1710565030::1712914435::1::::<><>::
-BlueFlower_00024.png::CompressedTexture2D::1027404751281891437::1710565030::1712914433::1::::<><>::
-BlueFlower_00025.png::CompressedTexture2D::8188977504558560647::1710565030::1712914433::1::::<><>::
-BlueFlower_00026.png::CompressedTexture2D::9100647883527509388::1710565030::1712914433::1::::<><>::
-BlueFlower_00027.png::CompressedTexture2D::7940380552722090890::1710565030::1712914433::1::::<><>::
-BlueFlower_00028.png::CompressedTexture2D::7736716602436204209::1710565030::1712914433::1::::<><>::
-BlueFlower_00029.png::CompressedTexture2D::4507542561013051926::1710565030::1712914434::1::::<><>::
-BlueFlower_00030.png::CompressedTexture2D::3060115830205163837::1710565030::1712914434::1::::<><>::
-BlueFlower_00031.png::CompressedTexture2D::6532573911895411305::1710565030::1712914434::1::::<><>::
-BlueFlower_00032.png::CompressedTexture2D::2224068298356576189::1710565030::1712914434::1::::<><>::
-BlueFlower_00033.png::CompressedTexture2D::6738312824062342403::1710565030::1712914434::1::::<><>::
-BlueFlower_00034.png::CompressedTexture2D::6755558866407579946::1710565030::1712914434::1::::<><>::
-BlueFlower_00035.png::CompressedTexture2D::285947221966803756::1710565030::1712914434::1::::<><>::
-BlueFlower_00036.png::CompressedTexture2D::8423121557658173792::1710565030::1712914434::1::::<><>::
-BlueFlower_00037.png::CompressedTexture2D::2239804876397001226::1710565030::1712914434::1::::<><>::
-BlueFlower_00038.png::CompressedTexture2D::5717597361829493286::1710565030::1712914434::1::::<><>::
-BlueFlower_00039.png::CompressedTexture2D::5656950756831827791::1710565030::1712914434::1::::<><>::
-BlueFlower_00040.png::CompressedTexture2D::3556163405849740288::1710565030::1712914434::1::::<><>::
-BlueFlower_00041.png::CompressedTexture2D::8469729573061035312::1710565030::1712914434::1::::<><>::
-BlueFlower_00042.png::CompressedTexture2D::4879838236387248289::1710565030::1712914434::1::::<><>::
-BlueFlower_00043.png::CompressedTexture2D::7253495803277272410::1710565030::1712914434::1::::<><>::
-BlueFlower_00044.png::CompressedTexture2D::469976287106137472::1710565030::1712914434::1::::<><>::
-BlueFlower_00045.png::CompressedTexture2D::3554612040085940187::1710565030::1712914434::1::::<><>::
-BlueFlower_00046.png::CompressedTexture2D::5688704111754255618::1710565030::1712914434::1::::<><>::
-BlueFlower_00047.png::CompressedTexture2D::4237884223217734527::1710565030::1712914434::1::::<><>::
-BlueFlower_00048.png::CompressedTexture2D::3205511965056669028::1710565030::1712914436::1::::<><>::
-BlueFlower_00049.png::CompressedTexture2D::718586149024311928::1710565030::1712914436::1::::<><>::
-BlueFlower_00050.png::CompressedTexture2D::1521479144559305198::1710565030::1712914436::1::::<><>::
-BlueFlower_00051.png::CompressedTexture2D::1553156164726732355::1710565030::1712914436::1::::<><>::
-BlueFlower_00052.png::CompressedTexture2D::6421638113986030244::1710565030::1712914436::1::::<><>::
-BlueFlower_00053.png::CompressedTexture2D::3466062606963415997::1710565030::1712914436::1::::<><>::
-BlueFlower_00054.png::CompressedTexture2D::291756468615970627::1710565030::1712914436::1::::<><>::
-BlueFlower_00055.png::CompressedTexture2D::989901572903978831::1710565030::1712914436::1::::<><>::
-BlueFlower_00056.png::CompressedTexture2D::4121540582670570275::1710565030::1712914436::1::::<><>::
-BlueFlower_00057.png::CompressedTexture2D::1334263298646598087::1710565030::1712914436::1::::<><>::
-BlueFlower_00058.png::CompressedTexture2D::75783606447076773::1710565030::1712914436::1::::<><>::
-BlueFlower_00059.png::CompressedTexture2D::368261242106049903::1710565030::1712914436::1::::<><>::
-::res://Assets/Grassland_Tileset/Plant Animations/BlueFlower2/::1712914437
-BluePlantClosed_00000.png::CompressedTexture2D::3512058379109981934::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00001.png::CompressedTexture2D::3894160610541882439::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00002.png::CompressedTexture2D::8846749695186590656::1710565029::1712914437::1::::<><>::
-BluePlantClosed_00003.png::CompressedTexture2D::3417642376874508129::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00004.png::CompressedTexture2D::6087616588058601645::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00005.png::CompressedTexture2D::5713942474740351195::1710565029::1712914437::1::::<><>::
-BluePlantClosed_00006.png::CompressedTexture2D::5306806772848850760::1710565029::1712914437::1::::<><>::
-BluePlantClosed_00007.png::CompressedTexture2D::2890882995225812487::1710565029::1712914437::1::::<><>::
-BluePlantClosed_00008.png::CompressedTexture2D::1526154526779321290::1710565029::1712914437::1::::<><>::
-BluePlantClosed_00009.png::CompressedTexture2D::5136068647086697637::1710565029::1712914437::1::::<><>::
-BluePlantClosed_00010.png::CompressedTexture2D::8312974691206690256::1710565029::1712914437::1::::<><>::
-BluePlantClosed_00011.png::CompressedTexture2D::8496391406252108848::1710565029::1712914437::1::::<><>::
-BluePlantClosed_00012.png::CompressedTexture2D::2222740805038467306::1710565029::1712914435::1::::<><>::
-BluePlantClosed_00013.png::CompressedTexture2D::7030086105489519732::1710565029::1712914435::1::::<><>::
-BluePlantClosed_00014.png::CompressedTexture2D::1483247078659471459::1710565029::1712914435::1::::<><>::
-BluePlantClosed_00015.png::CompressedTexture2D::2073936818803930018::1710565029::1712914435::1::::<><>::
-BluePlantClosed_00016.png::CompressedTexture2D::4268492535533253276::1710565029::1712914435::1::::<><>::
-BluePlantClosed_00017.png::CompressedTexture2D::5275528514557333578::1710565029::1712914435::1::::<><>::
-BluePlantClosed_00018.png::CompressedTexture2D::28563942124052487::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00019.png::CompressedTexture2D::8409868485435098366::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00020.png::CompressedTexture2D::1510819720847819549::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00021.png::CompressedTexture2D::3934711754245915126::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00022.png::CompressedTexture2D::5484051266313775488::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00023.png::CompressedTexture2D::1974746499849710069::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00024.png::CompressedTexture2D::1041650668496998726::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00025.png::CompressedTexture2D::6707900239143819700::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00026.png::CompressedTexture2D::8292414301954269796::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00027.png::CompressedTexture2D::7981828437825111727::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00028.png::CompressedTexture2D::769686755662001016::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00029.png::CompressedTexture2D::4076054187964130389::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00030.png::CompressedTexture2D::73923007134292395::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00031.png::CompressedTexture2D::584385154008425205::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00032.png::CompressedTexture2D::1662731156850250197::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00033.png::CompressedTexture2D::6933171920653279644::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00034.png::CompressedTexture2D::2381663622133853958::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00035.png::CompressedTexture2D::2043497325290189015::1710565029::1712914436::1::::<><>::
-BluePlantClosed_00036.png::CompressedTexture2D::4950535770550140941::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00037.png::CompressedTexture2D::1258825620234927029::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00038.png::CompressedTexture2D::7501737902105765435::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00039.png::CompressedTexture2D::3638373308803527230::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00040.png::CompressedTexture2D::1230754674779837136::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00041.png::CompressedTexture2D::6572882882045437669::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00042.png::CompressedTexture2D::3753125564470719044::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00043.png::CompressedTexture2D::9219949403642445050::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00044.png::CompressedTexture2D::5975370246322529166::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00045.png::CompressedTexture2D::4545675680856107766::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00046.png::CompressedTexture2D::3610440550903194901::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00047.png::CompressedTexture2D::3195659028926542585::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00048.png::CompressedTexture2D::4343047368159380923::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00049.png::CompressedTexture2D::5425998634061761850::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00050.png::CompressedTexture2D::2407968034083278659::1710565029::1712914430::1::::<><>::
-BluePlantClosed_00051.png::CompressedTexture2D::2144070690163110132::1710565029::1712914431::1::::<><>::
-BluePlantClosed_00052.png::CompressedTexture2D::8359743235868635410::1710565029::1712914431::1::::<><>::
-BluePlantClosed_00053.png::CompressedTexture2D::3839190510826627801::1710565029::1712914431::1::::<><>::
-BluePlantClosed_00054.png::CompressedTexture2D::3441250177748449951::1710565029::1712914431::1::::<><>::
-BluePlantClosed_00055.png::CompressedTexture2D::4368546478360354931::1710565029::1712914431::1::::<><>::
-BluePlantClosed_00056.png::CompressedTexture2D::475900750414279445::1710565029::1712914431::1::::<><>::
-BluePlantClosed_00057.png::CompressedTexture2D::32164596922119378::1710565029::1712914431::1::::<><>::
-BluePlantClosed_00058.png::CompressedTexture2D::3339198009274715790::1710565029::1712914431::1::::<><>::
-BluePlantClosed_00059.png::CompressedTexture2D::9094628476040815080::1710565029::1712914431::1::::<><>::
-::res://Assets/Grassland_Tileset/Plant Animations/Mossy Tileset/::1712927690
-Mossy - BackgroundDecoration.png::CompressedTexture2D::9048715258311489172::1710565133::1712914437::1::::<><>::
-Mossy - Decorations&Hazards.png::CompressedTexture2D::6718728665302567815::1710565133::1712914437::1::::<><>::
-Mossy - FloatingPlatforms.png::CompressedTexture2D::3095170665628517948::1710565133::1712914433::1::::<><>::
-Mossy - Hanging Plants.png::CompressedTexture2D::8825357607581850141::1710565133::1712914434::1::::<><>::
-Mossy - MossyHills.png::CompressedTexture2D::2718421856225792394::1710565133::1712914433::1::::<><>::
-Mossy - TileSet.png::CompressedTexture2D::1314407247540857193::1710565133::1712914435::1::::<><>::
-::res://Assets/Grassland_Tileset/Plant Animations/Plant 7/::1712914429
-Plant7_00000.png::CompressedTexture2D::3286485584523044845::1710565029::1712914428::1::::<><>::
-Plant7_00001.png::CompressedTexture2D::994379282598498506::1710565029::1712914428::1::::<><>::
-Plant7_00002.png::CompressedTexture2D::7849367694493469158::1710565029::1712914428::1::::<><>::
-Plant7_00003.png::CompressedTexture2D::1191790667044759864::1710565029::1712914428::1::::<><>::
-Plant7_00004.png::CompressedTexture2D::5281299833176612464::1710565029::1712914428::1::::<><>::
-Plant7_00005.png::CompressedTexture2D::2464157237689840144::1710565029::1712914428::1::::<><>::
-Plant7_00006.png::CompressedTexture2D::5258358591519081229::1710565029::1712914428::1::::<><>::
-Plant7_00007.png::CompressedTexture2D::6025949454252081575::1710565029::1712914428::1::::<><>::
-Plant7_00008.png::CompressedTexture2D::7282744479907848448::1710565029::1712914429::1::::<><>::
-Plant7_00009.png::CompressedTexture2D::4620613876398810013::1710565029::1712914429::1::::<><>::
-Plant7_00010.png::CompressedTexture2D::9122877372750477862::1710565029::1712914429::1::::<><>::
-Plant7_00011.png::CompressedTexture2D::3377154092527031287::1710565029::1712914429::1::::<><>::
-Plant7_00012.png::CompressedTexture2D::4034400587619153215::1710565029::1712914429::1::::<><>::
-Plant7_00013.png::CompressedTexture2D::972774644110559879::1710565029::1712914429::1::::<><>::
-Plant7_00014.png::CompressedTexture2D::891705693981272493::1710565029::1712914429::1::::<><>::
-Plant7_00015.png::CompressedTexture2D::6219590978866769883::1710565029::1712914429::1::::<><>::
-Plant7_00016.png::CompressedTexture2D::2243985489570733847::1710565029::1712914429::1::::<><>::
-Plant7_00017.png::CompressedTexture2D::8053793176881422597::1710565029::1712914429::1::::<><>::
-Plant7_00018.png::CompressedTexture2D::2093300123714800942::1710565029::1712914429::1::::<><>::
-Plant7_00019.png::CompressedTexture2D::655583943847510508::1710565029::1712914429::1::::<><>::
-Plant7_00020.png::CompressedTexture2D::967124691889100288::1710565029::1712914429::1::::<><>::
-Plant7_00021.png::CompressedTexture2D::3233415636481914487::1710565029::1712914429::1::::<><>::
-Plant7_00022.png::CompressedTexture2D::4285107906301495598::1710565029::1712914429::1::::<><>::
-Plant7_00023.png::CompressedTexture2D::5612584187186013358::1710565029::1712914429::1::::<><>::
-Plant7_00024.png::CompressedTexture2D::749122563293737005::1710565029::1712914429::1::::<><>::
-Plant7_00025.png::CompressedTexture2D::2486994147698495305::1710565029::1712914429::1::::<><>::
-Plant7_00026.png::CompressedTexture2D::6349901282783248045::1710565029::1712914429::1::::<><>::
-Plant7_00027.png::CompressedTexture2D::9201868038481627919::1710565029::1712914429::1::::<><>::
-Plant7_00028.png::CompressedTexture2D::2103283162174342522::1710565029::1712914429::1::::<><>::
-Plant7_00029.png::CompressedTexture2D::1945224002945124174::1710565029::1712914429::1::::<><>::
-Plant7_00030.png::CompressedTexture2D::4575815184840219842::1710565029::1712914429::1::::<><>::
-Plant7_00031.png::CompressedTexture2D::2059179317618563308::1710565029::1712914429::1::::<><>::
-Plant7_00032.png::CompressedTexture2D::683126258590306768::1710565029::1712914429::1::::<><>::
-Plant7_00033.png::CompressedTexture2D::873489231770903738::1710565029::1712914429::1::::<><>::
-Plant7_00034.png::CompressedTexture2D::7380478007690696826::1710565029::1712914429::1::::<><>::
-Plant7_00035.png::CompressedTexture2D::1669422442133558177::1710565029::1712914429::1::::<><>::
-Plant7_00036.png::CompressedTexture2D::6495665295272160600::1710565029::1712914429::1::::<><>::
-Plant7_00037.png::CompressedTexture2D::6194777780146445453::1710565029::1712914429::1::::<><>::
-Plant7_00038.png::CompressedTexture2D::5980276845413401135::1710565029::1712914429::1::::<><>::
-Plant7_00039.png::CompressedTexture2D::5824008565207021858::1710565029::1712914429::1::::<><>::
-Plant7_00040.png::CompressedTexture2D::5975898426110008258::1710565029::1712914429::1::::<><>::
-Plant7_00041.png::CompressedTexture2D::8607037594272504512::1710565029::1712914429::1::::<><>::
-Plant7_00042.png::CompressedTexture2D::7579755691907482978::1710565029::1712914429::1::::<><>::
-Plant7_00043.png::CompressedTexture2D::541519877170784397::1710565029::1712914429::1::::<><>::
-Plant7_00044.png::CompressedTexture2D::769673442289229672::1710565029::1712914429::1::::<><>::
-Plant7_00045.png::CompressedTexture2D::1106275213542613381::1710565029::1712914429::1::::<><>::
-Plant7_00046.png::CompressedTexture2D::7061138729508321741::1710565029::1712914429::1::::<><>::
-Plant7_00047.png::CompressedTexture2D::4584318027502155117::1710565029::1712914429::1::::<><>::
-Plant7_00048.png::CompressedTexture2D::5629993667756274228::1710565029::1712914429::1::::<><>::
-Plant7_00049.png::CompressedTexture2D::613826403409936904::1710565029::1712914429::1::::<><>::
-Plant7_00050.png::CompressedTexture2D::8413444288587390606::1710565029::1712914429::1::::<><>::
-Plant7_00051.png::CompressedTexture2D::1026451682270343235::1710565029::1712914429::1::::<><>::
-Plant7_00052.png::CompressedTexture2D::4045876789458396653::1710565029::1712914429::1::::<><>::
-Plant7_00053.png::CompressedTexture2D::7835331117170906592::1710565029::1712914429::1::::<><>::
-Plant7_00054.png::CompressedTexture2D::6909058620115153398::1710565029::1712914429::1::::<><>::
-Plant7_00055.png::CompressedTexture2D::7206194915412222057::1710565029::1712914429::1::::<><>::
-Plant7_00056.png::CompressedTexture2D::8032789827283602765::1710565029::1712914429::1::::<><>::
-Plant7_00057.png::CompressedTexture2D::3844788306847567410::1710565029::1712914429::1::::<><>::
-Plant7_00058.png::CompressedTexture2D::8726230572413484330::1710565029::1712914429::1::::<><>::
-Plant7_00059.png::CompressedTexture2D::1955225865164105124::1710565029::1712914429::1::::<><>::
-::res://Assets/Grassland_Tileset/Plant Animations/Plant 8 Poison/::1712914429
-PlantPosion_00000.png::CompressedTexture2D::7007399629949909254::1710565029::1712914429::1::::<><>::
-PlantPosion_00001.png::CompressedTexture2D::6007878641266590439::1710565029::1712914429::1::::<><>::
-PlantPosion_00002.png::CompressedTexture2D::8066039637738602913::1710565029::1712914429::1::::<><>::
-PlantPosion_00003.png::CompressedTexture2D::3191368251441576059::1710565029::1712914429::1::::<><>::
-PlantPosion_00004.png::CompressedTexture2D::5010198864909127349::1710565029::1712914429::1::::<><>::
-PlantPosion_00005.png::CompressedTexture2D::102717764287357597::1710565029::1712914429::1::::<><>::
-PlantPosion_00006.png::CompressedTexture2D::7010215956990348184::1710565029::1712914429::1::::<><>::
-PlantPosion_00007.png::CompressedTexture2D::6731943814708115516::1710565029::1712914428::1::::<><>::
-PlantPosion_00008.png::CompressedTexture2D::5491441072411740125::1710565029::1712914428::1::::<><>::
-PlantPosion_00009.png::CompressedTexture2D::1026422243488604374::1710565029::1712914428::1::::<><>::
-PlantPosion_00010.png::CompressedTexture2D::4960530853913637091::1710565029::1712914428::1::::<><>::
-PlantPosion_00011.png::CompressedTexture2D::3521106322651730652::1710565029::1712914428::1::::<><>::
-PlantPosion_00012.png::CompressedTexture2D::8986509861451237771::1710565029::1712914428::1::::<><>::
-PlantPosion_00013.png::CompressedTexture2D::9152488379611128594::1710565029::1712914428::1::::<><>::
-PlantPosion_00014.png::CompressedTexture2D::8000015495191786114::1710565029::1712914428::1::::<><>::
-PlantPosion_00015.png::CompressedTexture2D::58311554151401840::1710565029::1712914428::1::::<><>::
-PlantPosion_00016.png::CompressedTexture2D::2613946421375730202::1710565029::1712914428::1::::<><>::
-PlantPosion_00017.png::CompressedTexture2D::3929240196844893068::1710565029::1712914428::1::::<><>::
-PlantPosion_00018.png::CompressedTexture2D::8886777036838371218::1710565029::1712914428::1::::<><>::
-PlantPosion_00019.png::CompressedTexture2D::4277801699854684759::1710565029::1712914428::1::::<><>::
-PlantPosion_00020.png::CompressedTexture2D::7844566887106847728::1710565029::1712914428::1::::<><>::
-PlantPosion_00021.png::CompressedTexture2D::5125599194176718911::1710565029::1712914428::1::::<><>::
-PlantPosion_00022.png::CompressedTexture2D::8967935166189180499::1710565029::1712914428::1::::<><>::
-PlantPosion_00023.png::CompressedTexture2D::3944869291297210050::1710565029::1712914428::1::::<><>::
-PlantPosion_00024.png::CompressedTexture2D::8666338258074298816::1710565029::1712914428::1::::<><>::
-PlantPosion_00025.png::CompressedTexture2D::7859959710143898930::1710565029::1712914428::1::::<><>::
-PlantPosion_00026.png::CompressedTexture2D::1594037322363478153::1710565029::1712914428::1::::<><>::
-PlantPosion_00027.png::CompressedTexture2D::6101931671701080068::1710565029::1712914428::1::::<><>::
-PlantPosion_00028.png::CompressedTexture2D::4208494524582852962::1710565029::1712914428::1::::<><>::
-PlantPosion_00029.png::CompressedTexture2D::6376667065713703761::1710565029::1712914428::1::::<><>::
-::res://Assets/Grassland_Tileset/Plant Animations/PlantJump/::1712914428
-JumpPlant_00000.png::CompressedTexture2D::1940337545723140433::1710565029::1712914428::1::::<><>::
-JumpPlant_00001.png::CompressedTexture2D::7133615736916232496::1710565029::1712914428::1::::<><>::
-JumpPlant_00002.png::CompressedTexture2D::6077716375685244903::1710565029::1712914428::1::::<><>::
-JumpPlant_00003.png::CompressedTexture2D::3811604824933974277::1710565029::1712914428::1::::<><>::
-JumpPlant_00004.png::CompressedTexture2D::3761973119141712508::1710565029::1712914428::1::::<><>::
-JumpPlant_00005.png::CompressedTexture2D::1588887419887441250::1710565029::1712914428::1::::<><>::
-JumpPlant_00006.png::CompressedTexture2D::4308037744053558232::1710565029::1712914428::1::::<><>::
-JumpPlant_00007.png::CompressedTexture2D::4173074863091764323::1710565029::1712914428::1::::<><>::
-JumpPlant_00008.png::CompressedTexture2D::3387254440142912652::1710565029::1712914428::1::::<><>::
-JumpPlant_00009.png::CompressedTexture2D::5942124310773123373::1710565029::1712914428::1::::<><>::
-JumpPlant_00010.png::CompressedTexture2D::6218178299871508100::1710565029::1712914428::1::::<><>::
-JumpPlant_00011.png::CompressedTexture2D::3277517991650675466::1710565029::1712914428::1::::<><>::
-JumpPlant_00012.png::CompressedTexture2D::3257925701330109838::1710565029::1712914428::1::::<><>::
-JumpPlant_00013.png::CompressedTexture2D::2184955708241197029::1710565029::1712914428::1::::<><>::
-JumpPlant_00014.png::CompressedTexture2D::5337906481180664764::1710565029::1712914428::1::::<><>::
-JumpPlant_00015.png::CompressedTexture2D::7096200934411437989::1710565029::1712914428::1::::<><>::
-JumpPlant_00016.png::CompressedTexture2D::87404785144958148::1710565029::1712914428::1::::<><>::
-JumpPlant_00017.png::CompressedTexture2D::3075880342293137760::1710565029::1712914428::1::::<><>::
-JumpPlant_00018.png::CompressedTexture2D::3411050319569551625::1710565029::1712914428::1::::<><>::
-JumpPlant_00019.png::CompressedTexture2D::4560979467837588802::1710565029::1712914428::1::::<><>::
-::res://Assets/Grassland_Tileset/Plant Animations/PlantJump2/::1712914428
-JumpPlant 2_00000.png::CompressedTexture2D::7416103466968274571::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00001.png::CompressedTexture2D::849290186603909376::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00002.png::CompressedTexture2D::1325461638400891292::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00003.png::CompressedTexture2D::7893448996153150388::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00004.png::CompressedTexture2D::6297224385942148808::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00005.png::CompressedTexture2D::7862014961022621728::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00006.png::CompressedTexture2D::8247928694303765023::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00007.png::CompressedTexture2D::761035821754650310::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00008.png::CompressedTexture2D::7506154300265020269::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00009.png::CompressedTexture2D::3613857384620184848::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00010.png::CompressedTexture2D::6061410088617601963::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00011.png::CompressedTexture2D::4415628629335091066::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00012.png::CompressedTexture2D::7046385598289369726::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00013.png::CompressedTexture2D::7929649531153300902::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00014.png::CompressedTexture2D::1953369714993976792::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00015.png::CompressedTexture2D::4422255429803693209::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00016.png::CompressedTexture2D::657086210866069326::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00017.png::CompressedTexture2D::6100773590380954651::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00018.png::CompressedTexture2D::9075549402929250611::1710565029::1712914428::1::::<><>::
-JumpPlant 2_00019.png::CompressedTexture2D::5506267560388241268::1710565029::1712914428::1::::<><>::
 ::res://Assets/NightBorne/::1712464499
 NightBorne copy.png::CompressedTexture2D::3446694605571100813::1712464499::1712464499::1::::<><>::
 NightBorne.png::CompressedTexture2D::6164879266597409064::1712464499::1712464499::1::::<><>::
@@ -364,66 +100,60 @@ NightBorne.png::CompressedTexture2D::6164879266597409064::1712464499::1712464499
 arm_projectile.png::CompressedTexture2D::2299785439857936263::1712464499::1712464499::1::::<><>::
 arm_projectile_glowing.png::CompressedTexture2D::68227226499779890::1712464499::1712464499::1::::<><>::
 Laser_sheet.png::CompressedTexture2D::5474812721338453242::1712464499::1712464499::1::::<><>::
+::res://Assets/oak_woods_v1.0/::1712952753
+oak_woods_tileset.png::CompressedTexture2D::7369087700969962185::1711685179::1712952753::1::::<><>::
+readme.TXT::TextFile::-1::1711685179::0::1::::<><>::
+::res://Assets/oak_woods_v1.0/background/::1712952753
+background_layer_1.png::CompressedTexture2D::1206556797705296737::1711685179::1712952753::1::::<><>::
+background_layer_2.png::CompressedTexture2D::955178101788593558::1711685179::1712952753::1::::<><>::
+background_layer_3.png::CompressedTexture2D::3423313776926687928::1711685179::1712952753::1::::<><>::
+::res://Assets/oak_woods_v1.0/character/::1712952753
+char_blue.png::CompressedTexture2D::6439021540927513248::1711685179::1712952753::1::::<><>::
+::res://Assets/oak_woods_v1.0/decorations/::1712952753
+fence_1.png::CompressedTexture2D::330218926807813543::1711685179::1712952753::1::::<><>::
+fence_2.png::CompressedTexture2D::3691242548811908044::1711685179::1712952753::1::::<><>::
+grass_1.png::CompressedTexture2D::1084175811915564026::1711685179::1712952753::1::::<><>::
+grass_2.png::CompressedTexture2D::4591025047935632087::1711685179::1712952753::1::::<><>::
+grass_3.png::CompressedTexture2D::6571504745917634124::1711685179::1712952753::1::::<><>::
+lamp.png::CompressedTexture2D::6591132303574428805::1711685179::1712952753::1::::<><>::
+rock_1.png::CompressedTexture2D::7549270572435100961::1711685179::1712952753::1::::<><>::
+rock_2.png::CompressedTexture2D::8268506445086394699::1711685179::1712952753::1::::<><>::
+rock_3.png::CompressedTexture2D::1447573658607245661::1711685179::1712952753::1::::<><>::
+shop.png::CompressedTexture2D::4330227909124212944::1711685179::1712952753::1::::<><>::
+shop_anim.png::CompressedTexture2D::106042308307715404::1711685179::1712952753::1::::<><>::
+sign.png::CompressedTexture2D::8040747797350679094::1711685179::1712952753::1::::<><>::
+::res://Assets/Slime/::1712970943
+green-slime-spritesheet.png::CompressedTexture2D::1850349706964219563::1712970921::1712970941::1::::<><>::
+red-slime-spritesheet.png::CompressedTexture2D::4956410058259147847::1712970891::1712970943::1::::<><>::
 ::res://Assets/Tronchungo/::1712914847
 tronchungo3.png::CompressedTexture2D::2672494189623728458::1712914736::1712914847::1::::<><>::
-::res://Enemies/::1712929599
+::res://EarthRealmlvl2/::1712952781
+::res://EarthRealmlvl2/Assetsforlvl2/::1712952781
+::res://Enemies/::1713006168
 Cultist_Priest.gd::GDScript::-1::1711691735::0::1::::<>CharacterBody2D<>::
-cultist_priest.tscn::PackedScene::3155826156258214639::1712929599::0::1::::<><>::res://Enemies/Cultist_Priest.gd<>uid://cp0b0fbx60knl::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_1.png<>uid://ch58plj4s338s::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_2.png<>uid://v000itwip82m::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_3.png<>uid://b7anr6oax4wk5::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_4.png<>uid://dn7vpaikyq7pg::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_5.png<>uid://bgl15owcn1rnr::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_1.png<>uid://bq7asfxkqn46h::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_2.png<>uid://bjngibp4t1uiw::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_3.png<>uid://cylfqrmv4thia::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_4.png<>uid://dxi5dxpletfva::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_5.png<>uid://ce2gwhdb0gbsk::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_6.png<>uid://dfq2uiv2kxru3::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_1.png<>uid://ba7o1ke0xu5yj::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_2.png<>uid://bwn5cm4047lfy::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_3.png<>uid://cev8mxtr4b185::::res://Assets/cultist_priest_sprite_pack/cultist_priest_takehit_4.png<>uid://bmetq7ljlp8nw::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_5.png<>uid://dkic6bl5tkp36::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_4.png<>uid://deiroslqmatt8::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_1.png<>uid://diamdtykb05j8::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_2.png<>uid://diypqjjpfnfxj::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_3.png<>uid://d1iy5r0e8ure6::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_4.png<>uid://cua0tiqv44pck::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_5.png<>uid://b8wp8m0jbjged::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_6.png
-EnemyNightBorne.gd::GDScript::-1::1712922159::0::1::::<>CharacterBody2D<>::
+cultist_priest.tscn::PackedScene::3155826156258214639::1713003120::0::1::::<><>::res://Enemies/Cultist_Priest.gd<>uid://cp0b0fbx60knl::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_1.png<>uid://ch58plj4s338s::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_2.png<>uid://v000itwip82m::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_3.png<>uid://b7anr6oax4wk5::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_4.png<>uid://dn7vpaikyq7pg::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_5.png<>uid://bgl15owcn1rnr::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_1.png<>uid://bq7asfxkqn46h::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_2.png<>uid://bjngibp4t1uiw::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_3.png<>uid://cylfqrmv4thia::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_4.png<>uid://dxi5dxpletfva::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_5.png<>uid://ce2gwhdb0gbsk::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_6.png<>uid://dfq2uiv2kxru3::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_1.png<>uid://ba7o1ke0xu5yj::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_2.png<>uid://bwn5cm4047lfy::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_3.png<>uid://cev8mxtr4b185::::res://Assets/cultist_priest_sprite_pack/cultist_priest_takehit_4.png<>uid://bmetq7ljlp8nw::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_5.png<>uid://dkic6bl5tkp36::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_4.png<>uid://deiroslqmatt8::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_1.png<>uid://diamdtykb05j8::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_2.png<>uid://diypqjjpfnfxj::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_3.png<>uid://d1iy5r0e8ure6::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_4.png<>uid://cua0tiqv44pck::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_5.png<>uid://b8wp8m0jbjged::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_6.png
+EnemyNightBorne.gd::GDScript::-1::1712983310::0::1::::<>CharacterBody2D<>::
 enemy_nightborne_death_effect.gd::GDScript::-1::1712922159::0::1::::<>AnimatedSprite2D<>::
-enemy_nightborne_death_effect.tscn::PackedScene::5194999909679453447::1712922223::0::1::::<><>::uid://ct3kwp55r5bgy::::res://Assets/NightBorne/NightBorne.png<>res://Enemies/enemy_nightborne_death_effect.gd
-enemy_night_borne.tscn::PackedScene::4746486277279099416::1712923175::0::1::::<><>::res://Enemies/EnemyNightBorne.gd<>uid://ct3kwp55r5bgy::::res://Assets/NightBorne/NightBorne.png
+enemy_nightborne_death_effect.tscn::PackedScene::5194999909679453447::1712951586::0::1::::<><>::uid://ct3kwp55r5bgy::::res://Assets/NightBorne/NightBorne.png<>res://Enemies/enemy_nightborne_death_effect.gd
+enemy_night_borne.tscn::PackedScene::4746486277279099416::1713003120::0::1::::<><>::res://Enemies/EnemyNightBorne.gd<>uid://ct3kwp55r5bgy::::res://Assets/NightBorne/NightBorne.png
+enemy_slime.gd::GDScript::-1::1712971641::0::1::::<>CharacterBody2D<>::
+enemy_slime.tscn::PackedScene::4811984656642377179::1712973538::0::1::::<><>::uid://1mk8vw17aadf::::res://Assets/Slime/green-slime-spritesheet.png<>res://Enemies/enemy_slime.gd
+enemy_tronchungo.gd::GDScript::-1::1712969111::0::1::::<>CharacterBody2D<>::
+enemy_tronchungo.tscn::PackedScene::3242073614607298430::1713005951::0::1::::<><>::res://Enemies/enemy_tronchungo.gd<>uid://bectuaybgym4a::::res://Assets/Tronchungo/tronchungo3.png
 enemy_worm_death_effect.gd::GDScript::-1::1712918425::0::1::::<>AnimatedSprite2D<>::
 enemy_worm_death_effect.tscn::PackedScene::2226388589849198691::1712920040::0::1::::<><>::uid://dcxbk6nce8n1t::::res://Assets/Fire Worm/Sprites/Worm/Death.png<>res://Enemies/enemy_worm_death_effect.gd
 Worm.gd::GDScript::-1::1712629439::0::1::::<>CharacterBody2D<>::
 Worm.tscn::PackedScene::1542160674533143359::1712793776::0::1::::<><>::uid://dq7k4rs3gttgl::::res://Assets/Fire Worm/Sprites/Worm/Attack.png<>res://Enemies/Worm.gd<>uid://dcxbk6nce8n1t::::res://Assets/Fire Worm/Sprites/Worm/Death.png<>uid://dryxnw4m886nf::::res://Assets/Fire Worm/Sprites/Worm/Get Hit.png<>uid://6b03iosdt8uo::::res://Assets/Fire Worm/Sprites/Worm/Idle.png<>uid://bhmpulgi1qg03::::res://Assets/Fire Worm/Sprites/Worm/Walk.png
 worm_2.gd::GDScript::-1::1712919028::0::1::::<>CharacterBody2D<>::
-worm_2.tscn::PackedScene::7413172646145649084::1712923172::0::1::::<><>::uid://dq7k4rs3gttgl::::res://Assets/Fire Worm/Sprites/Worm/Attack.png<>res://Enemies/worm_2.gd<>uid://dcxbk6nce8n1t::::res://Assets/Fire Worm/Sprites/Worm/Death.png<>uid://dryxnw4m886nf::::res://Assets/Fire Worm/Sprites/Worm/Get Hit.png<>uid://6b03iosdt8uo::::res://Assets/Fire Worm/Sprites/Worm/Idle.png<>uid://bhmpulgi1qg03::::res://Assets/Fire Worm/Sprites/Worm/Walk.png
-::res://Fantasy Swamp Forest/::1711684406
-LICENSE.txt::TextFile::-1::1710575609::0::1::::<><>::
-README.txt::TextFile::-1::1710567740::0::1::::<><>::
-::res://Fantasy Swamp Forest/Free/::1712927731
-Mockup.png::CompressedTexture2D::2222630466628140711::1710567740::1712927731::1::::<><>::
-Terrain-and-Props-OLD.png::CompressedTexture2D::1217362452437446094::1710567740::1712927731::1::::<><>::
-Terrain_and_Props.png::CompressedTexture2D::189476073261804797::1710567740::1712927731::1::::<><>::
-::res://Fantasy Swamp Forest/Free/BG_1/::1712927731
-BG_1.png::CompressedTexture2D::3352986937270190918::1710567740::1712927731::1::::<><>::
-::res://Fantasy Swamp Forest/Free/BG_2/::1712927731
-BG_2.png::CompressedTexture2D::8975477511651719::1710567740::1712927731::1::::<><>::
-::res://Fantasy Swamp Forest/Free/BG_3/::1712927731
-BG_3.png::CompressedTexture2D::4078416693287967652::1710567740::1712927731::1::::<><>::
-BG_3_alt.png::CompressedTexture2D::3628484378191556404::1710567740::1712927731::1::::<><>::
-::res://MovingPlatforms/::1712928675
-moving_platforms.tscn::PackedScene::1664000319793242677::1712928675::0::1::::<><>::uid://cx1v4ub40rll::::res://Fantasy Swamp Forest/Free/Terrain_and_Props.png
-moving_platform_r_down_up.tscn::PackedScene::4759400098671367994::1712928675::0::1::::<><>::uid://cx1v4ub40rll::::res://Fantasy Swamp Forest/Free/Terrain_and_Props.png
-moving_platform_updown.tscn::PackedScene::501841759746291714::1712928675::0::1::::<><>::uid://cx1v4ub40rll::::res://Fantasy Swamp Forest/Free/Terrain_and_Props.png
-::res://MysticForest/::1712930700
+worm_2.tscn::PackedScene::7413172646145649084::1713006168::0::1::::<><>::uid://dq7k4rs3gttgl::::res://Assets/Fire Worm/Sprites/Worm/Attack.png<>res://Enemies/worm_2.gd<>uid://dcxbk6nce8n1t::::res://Assets/Fire Worm/Sprites/Worm/Death.png<>uid://dryxnw4m886nf::::res://Assets/Fire Worm/Sprites/Worm/Get Hit.png<>uid://6b03iosdt8uo::::res://Assets/Fire Worm/Sprites/Worm/Idle.png<>uid://bhmpulgi1qg03::::res://Assets/Fire Worm/Sprites/Worm/Walk.png
+::res://MovingPlatforms/::1713004280
+moving_platforms.tscn::PackedScene::1664000319793242677::1713004280::0::1::::<><>::uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png
+moving_platform_r_down_up.tscn::PackedScene::4759400098671367994::1713004280::0::1::::<><>::uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png
+::res://MysticForest/::1713006160
 Mystic Forest.gd::GDScript::-1::1711691735::0::1::::<>ParallaxBackground<>::
-mystic_forest.tscn::PackedScene::5162453901501970199::1712929728::0::1::::<><>::res://MysticForest/Mystic Forest.gd<>uid://el3bqck5i52::::res://Fantasy Swamp Forest/Free/BG_2/BG_2.png<>uid://bydu6rxy1wnkm::::res://Fantasy Swamp Forest/Free/BG_3/BG_3.png<>uid://bn1hg77rihfkg::::res://Fantasy Swamp Forest/Free/BG_1/BG_1.png
-Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1712930700::0::1::::<><>::uid://hfdi4did4yf7::::res://MovingPlatforms/moving_platform_updown.tscn<>uid://xyb3vsabuedp::::res://MovingPlatforms/moving_platforms.tscn<>uid://b82qvhwh5a2ti::::res://MovingPlatforms/moving_platform_r_down_up.tscn<>uid://cfsy4j565ash8::::res://MysticForest/mystic_forest.tscn<>uid://syydig3re5u0::::res://Assets/Grassland_Tileset/Plant Animations/Mossy Tileset/Mossy - TileSet.png<>uid://pfvctad1wu68::::res://Assets/Grassland_Tileset/Grassland_Tileset.png<>uid://rlx1txhvu1ru::::res://Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://ddu84ugmedagy::::res://Enemies/worm_2.tscn<>uid://bk7x84b3ven1x::::res://Enemies/cultist_priest.tscn<>uid://b8vh62pslfc61::::res://Enemies/enemy_night_borne.tscn<>uid://bhtd30ci3xdej::::res://TestCharacter/TestCharacter.tscn
-::res://oak_woods_v1.0/::1712914748
-oak_woods_tileset.png::CompressedTexture2D::7369087700969962185::1711685179::1711691897::1::::<><>::
-readme.TXT::TextFile::-1::1711685179::0::1::::<><>::
-::res://oak_woods_v1.0/background/::1711691897
-background_layer_1.png::CompressedTexture2D::1206556797705296737::1711685179::1711691897::1::::<><>::
-background_layer_2.png::CompressedTexture2D::955178101788593558::1711685179::1711691897::1::::<><>::
-background_layer_3.png::CompressedTexture2D::3423313776926687928::1711685179::1711691897::1::::<><>::
-::res://oak_woods_v1.0/character/::1711691897
-char_blue.png::CompressedTexture2D::6439021540927513248::1711685179::1711691897::1::::<><>::
-::res://oak_woods_v1.0/decorations/::1711691897
-fence_1.png::CompressedTexture2D::330218926807813543::1711685179::1711691897::1::::<><>::
-fence_2.png::CompressedTexture2D::3691242548811908044::1711685179::1711691897::1::::<><>::
-grass_1.png::CompressedTexture2D::1084175811915564026::1711685179::1711691897::1::::<><>::
-grass_2.png::CompressedTexture2D::4591025047935632087::1711685179::1711691897::1::::<><>::
-grass_3.png::CompressedTexture2D::6571504745917634124::1711685179::1711691897::1::::<><>::
-lamp.png::CompressedTexture2D::6591132303574428805::1711685179::1711691897::1::::<><>::
-rock_1.png::CompressedTexture2D::7549270572435100961::1711685179::1711691897::1::::<><>::
-rock_2.png::CompressedTexture2D::8268506445086394699::1711685179::1711691897::1::::<><>::
-rock_3.png::CompressedTexture2D::1447573658607245661::1711685179::1711691897::1::::<><>::
-shop.png::CompressedTexture2D::4330227909124212944::1711685179::1711691897::1::::<><>::
-shop_anim.png::CompressedTexture2D::106042308307715404::1711685179::1711691897::1::::<><>::
-sign.png::CompressedTexture2D::8040747797350679094::1711685179::1711691897::1::::<><>::
+mystic_forest.tscn::PackedScene::5162453901501970199::1712952632::0::1::::<><>::res://MysticForest/Mystic Forest.gd<>uid://el3bqck5i52::::res://Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png<>uid://bydu6rxy1wnkm::::res://Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png<>uid://bn1hg77rihfkg::::res://Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png
+Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1713006160::0::1::::<><>::uid://xyb3vsabuedp::::res://MovingPlatforms/moving_platforms.tscn<>uid://b82qvhwh5a2ti::::res://MovingPlatforms/moving_platform_r_down_up.tscn<>uid://cfsy4j565ash8::::res://MysticForest/mystic_forest.tscn<>uid://rlx1txhvu1ru::::res://Assets/Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://ddu84ugmedagy::::res://Enemies/worm_2.tscn<>uid://bk7x84b3ven1x::::res://Enemies/cultist_priest.tscn<>uid://bmgqqjpf26mju::::res://Enemies/enemy_tronchungo.tscn<>uid://b8vh62pslfc61::::res://Enemies/enemy_night_borne.tscn<>uid://cas7xi871sxl0::::res://Enemies/enemy_slime.tscn<>uid://bhtd30ci3xdej::::res://TestCharacter/TestCharacter.tscn
 ::res://Plants/::1712930134
-::res://TestCharacter/::1712916603
+::res://TestCharacter/::1713003120
 TestCharacter.gd::GDScript::-1::1712560114::0::1::::<>CharacterBody2D<>::
-TestCharacter.tscn::PackedScene::2917199236269270805::1712916603::0::1::::<><>::res://TestCharacter/TestCharacter.gd<>uid://cx0d0kdhcndky::::res://oak_woods_v1.0/character/char_blue.png
+TestCharacter.tscn::PackedScene::2917199236269270805::1713003120::0::1::::<><>::res://TestCharacter/TestCharacter.gd<>uid://cx0d0kdhcndky::::res://Assets/oak_woods_v1.0/character/char_blue.png
