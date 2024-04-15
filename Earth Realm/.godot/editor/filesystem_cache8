@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713006625
+::res://::1713168725
 icon.svg::CompressedTexture2D::2995219347521462331::1709750338::1711691897::1::::<><>::
 Main.gd::GDScript::-1::1712465515::0::1::::<>Node2D<>::
 main.tscn::PackedScene::2509215929056746046::1712465523::0::1::::<><>::res://Main.gd<>uid://biw53b0vsuj8v::::res://icon.svg
@@ -129,31 +129,55 @@ red-slime-spritesheet.png::CompressedTexture2D::4956410058259147847::1712970891:
 tronchungo3.png::CompressedTexture2D::2672494189623728458::1712914736::1712914847::1::::<><>::
 ::res://EarthRealmlvl2/::1712952781
 ::res://EarthRealmlvl2/Assetsforlvl2/::1712952781
-::res://Enemies/::1713006168
-Cultist_Priest.gd::GDScript::-1::1711691735::0::1::::<>CharacterBody2D<>::
-cultist_priest.tscn::PackedScene::3155826156258214639::1713003120::0::1::::<><>::res://Enemies/Cultist_Priest.gd<>uid://cp0b0fbx60knl::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_1.png<>uid://ch58plj4s338s::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_2.png<>uid://v000itwip82m::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_3.png<>uid://b7anr6oax4wk5::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_4.png<>uid://dn7vpaikyq7pg::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_5.png<>uid://bgl15owcn1rnr::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_1.png<>uid://bq7asfxkqn46h::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_2.png<>uid://bjngibp4t1uiw::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_3.png<>uid://cylfqrmv4thia::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_4.png<>uid://dxi5dxpletfva::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_5.png<>uid://ce2gwhdb0gbsk::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_6.png<>uid://dfq2uiv2kxru3::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_1.png<>uid://ba7o1ke0xu5yj::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_2.png<>uid://bwn5cm4047lfy::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_3.png<>uid://cev8mxtr4b185::::res://Assets/cultist_priest_sprite_pack/cultist_priest_takehit_4.png<>uid://bmetq7ljlp8nw::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_5.png<>uid://dkic6bl5tkp36::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_4.png<>uid://deiroslqmatt8::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_1.png<>uid://diamdtykb05j8::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_2.png<>uid://diypqjjpfnfxj::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_3.png<>uid://d1iy5r0e8ure6::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_4.png<>uid://cua0tiqv44pck::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_5.png<>uid://b8wp8m0jbjged::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_6.png
-EnemyNightBorne.gd::GDScript::-1::1712983310::0::1::::<>CharacterBody2D<>::
-enemy_nightborne_death_effect.gd::GDScript::-1::1712922159::0::1::::<>AnimatedSprite2D<>::
-enemy_nightborne_death_effect.tscn::PackedScene::5194999909679453447::1712951586::0::1::::<><>::uid://ct3kwp55r5bgy::::res://Assets/NightBorne/NightBorne.png<>res://Enemies/enemy_nightborne_death_effect.gd
-enemy_night_borne.tscn::PackedScene::4746486277279099416::1713003120::0::1::::<><>::res://Enemies/EnemyNightBorne.gd<>uid://ct3kwp55r5bgy::::res://Assets/NightBorne/NightBorne.png
-enemy_slime.gd::GDScript::-1::1712971641::0::1::::<>CharacterBody2D<>::
-enemy_slime.tscn::PackedScene::4811984656642377179::1712973538::0::1::::<><>::uid://1mk8vw17aadf::::res://Assets/Slime/green-slime-spritesheet.png<>res://Enemies/enemy_slime.gd
-enemy_tronchungo.gd::GDScript::-1::1712969111::0::1::::<>CharacterBody2D<>::
-enemy_tronchungo.tscn::PackedScene::3242073614607298430::1713005951::0::1::::<><>::res://Enemies/enemy_tronchungo.gd<>uid://bectuaybgym4a::::res://Assets/Tronchungo/tronchungo3.png
-enemy_worm_death_effect.gd::GDScript::-1::1712918425::0::1::::<>AnimatedSprite2D<>::
-enemy_worm_death_effect.tscn::PackedScene::2226388589849198691::1712920040::0::1::::<><>::uid://dcxbk6nce8n1t::::res://Assets/Fire Worm/Sprites/Worm/Death.png<>res://Enemies/enemy_worm_death_effect.gd
+::res://Enemies/::1713168725
+cultist_priest.tscn::PackedScene::3155826156258214639::1713168725::0::1::::<><>::res://Enemies/CultistPriest/Cultist_Priest.gd<>uid://cp0b0fbx60knl::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_1.png<>uid://ch58plj4s338s::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_2.png<>uid://v000itwip82m::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_3.png<>uid://b7anr6oax4wk5::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_4.png<>uid://dn7vpaikyq7pg::::res://Assets/cultist_priest_sprite_pack/cultist_priest_attack_5.png<>uid://bgl15owcn1rnr::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_1.png<>uid://bq7asfxkqn46h::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_2.png<>uid://bjngibp4t1uiw::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_3.png<>uid://cylfqrmv4thia::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_4.png<>uid://dxi5dxpletfva::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_5.png<>uid://ce2gwhdb0gbsk::::res://Assets/cultist_priest_sprite_pack/cultist_priest_die_6.png<>uid://dfq2uiv2kxru3::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_1.png<>uid://ba7o1ke0xu5yj::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_2.png<>uid://bwn5cm4047lfy::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_3.png<>uid://cev8mxtr4b185::::res://Assets/cultist_priest_sprite_pack/cultist_priest_takehit_4.png<>uid://bmetq7ljlp8nw::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_5.png<>uid://dkic6bl5tkp36::::res://Assets/cultist_priest_sprite_pack/cultist_priest_idle_4.png<>uid://deiroslqmatt8::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_1.png<>uid://diamdtykb05j8::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_2.png<>uid://diypqjjpfnfxj::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_3.png<>uid://d1iy5r0e8ure6::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_4.png<>uid://cua0tiqv44pck::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_5.png<>uid://b8wp8m0jbjged::::res://Assets/cultist_priest_sprite_pack/cultist_priest_walk_6.png
 Worm.gd::GDScript::-1::1712629439::0::1::::<>CharacterBody2D<>::
 Worm.tscn::PackedScene::1542160674533143359::1712793776::0::1::::<><>::uid://dq7k4rs3gttgl::::res://Assets/Fire Worm/Sprites/Worm/Attack.png<>res://Enemies/Worm.gd<>uid://dcxbk6nce8n1t::::res://Assets/Fire Worm/Sprites/Worm/Death.png<>uid://dryxnw4m886nf::::res://Assets/Fire Worm/Sprites/Worm/Get Hit.png<>uid://6b03iosdt8uo::::res://Assets/Fire Worm/Sprites/Worm/Idle.png<>uid://bhmpulgi1qg03::::res://Assets/Fire Worm/Sprites/Worm/Walk.png
+::res://Enemies/CultistPriest/::1713168725
+Cultist_Priest.gd::GDScript::-1::1711691735::0::1::::<>CharacterBody2D<>::
+::res://Enemies/NightBorne/::1713168647
+EnemyNightBorne.gd::GDScript::-1::1712983310::0::1::::<>CharacterBody2D<>::
+enemy_nightborne_death_effect.gd::GDScript::-1::1712922159::0::1::::<>AnimatedSprite2D<>::
+enemy_nightborne_death_effect.tscn::PackedScene::5194999909679453447::1713168644::0::1::::<><>::uid://ct3kwp55r5bgy::::res://Assets/NightBorne/NightBorne.png<>res://Enemies/NightBorne/enemy_nightborne_death_effect.gd
+enemy_night_borne.tscn::PackedScene::4746486277279099416::1713168642::0::1::::<><>::res://Enemies/NightBorne/EnemyNightBorne.gd<>uid://ct3kwp55r5bgy::::res://Assets/NightBorne/NightBorne.png
+::res://Enemies/Slime/::1713168624
+enemy_slime.gd::GDScript::-1::1713168544::0::1::::<>CharacterBody2D<>::
+enemy_slime.tscn::PackedScene::4811984656642377179::1713168617::0::1::::<><>::uid://1mk8vw17aadf::::res://Assets/Slime/green-slime-spritesheet.png<>res://Enemies/Slime/enemy_slime.gd
+enemy_slime_death_effect.gd::GDScript::-1::1713168544::0::1::::<>AnimatedSprite2D<>::
+enemy_slime_death_effect.tscn::PackedScene::5195577349791790646::1713168622::0::1::::<><>::uid://1mk8vw17aadf::::res://Assets/Slime/green-slime-spritesheet.png<>res://Enemies/Slime/enemy_slime_death_effect.gd
+::res://Enemies/Tronchungo/::1713168669
+enemy_tronchungo.gd::GDScript::-1::1712969111::0::1::::<>CharacterBody2D<>::
+enemy_tronchungo.tscn::PackedScene::3242073614607298430::1713168667::0::1::::<><>::res://Enemies/Tronchungo/enemy_tronchungo.gd<>uid://bectuaybgym4a::::res://Assets/Tronchungo/tronchungo3.png
+::res://Enemies/Worm/::1713168597
+enemy_worm_death_effect.gd::GDScript::-1::1712918425::0::1::::<>AnimatedSprite2D<>::
+enemy_worm_death_effect.tscn::PackedScene::2226388589849198691::1713168595::0::1::::<><>::uid://dcxbk6nce8n1t::::res://Assets/Fire Worm/Sprites/Worm/Death.png<>res://Enemies/Worm/enemy_worm_death_effect.gd
 worm_2.gd::GDScript::-1::1712919028::0::1::::<>CharacterBody2D<>::
-worm_2.tscn::PackedScene::7413172646145649084::1713006168::0::1::::<><>::uid://dq7k4rs3gttgl::::res://Assets/Fire Worm/Sprites/Worm/Attack.png<>res://Enemies/worm_2.gd<>uid://dcxbk6nce8n1t::::res://Assets/Fire Worm/Sprites/Worm/Death.png<>uid://dryxnw4m886nf::::res://Assets/Fire Worm/Sprites/Worm/Get Hit.png<>uid://6b03iosdt8uo::::res://Assets/Fire Worm/Sprites/Worm/Idle.png<>uid://bhmpulgi1qg03::::res://Assets/Fire Worm/Sprites/Worm/Walk.png
+worm_2.tscn::PackedScene::7413172646145649084::1713168583::0::1::::<><>::uid://dq7k4rs3gttgl::::res://Assets/Fire Worm/Sprites/Worm/Attack.png<>res://Enemies/Worm/worm_2.gd<>uid://dcxbk6nce8n1t::::res://Assets/Fire Worm/Sprites/Worm/Death.png<>uid://dryxnw4m886nf::::res://Assets/Fire Worm/Sprites/Worm/Get Hit.png<>uid://6b03iosdt8uo::::res://Assets/Fire Worm/Sprites/Worm/Idle.png<>uid://bhmpulgi1qg03::::res://Assets/Fire Worm/Sprites/Worm/Walk.png
 ::res://MovingPlatforms/::1713004280
 moving_platforms.tscn::PackedScene::1664000319793242677::1713004280::0::1::::<><>::uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png
 moving_platform_r_down_up.tscn::PackedScene::4759400098671367994::1713004280::0::1::::<><>::uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png
-::res://MysticForest/::1713006160
+::res://MysticForest/::1713168669
 Mystic Forest.gd::GDScript::-1::1711691735::0::1::::<>ParallaxBackground<>::
 mystic_forest.tscn::PackedScene::5162453901501970199::1712952632::0::1::::<><>::res://MysticForest/Mystic Forest.gd<>uid://el3bqck5i52::::res://Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png<>uid://bydu6rxy1wnkm::::res://Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png<>uid://bn1hg77rihfkg::::res://Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png
-Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1713006160::0::1::::<><>::uid://xyb3vsabuedp::::res://MovingPlatforms/moving_platforms.tscn<>uid://b82qvhwh5a2ti::::res://MovingPlatforms/moving_platform_r_down_up.tscn<>uid://cfsy4j565ash8::::res://MysticForest/mystic_forest.tscn<>uid://rlx1txhvu1ru::::res://Assets/Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://ddu84ugmedagy::::res://Enemies/worm_2.tscn<>uid://bk7x84b3ven1x::::res://Enemies/cultist_priest.tscn<>uid://bmgqqjpf26mju::::res://Enemies/enemy_tronchungo.tscn<>uid://b8vh62pslfc61::::res://Enemies/enemy_night_borne.tscn<>uid://cas7xi871sxl0::::res://Enemies/enemy_slime.tscn<>uid://bhtd30ci3xdej::::res://TestCharacter/TestCharacter.tscn
-::res://Plants/::1712930134
-::res://TestCharacter/::1713003120
+Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1713168727::0::1::::<><>::uid://xyb3vsabuedp::::res://MovingPlatforms/moving_platforms.tscn<>uid://b82qvhwh5a2ti::::res://MovingPlatforms/moving_platform_r_down_up.tscn<>uid://cfsy4j565ash8::::res://MysticForest/mystic_forest.tscn<>uid://rlx1txhvu1ru::::res://Assets/Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://ddu84ugmedagy::::res://Enemies/Worm/worm_2.tscn<>uid://bk7x84b3ven1x::::res://Enemies/cultist_priest.tscn<>uid://bmgqqjpf26mju::::res://Enemies/Tronchungo/enemy_tronchungo.tscn<>uid://b8vh62pslfc61::::res://Enemies/NightBorne/enemy_night_borne.tscn<>uid://cas7xi871sxl0::::res://Enemies/Slime/enemy_slime.tscn<>uid://bhtd30ci3xdej::::res://TestCharacter/TestCharacter.tscn
+::res://Puzzle/::1713047738
+::res://Puzzle/Assets/::1713047738
+Catpixelart.png::CompressedTexture2D::9006062310067575795::1713047732::1713047738::1::::<><>::
+::res://Puzzle/Scenes/::1713051750
+::res://Puzzle/Scenes/Board/::1713140746
+board.gd::GDScript::-1::1713140746::0::1::::<>Control<>::
+board.tscn::PackedScene::5740896651010713690::1713140746::0::1::::<><>::res://Puzzle/Scenes/Board/board.gd<>uid://cbvu2x25v4n0d::::res://Puzzle/Scenes/Tile/Tile.tscn
+::res://Puzzle/Scenes/Tile/::1713156063
+Tile.gd::GDScript::-1::1713156063::0::1::::<>TextureButton<>::
+Tile.tscn::PackedScene::4887645951289305281::1713140746::0::1::::<><>::res://Puzzle/Scenes/Tile/Tile.gd<>uid://d1kusbgujhynr::::res://Puzzle/Assets/Catpixelart.png
+::res://RiddlePuzzle/::1713162997
+new_font_variation.tres::FontVariation::2503296519165016010::1713162997::0::1::::<><>::uid://bt4q418jqc5fc::::res://RiddlePuzzle/AssetsforRiddle/m5x7.ttf
+::res://RiddlePuzzle/AssetsforRiddle/::1713162755
+m5x7.ttf::FontFile::3780900344607018388::1713162755::1713162755::1::::<><>::
+MenuBackground.png::CompressedTexture2D::6547453717278567196::1713157270::1713157270::1::::<><>::
+::res://RiddlePuzzle/Scenes/::1713166390
+Paper.gd::GDScript::-1::1713165375::0::1::::<>NinePatchRect<>::
+Riddle.tscn::PackedScene::1663469873359202059::1713166390::0::1::::<><>::uid://c0jvuuxjq06wm::::res://RiddlePuzzle/AssetsforRiddle/MenuBackground.png<>res://RiddlePuzzle/Scenes/Paper.gd<>uid://bt4q418jqc5fc::::res://RiddlePuzzle/AssetsforRiddle/m5x7.ttf
+::res://TestCharacter/::1713051522
 TestCharacter.gd::GDScript::-1::1712560114::0::1::::<>CharacterBody2D<>::
-TestCharacter.tscn::PackedScene::2917199236269270805::1713003120::0::1::::<><>::res://TestCharacter/TestCharacter.gd<>uid://cx0d0kdhcndky::::res://Assets/oak_woods_v1.0/character/char_blue.png
+TestCharacter.tscn::PackedScene::2917199236269270805::1713051522::0::1::::<><>::res://TestCharacter/TestCharacter.gd<>uid://cx0d0kdhcndky::::res://Assets/oak_woods_v1.0/character/char_blue.png
