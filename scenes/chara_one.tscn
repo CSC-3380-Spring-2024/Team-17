@@ -1,6 +1,7 @@
-[gd_scene load_steps=74 format=3 uid="uid://ng3u3nsmbe71"]
+[gd_scene load_steps=89 format=3 uid="uid://ng3u3nsmbe71"]
 
 [ext_resource type="Script" path="res://scripts/charaOne.gd" id="1_esgsd"]
+[ext_resource type="Shader" uid="uid://dwl6kuftanhh3" path="res://scenes/chara_one_hit_shader.tres" id="2_bbvkj"]
 [ext_resource type="Texture2D" uid="uid://2xyoq2gp2kgs" path="res://assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Dash.png" id="2_jk52l"]
 [ext_resource type="Texture2D" uid="uid://duo885wttv6a6" path="res://assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Death.png" id="3_ou3dw"]
 [ext_resource type="Texture2D" uid="uid://bm6eha8ca363i" path="res://assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Fall.png" id="4_6krkc"]
@@ -11,10 +12,15 @@
 [ext_resource type="Texture2D" uid="uid://cdonvuelktn7d" path="res://assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Roll.png" id="9_mmujy"]
 [ext_resource type="Texture2D" uid="uid://dy0xhjxtawct7" path="res://assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_AttackNoMovement.png" id="10_qdlr4"]
 [ext_resource type="Texture2D" uid="uid://cduqi44xam3cg" path="res://assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Run.png" id="11_ekasr"]
+[ext_resource type="Texture2D" uid="uid://bsjh8ook3huj0" path="res://assets/tileset/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png" id="13_lsk3y"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ystly"]
-radius = 7.5
-height = 38.5
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0w80e"]
+size = Vector2(16, 37)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2kfbc"]
+shader = ExtResource("2_bbvkj")
+shader_parameter/enabled = false
+shader_parameter/hit_shade = Color(1, 0.357761, 0.317039, 1)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wp3t1"]
 atlas = ExtResource("2_jk52l")
@@ -261,7 +267,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vxkt6")
 }],
-"loop": true,
+"loop": false,
 "name": &"dash",
 "speed": 5.0
 }, {
@@ -296,7 +302,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_evly3")
 }],
-"loop": true,
+"loop": false,
 "name": &"death",
 "speed": 5.0
 }, {
@@ -318,7 +324,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_aexcp")
 }],
-"loop": true,
+"loop": false,
 "name": &"hurt",
 "speed": 5.0
 }, {
@@ -364,7 +370,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5yrh7")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
 "speed": 5.0
 }, {
@@ -387,7 +393,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qoa5s")
 }],
-"loop": true,
+"loop": false,
 "name": &"magic",
 "speed": 5.0
 }, {
@@ -428,7 +434,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fcm0i")
 }],
-"loop": true,
+"loop": false,
 "name": &"roll",
 "speed": 5.0
 }, {
@@ -445,7 +451,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5hsm5")
 }],
-"loop": true,
+"loop": false,
 "name": &"sword",
 "speed": 5.0
 }, {
@@ -486,17 +492,84 @@ animations = [{
 radius = 4.04456
 height = 19.9755
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vsw2m"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2rfog"]
+radius = 4.0
+height = 20.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vb6j5"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nq0op"]
+
+[sub_resource type="Animation" id="Animation_2vmn4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("charaOneanim:material:shader_parameter/enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_qqvmm"]
+resource_name = "hurt"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("charaOneanim:material:shader_parameter/enabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qnp6c"]
+_data = {
+"RESET": SubResource("Animation_2vmn4"),
+"hurt": SubResource("Animation_qqvmm")
+}
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ov8dg"]
+texture = ExtResource("13_lsk3y")
+0:0/size_in_atlas = Vector2i(4, 3)
+0:0/0 = 0
+0:8/size_in_atlas = Vector2i(4, 2)
+0:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_tq4jj"]
+sources/0 = SubResource("TileSetAtlasSource_ov8dg")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eh376"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1y7ab"]
+bg_color = Color(0, 0, 0.00784314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pjj0i"]
+bg_color = Color(0.556863, 0.858824, 0.4, 1)
+
 [node name="charaOne" type="CharacterBody2D"]
+position = Vector2(5, -62)
 script = ExtResource("1_esgsd")
 
 [node name="idlecollS" type="CollisionShape2D" parent="."]
-position = Vector2(-5, 44)
-shape = SubResource("CapsuleShape2D_ystly")
+position = Vector2(-5, 43.5)
+shape = SubResource("RectangleShape2D_0w80e")
 
 [node name="charaOneanim" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_2kfbc")
 position = Vector2(0, 22)
 sprite_frames = SubResource("SpriteFrames_ul15b")
-animation = &"idle"
+animation = &"dash"
 
 [node name="rollcollS" type="CollisionShape2D" parent="."]
 position = Vector2(1, 39)
@@ -505,3 +578,73 @@ shape = SubResource("CapsuleShape2D_jgw16")
 disabled = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="charaBox" type="Area2D" parent="."]
+
+[node name="hurtBox" type="CollisionShape2D" parent="charaBox"]
+position = Vector2(-5, 45)
+shape = SubResource("CapsuleShape2D_vsw2m")
+debug_color = Color(0.788235, 0.384314, 0.521569, 0.419608)
+
+[node name="hurtBoxRoll" type="CollisionShape2D" parent="charaBox"]
+position = Vector2(1, 39)
+rotation = -1.50645
+shape = SubResource("CapsuleShape2D_2rfog")
+disabled = true
+debug_color = Color(0.356863, 0.611765, 0.282353, 0.419608)
+
+[node name="hitBoxSword" type="CollisionShape2D" parent="charaBox"]
+shape = SubResource("CapsuleShape2D_vb6j5")
+disabled = true
+
+[node name="hitBoxMagic" type="CollisionShape2D" parent="charaBox"]
+shape = SubResource("CapsuleShape2D_nq0op")
+disabled = true
+
+[node name="hurtanim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_qnp6c")
+}
+
+[node name="testMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_tq4jj")
+format = 2
+
+[node name="testEnemy" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="testEnemy"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="testEnemy"]
+sprite_frames = SubResource("SpriteFrames_eh376")
+
+[node name="CoyoteTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="hpLabel" type="Label" parent="."]
+offset_left = -551.0
+offset_top = -303.0
+offset_right = -511.0
+offset_bottom = -280.0
+text = "Hp"
+
+[node name="hpBar" type="ProgressBar" parent="."]
+z_index = 1
+offset_left = -555.0
+offset_top = -275.0
+offset_right = -422.0
+offset_bottom = -248.0
+theme_override_styles/background = SubResource("StyleBoxFlat_1y7ab")
+theme_override_styles/fill = SubResource("StyleBoxFlat_pjj0i")
+value = 50.0
+show_percentage = false
+
+[node name="attackTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="damageTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="body_entered" from="charaBox" to="." method="_on_hurtbox_body_entered"]
+[connection signal="body_exited" from="charaBox" to="." method="_on_hurtbox_body_exited"]
+[connection signal="timeout" from="attackTimer" to="." method="_on_attack_timer_timeout"]
+[connection signal="timeout" from="damageTimer" to="." method="_on_damage_timer_timeout"]
