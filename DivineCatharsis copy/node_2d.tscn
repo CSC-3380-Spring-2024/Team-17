@@ -1,0 +1,77 @@
+[gd_scene load_steps=7 format=3 uid="uid://btyrvl4mfjvn8"]
+
+[ext_resource type="Script" path="res://intro.gd" id="1_ijmd8"]
+[ext_resource type="Texture2D" uid="uid://duve52bl3gj1u" path="res://LoadUp.jpg" id="2_aslf8"]
+
+[sub_resource type="Animation" id="Animation_r4mvu"]
+resource_name = "fade in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_a57xm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_icl71"]
+resource_name = "fade out"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c0te8"]
+_data = {
+"RESET": SubResource("Animation_a57xm"),
+"fade in": SubResource("Animation_r4mvu"),
+"fade out": SubResource("Animation_icl71")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ijmd8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1003, 782)
+texture = ExtResource("2_aslf8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -439.0
+offset_top = -277.0
+offset_right = 2442.0
+offset_bottom = 1915.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_c0te8")
+}
