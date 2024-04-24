@@ -1,8 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://xx2dujrjabep"]
+[gd_scene load_steps=9 format=3 uid="uid://xx2dujrjabep"]
 
 [ext_resource type="Texture2D" uid="uid://c0jvuuxjq06wm" path="res://RiddlePuzzle/AssetsforRiddle/MenuBackground.png" id="1_38hy4"]
+[ext_resource type="Texture2D" uid="uid://bydu6rxy1wnkm" path="res://Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png" id="1_cm66i"]
+[ext_resource type="Texture2D" uid="uid://el3bqck5i52" path="res://Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png" id="2_fddgv"]
 [ext_resource type="Script" path="res://RiddlePuzzle/Scenes/Paper.gd" id="2_gyel5"]
 [ext_resource type="FontFile" uid="uid://bt4q418jqc5fc" path="res://RiddlePuzzle/AssetsforRiddle/m5x7.ttf" id="3_ect5o"]
+[ext_resource type="Texture2D" uid="uid://bn1hg77rihfkg" path="res://Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png" id="3_xxhhl"]
+[ext_resource type="Shader" path="res://MysticForest/mystic_forest.gdshader" id="4_d7wup"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ubknv"]
+shader = ExtResource("4_d7wup")
+shader_parameter/rain_amount = 200.0
+shader_parameter/near_rain_length = 0.01
+shader_parameter/far_rain_length = 0.01
+shader_parameter/near_rain_width = 1.0
+shader_parameter/far_rain_width = 0.5
+shader_parameter/near_rain_transparency = 0.31
+shader_parameter/far_rain_transparency = 0.5
+shader_parameter/rain_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+shader_parameter/base_rain_speed = 0.5
+shader_parameter/additional_rain_speed = 0.5
+shader_parameter/slant = 0.38
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -12,7 +30,40 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Bg3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(573, 322)
+scale = Vector2(0.55957, 1.61)
+texture = ExtResource("1_cm66i")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Bg2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(458.002, 320.5)
+scale = Vector2(1.27463, 1.6175)
+texture = ExtResource("2_fddgv")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Bg1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(531.25, 321.5)
+scale = Vector2(1.4212, 1.6175)
+texture = ExtResource("3_xxhhl")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(685, 2.08165e-12)
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxBackground/ParallaxLayer4"]
+material = SubResource("ShaderMaterial_ubknv")
+offset_right = 695.0
+offset_bottom = 642.0
+color = Color(1, 1, 1, 0)
+
 [node name="Background" type="ColorRect" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -46,9 +97,9 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -193.0
-offset_right = 193.0
-offset_bottom = 397.0
+offset_left = -207.0
+offset_right = 207.0
+offset_bottom = 469.0
 grow_horizontal = 2
 
 [node name="Label" type="Label" parent="Paper/VBoxContainer"]

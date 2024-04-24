@@ -1,30 +1,30 @@
 [gd_scene load_steps=10 format=3 uid="uid://cga1nuinvn01g"]
 
-[ext_resource type="Texture2D" uid="uid://1mk8vw17aadf" path="res://Assets/Slime/green-slime-spritesheet.png" id="1_3s4cc"]
-[ext_resource type="Script" path="res://Enemies/Slime/enemy_slime_death_effect.gd" id="2_lgmg0"]
+[ext_resource type="Texture2D" uid="uid://1mk8vw17aadf" path="res://Assets/Slime/green-slime-spritesheet.png" id="1_u3071"]
+[ext_resource type="Script" path="res://Enemies/Slime/enemy_slime_death_effect.gd" id="2_ptgej"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aeehy"]
-atlas = ExtResource("1_3s4cc")
+atlas = ExtResource("1_u3071")
 region = Rect2(160, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_376tk"]
-atlas = ExtResource("1_3s4cc")
+atlas = ExtResource("1_u3071")
 region = Rect2(144, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3tyce"]
-atlas = ExtResource("1_3s4cc")
+atlas = ExtResource("1_u3071")
 region = Rect2(128, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ifdr1"]
-atlas = ExtResource("1_3s4cc")
+atlas = ExtResource("1_u3071")
 region = Rect2(112, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fw7ke"]
-atlas = ExtResource("1_3s4cc")
+atlas = ExtResource("1_u3071")
 region = Rect2(96, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4u3lq"]
-atlas = ExtResource("1_3s4cc")
+atlas = ExtResource("1_u3071")
 region = Rect2(80, 0, 16, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rof7b"]
@@ -66,7 +66,7 @@ animation = &"Death"
 autoplay = "Death"
 frame = 7
 frame_progress = 1.0
-script = ExtResource("2_lgmg0")
+script = ExtResource("2_ptgej")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

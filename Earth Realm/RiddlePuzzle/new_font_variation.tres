@@ -1,6 +1,0 @@
-[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://bbwu6sxshe3va"]
-
-[ext_resource type="FontFile" uid="uid://bt4q418jqc5fc" path="res://RiddlePuzzle/AssetsforRiddle/m5x7.ttf" id="1_s2rnl"]
-
-[resource]
-base_font = ExtResource("1_s2rnl")

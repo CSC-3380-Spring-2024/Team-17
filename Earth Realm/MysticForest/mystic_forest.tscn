@@ -1,9 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://cfsy4j565ash8"]
+[gd_scene load_steps=7 format=3 uid="uid://cfsy4j565ash8"]
 
 [ext_resource type="Script" path="res://MysticForest/Mystic Forest.gd" id="1_rrufa"]
 [ext_resource type="Texture2D" uid="uid://el3bqck5i52" path="res://Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png" id="3_espep"]
 [ext_resource type="Texture2D" uid="uid://bydu6rxy1wnkm" path="res://Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png" id="3_gvwv0"]
 [ext_resource type="Texture2D" uid="uid://bn1hg77rihfkg" path="res://Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png" id="4_vsmxy"]
+[ext_resource type="Shader" path="res://MysticForest/mystic_forest.gdshader" id="5_rgera"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jstii"]
+shader = ExtResource("5_rgera")
+shader_parameter/rain_amount = 200.0
+shader_parameter/near_rain_length = 0.021
+shader_parameter/far_rain_length = 0.01
+shader_parameter/near_rain_width = 0.37
+shader_parameter/far_rain_width = 0.425
+shader_parameter/near_rain_transparency = 0.32
+shader_parameter/far_rain_transparency = 0.5
+shader_parameter/rain_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+shader_parameter/base_rain_speed = 0.5
+shader_parameter/additional_rain_speed = 0.358
+shader_parameter/slant = 0.38
 
 [node name="Mystic Forest" type="ParallaxBackground"]
 script = ExtResource("1_rrufa")
@@ -49,3 +64,12 @@ position = Vector2(1208, 256)
 scale = Vector2(1.25246, 1.28)
 texture = ExtResource("4_vsmxy")
 flip_h = true
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(685, 2.08165e-12)
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxLayer4"]
+material = SubResource("ShaderMaterial_jstii")
+offset_right = 685.0
+offset_bottom = 511.0
+color = Color(1, 1, 1, 0)

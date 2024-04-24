@@ -61,7 +61,7 @@ func handleButtonPress(button):
 
 
 func _on_check_pressed():
-	if handleButtonPress("2"):
+	if Echo.set_pressed:
 		print("Correct answer")
-	else:
+	elif !Echo.set_pressed():
 		print("u r wrong")

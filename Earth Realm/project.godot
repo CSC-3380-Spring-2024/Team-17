@@ -29,6 +29,7 @@ folder_colors={
 "res://MysticForest/": "purple",
 "res://Puzzle/": "green",
 "res://RiddlePuzzle/": "yellow",
+"res://Scripts/": "purple",
 "res://TestCharacter/": "blue"
 }
 

@@ -1,98 +1,98 @@
 [gd_scene load_steps=27 format=3 uid="uid://cgaq5ijo3cmah"]
 
-[ext_resource type="Texture2D" uid="uid://ct3kwp55r5bgy" path="res://Assets/NightBorne/NightBorne.png" id="1_wnhom"]
-[ext_resource type="Script" path="res://Enemies/NightBorne/enemy_nightborne_death_effect.gd" id="2_hdisb"]
+[ext_resource type="Texture2D" uid="uid://ct3kwp55r5bgy" path="res://Assets/NightBorne/NightBorne.png" id="1_sftlx"]
+[ext_resource type="Script" path="res://Enemies/NightBorne/enemy_nightborne_death_effect.gd" id="2_a8rts"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7i3cy"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(0, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3bq3y"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(80, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_70m30"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(160, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0p4ta"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(240, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0jrms"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(320, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xwqd0"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(400, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b7dxo"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(480, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wubdi"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(560, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yxo7p"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(640, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h8lec"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(720, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tmx8f"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(800, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p5mwx"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(880, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_72x6t"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(960, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_72wus"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1040, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5lnum"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1120, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qs3uf"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1200, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jmd0q"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1280, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ie0x"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1360, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_827xp"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1440, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oywkv"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1520, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_po3nb"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1600, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gc3pn"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1680, 320, 80, 80)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uaiob"]
-atlas = ExtResource("1_wnhom")
+atlas = ExtResource("1_sftlx")
 region = Rect2(1760, 320, 80, 80)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0nm1e"]
@@ -180,7 +180,7 @@ sprite_frames = SubResource("SpriteFrames_0nm1e")
 autoplay = "default"
 frame = 23
 frame_progress = 1.0
-script = ExtResource("2_hdisb")
+script = ExtResource("2_a8rts")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0

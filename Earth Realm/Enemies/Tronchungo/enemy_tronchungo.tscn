@@ -203,6 +203,7 @@ size = Vector2(33.5, 33)
 
 [node name="EnemyTronchungo" type="CharacterBody2D"]
 position = Vector2(0, -5)
+collision_layer = 5
 script = ExtResource("1_4ajod")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

@@ -1,18 +1,7 @@
 res://MysticForest/Mystic_Forest_Map.tscn
 res://Puzzle/Scenes/Tile/Tile.gd
-res://RiddlePuzzle/Scenes/Riddle.tscn
-res://RiddlePuzzle/Scenes/Paper.gd
-res://RiddlePuzzle/new_font_variation.tres
-res://Enemies/enemy_slime.tscn
-res://Enemies/enemy_slime.gd
-res://Enemies/enemy_slime_death_effect.gd
-res://Enemies/enemy_slime_death_effect.tscn
-res://Enemies/Worm/enemy_worm_death_effect.tscn
-res://Enemies/NightBorne/EnemyNightBorne.gd
-res://Enemies/Slime/enemy_slime.gd
-res://Enemies/Worm/worm_2.gd
-res://Enemies/Tronchungo/enemy_tronchungo.tscn
-res://Enemies/Tronchungo/enemy_tronchungo.gd
-res://Enemies/NightBorne/enemy_night_borne.tscn
-res://Enemies/Tronchungo/enemy_tronchungo_death_effect.gd
-res://Enemies/Tronchungo/enemy_tronchungo_death_effect.tscn
+res://MysticForest/mystic_forest.gdshader
+res://EarthRealmlvl2/Level 2/Level2.tscn
+res://test.tscn
+res://main.tscn
+res://test2.tscn
