@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn16y13a0atws"]
+
+[ext_resource type="Script" path="res://Puzzle/Scenes/Board/board.gd" id="1_wbj3m"]
+[ext_resource type="PackedScene" uid="uid://cbvu2x25v4n0d" path="res://Puzzle/Scenes/Tile/Tile.tscn" id="2_l4xj1"]
+
+[node name="Board" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wbj3m")
+tile_size = 4
+tile_scene = ExtResource("2_l4xj1")
