@@ -484,7 +484,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jgw16"]
@@ -498,8 +498,12 @@ radius = 4.0
 height = 20.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vb6j5"]
+radius = 7.0
+height = 38.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nq0op"]
+radius = 18.0
+height = 44.0
 
 [sub_resource type="Animation" id="Animation_2vmn4"]
 length = 0.001
@@ -557,9 +561,8 @@ shape = SubResource("RectangleShape2D_0w80e")
 material = SubResource("ShaderMaterial_2kfbc")
 position = Vector2(0, 22)
 sprite_frames = SubResource("SpriteFrames_ul15b")
-animation = &"dash"
-frame = 1
-frame_progress = 1.0
+animation = &"swordLight"
+frame = 2
 
 [node name="jumpTimer" type="Timer" parent="charaOneanim"]
 
@@ -576,22 +579,27 @@ disabled = true
 [node name="hurtBox" type="CollisionShape2D" parent="charaBox"]
 position = Vector2(-5, 45)
 shape = SubResource("CapsuleShape2D_vsw2m")
-debug_color = Color(0.788235, 0.384314, 0.521569, 0.419608)
+debug_color = Color(1, 0, 0, 0.419608)
 
 [node name="hurtBoxRoll" type="CollisionShape2D" parent="charaBox"]
 position = Vector2(1, 39)
 rotation = -1.50645
 shape = SubResource("CapsuleShape2D_2rfog")
 disabled = true
-debug_color = Color(0.356863, 0.611765, 0.282353, 0.419608)
+debug_color = Color(1, 0, 0, 0.419608)
 
-[node name="hitBoxSword" type="CollisionShape2D" parent="charaBox"]
+[node name="hitBoxSwordLight" type="CollisionShape2D" parent="charaBox"]
+position = Vector2(24, 43)
+rotation = 1.5708
 shape = SubResource("CapsuleShape2D_vb6j5")
 disabled = true
+debug_color = Color(0, 1, 0, 0.419608)
 
-[node name="hitBoxMagic" type="CollisionShape2D" parent="charaBox"]
+[node name="hitBoxSwordHeavy" type="CollisionShape2D" parent="charaBox"]
+position = Vector2(29, 42)
 shape = SubResource("CapsuleShape2D_nq0op")
 disabled = true
+debug_color = Color(0, 1, 0, 0.419608)
 
 [node name="hurtanim" type="AnimationPlayer" parent="."]
 libraries = {
@@ -625,7 +633,13 @@ one_shot = true
 [node name="damageTimer" type="Timer" parent="."]
 one_shot = true
 
+[node name="rollTimer" type="Timer" parent="."]
+
+[node name="dashTimer" type="Timer" parent="."]
+
 [connection signal="body_entered" from="charaBox" to="." method="_on_hurtbox_body_entered"]
 [connection signal="body_exited" from="charaBox" to="." method="_on_hurtbox_body_exited"]
 [connection signal="timeout" from="attackTimer" to="." method="_on_attack_timer_timeout"]
 [connection signal="timeout" from="damageTimer" to="." method="_on_damage_timer_timeout"]
+[connection signal="timeout" from="rollTimer" to="." method="_on_roll_timer_timeout"]
+[connection signal="timeout" from="dashTimer" to="." method="_on_dash_timer_timeout"]

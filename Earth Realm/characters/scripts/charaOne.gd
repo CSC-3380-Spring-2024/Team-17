@@ -1,11 +1,11 @@
 extends CharacterBody2D
 
 const GRAVITY : int = 1000
-@export var speed : int = 5000
+@export var speed : int = 5000 * 2
 @export var jumpVert : int = -500
 @export var jumpHoriz : int = 100
-@export var dash : int = 5000 * 10
-@export var roll : int = 5000 * 10
+@export var dash : int = speed * 40
+@export var roll : int = speed * 20
 @export var maxhp : int = 1000
 var charaDead : bool = false
 var currenthp : int = 1000
@@ -34,6 +34,8 @@ var damage : int = 100
 @onready var hpBar : ProgressBar = $hpBar
 @onready var atkTimer : Timer = $attackTimer
 @onready var dmgTimer : Timer = $damageTimer
+@onready var rollTimer : Timer = $rollTimer
+@onready var dashTimer : Timer = $dashTimer
 
 
 func _ready() -> void:
@@ -41,6 +43,8 @@ func _ready() -> void:
 	coyoteTimer.wait_time = coyote_frames / 60.0
 	atkTimer.wait_time = 0.5
 	dmgTimer.wait_time = 0.5
+	dashTimer.wait_time = 0.4
+	rollTimer.wait_time = 0.4
 	jumpTimer.wait_time = 0.4
 	
 	
@@ -123,17 +127,19 @@ func _on_coyote_timer_timeout() -> void:
 	
 func CharaDash(delta : float) -> void:
 	if Input.is_action_just_pressed("dash") && direction != 0:
-		dashis = true
 		velocity.x = direction * dash * delta
+		dashis = true
 		anim.play("dash")
+		dashTimer.start()
 	
 	
 	
 func CharaRoll(delta : float) -> void:
 	if Input.is_action_just_pressed("roll") && is_on_floor() && direction != 0:
-		rollis = true
 		velocity.x = direction * roll * delta
+		rollis = true
 		anim.play("roll")
+		rollTimer.start()
 	
 	
 	
@@ -200,9 +206,19 @@ func _on_damage_timer_timeout() -> void:
 	dmgTimer.stop()
 	enemyAttack = false
 	damageCD = false
-	pass # Replace with function body.
 
 
+
+func _on_dash_timer_timeout() -> void:
+	dashTimer.stop()
+	dashis = false
+	
+
+
+func _on_roll_timer_timeout() -> void:
+	rollTimer.stop()
+	rollis = false
+	
 
 func CharaDeath(delta : float) -> void:
 	if currenthp == 0:
@@ -211,4 +227,3 @@ func CharaDeath(delta : float) -> void:
 
 func CharaRespawn(delta : float) -> void:
 	pass
-

@@ -12,4 +12,3 @@ CollisionShape2D
 Area2D
 NinePatchRect
 Sprite2D
-ColorRect

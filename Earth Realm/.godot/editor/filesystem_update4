@@ -1,7 +1,7 @@
-res://characters/scenes/chara_one.tscn
+res://MysticForest/Mystic_Forest_Map.tscn
 res://Puzzle/Scenes/Tile/Tile.gd
 res://MysticForest/mystic_forest.gdshader
 res://characters/scenes/chara_one_hit_shader.tres
-res://MysticForest/Mystic_Forest_Map.tscn
 res://EarthRealmlvl2/Level 2/Level2.tscn
+res://characters/scenes/chara_one.tscn
 res://characters/scripts/charaOne.gd
