@@ -1,0 +1,124 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnjrgtirekbmv"]
+
+[ext_resource type="Texture2D" uid="uid://c0jvuuxjq06wm" path="res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/MenuBackground.png" id="1_mf10g"]
+[ext_resource type="Texture2D" uid="uid://cv53kr861wfjt" path="res://EarthRealmlvl2/Assetsforlvl2/Adve/map_preview.png" id="1_x01h0"]
+[ext_resource type="Script" path="res://EarthRealmlvl2/Riddlelvl2/scenes/Paper.gd" id="2_i7voi"]
+[ext_resource type="FontFile" uid="uid://bt4q418jqc5fc" path="res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/m5x7.ttf" id="3_udvy6"]
+
+[node name="Riddle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MapPreview" type="Sprite2D" parent="."]
+position = Vector2(674, 433)
+scale = Vector2(1.18229, 1.18651)
+texture = ExtResource("1_x01h0")
+
+[node name="Paper" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -213.5
+offset_top = -221.0
+offset_right = 213.5
+offset_bottom = 221.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_mf10g")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+script = ExtResource("2_i7voi")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Paper"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -207.0
+offset_right = 207.0
+offset_bottom = 469.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Paper/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_fonts/font = ExtResource("3_udvy6")
+theme_override_font_sizes/font_size = 22
+text = "
+Ah, you've made it to the second level.
+ Impressive indeed.
+ Let's see if your wit serves you well with this one:
+
+From the infernal depths where darkness reigns,
+I'm forged in torment, bound by fiery chains.
+Though my home is Hell's fiery embrace,
+I'm wielded in realms of the human race.
+What am I, traveler, born of infernal might?
+
+"
+horizontal_alignment = 1
+
+[node name="Anguish" type="CheckButton" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_colors/font_hover_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_fonts/font = ExtResource("3_udvy6")
+theme_override_font_sizes/font_size = 35
+text = "Anguish"
+
+[node name="Flame" type="CheckButton" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_colors/font_hover_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_fonts/font = ExtResource("3_udvy6")
+theme_override_font_sizes/font_size = 35
+text = "Flame
+"
+
+[node name="Pain" type="CheckButton" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_colors/font_hover_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_fonts/font = ExtResource("3_udvy6")
+theme_override_font_sizes/font_size = 35
+text = "Pain"
+
+[node name="Shadow" type="CheckButton" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_colors/font_hover_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_fonts/font = ExtResource("3_udvy6")
+theme_override_font_sizes/font_size = 35
+text = "Shadow
+"
+
+[node name="Check" type="Button" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.968627, 0.968627, 0.968627, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_udvy6")
+theme_override_font_sizes/font_size = 33
+text = "Check your answer."
+
+[connection signal="pressed" from="Paper/VBoxContainer/Anguish" to="Paper" method="_on_anguish_pressed"]
+[connection signal="pressed" from="Paper/VBoxContainer/Flame" to="Paper" method="_on_flame_pressed"]
+[connection signal="pressed" from="Paper/VBoxContainer/Pain" to="Paper" method="_on_pain_pressed"]
+[connection signal="pressed" from="Paper/VBoxContainer/Shadow" to="Paper" method="_on_shadow_pressed"]
+[connection signal="pressed" from="Paper/VBoxContainer/Check" to="Paper" method="_on_check_pressed"]

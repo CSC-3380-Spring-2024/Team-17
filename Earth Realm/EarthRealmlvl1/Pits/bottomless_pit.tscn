@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpqc7pj003gaa"]
+
+[ext_resource type="Script" path="res://EarthRealmlvl1/Pits/bottomless_pit.gd" id="1_a27yc"]
+
+[node name="BottomlessPit" type="Area2D"]
+script = ExtResource("1_a27yc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

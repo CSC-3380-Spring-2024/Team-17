@@ -1,0 +1,76 @@
+[gd_scene load_steps=10 format=3 uid="uid://cga1nuinvn01g"]
+
+[ext_resource type="Texture2D" uid="uid://1mk8vw17aadf" path="res://EarthRealmlvl1/Assets/Slime/green-slime-spritesheet.png" id="1_u3071"]
+[ext_resource type="Script" path="res://EarthRealmlvl1/Enemies/Slime/enemy_slime_death_effect.gd" id="2_ptgej"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aeehy"]
+atlas = ExtResource("1_u3071")
+region = Rect2(160, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_376tk"]
+atlas = ExtResource("1_u3071")
+region = Rect2(144, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tyce"]
+atlas = ExtResource("1_u3071")
+region = Rect2(128, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifdr1"]
+atlas = ExtResource("1_u3071")
+region = Rect2(112, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fw7ke"]
+atlas = ExtResource("1_u3071")
+region = Rect2(96, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4u3lq"]
+atlas = ExtResource("1_u3071")
+region = Rect2(80, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rof7b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aeehy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_376tk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3tyce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifdr1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fw7ke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4u3lq")
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"Death",
+"speed": 5.0
+}]
+
+[node name="EnemySlimeDeathEffect" type="AnimatedSprite2D"]
+position = Vector2(-1, 0)
+sprite_frames = SubResource("SpriteFrames_rof7b")
+animation = &"Death"
+autoplay = "Death"
+frame = 7
+frame_progress = 1.0
+script = ExtResource("2_ptgej")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://du105rib5n7oj"]
+
+[ext_resource type="Texture2D" uid="uid://c0jvuuxjq06wm" path="res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/MenuBackground.png" id="1_3j4ds"]
+[ext_resource type="Script" path="res://EarthRealmlvl2/Riddlelvl2/Riddle2Collectable/riddle_collectable_lvl2.gd" id="1_vlwmd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rsjx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y5pqx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3j4ds")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="PaperRiddle" type="Area2D"]
+script = ExtResource("1_vlwmd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4rsjx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_y5pqx")
+autoplay = "default"
+frame_progress = 0.97319
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

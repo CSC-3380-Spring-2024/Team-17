@@ -1,17 +1,11 @@
-res://Assets/Music
-res://EarthRealmlvl2/Level 2
+res://EarthRealmlvl2/Pits_lvl2
+res://EarthRealmlvl2/Riddlelvl2/Riddle2Collectable
+res://EarthRealmlvl2/Riddlelvl2
+res://EarthRealmlvl1/RiddlePuzzle/RiddleCollectable
+res://EarthRealmlvl1/RiddlePuzzle/Scenes
+res://EarthRealmlvl1/Pits
+res://character/characters/scripts
 res://
+res://EarthRealmlvl2/Platforms
+res://EarthRealmlvl2/Level 2
 res://Scripts/StateMachine
-res://Assets/Archer
-res://Enemies/Archer
-res://Enemies/Tronchungo
-res://Assets/Tronchungo
-res://Enemies
-res://Assets/Slime
-res://RiddlePuzzle
-res://RiddlePuzzle/Scenes
-res://Puzzle/Scenes
-res://MysticForest
-res://Assets/NightBorne
-res://Assets/Fire Worm/Sprites/Worm
-res://MovingPlatforms

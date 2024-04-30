@@ -34,3 +34,7 @@ func _physics_process(delta):
 
 	if health <= 0:
 		queue_free()
+		
+		
+func respawn():
+	get_tree().reload_current_scene()

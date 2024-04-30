@@ -1,7 +1,7 @@
 [gd_scene load_steps=38 format=3 uid="uid://bhtd30ci3xdej"]
 
 [ext_resource type="Script" path="res://TestCharacter/TestCharacter.gd" id="1_vlrij"]
-[ext_resource type="Texture2D" uid="uid://cx0d0kdhcndky" path="res://Assets/oak_woods_v1.0/character/char_blue.png" id="2_47oux"]
+[ext_resource type="Texture2D" uid="uid://cx0d0kdhcndky" path="res://EarthRealmlvl1/Assets/oak_woods_v1.0/character/char_blue.png" id="2_47oux"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pitxg"]
 radius = 16.0
