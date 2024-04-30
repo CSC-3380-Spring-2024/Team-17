@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714407874
+::res://::1714452218
 icon.svg::CompressedTexture2D::2995219347521462331::1714407580::1714407580::1::::<><>::
 Main.gd::GDScript::-1::1714407579::0::1::::<>Node2D<>::
 main.tscn::PackedScene::2509215929056746046::1714407580::0::1::::<><>::res://Main.gd<>uid://biw53b0vsuj8v::::res://icon.svg
@@ -138,8 +138,8 @@ tronchungo3.png::CompressedTexture2D::2672494189623728458::1714407579::171440757
 icon.svg::CompressedTexture2D::8900064516038516965::1714407580::1714407580::1::::<><>::
 README.md::TextFile::-1::1714407579::0::1::::<><>::
 ::res://characters/assets/::1714407580
-::res://characters/assets/chara/::1714411135
-::res://characters/assets/chara/Animation Pack/::1714411234
+::res://characters/assets/chara/::1714452657
+::res://characters/assets/chara/Animation Pack/::1714411244
 Burst of ice.png::CompressedTexture2D::229609970639994051::1541197026::1714411244::1::::<><>::
 projetilNew.png::CompressedTexture2D::653454956619825377::1541196838::1714411244::1::::<><>::
 ::res://characters/assets/chara/FreeKnight_v1/::1714407580
@@ -278,10 +278,26 @@ _WallClimb.png::CompressedTexture2D::8732434300032186869::1714407580::1714407580
 _WallClimbNoMovement.png::CompressedTexture2D::8702004590398962588::1714407580::1714407580::1::::<><>::
 _WallHang.png::CompressedTexture2D::5472659786343755657::1714407580::1714407580::1::::<><>::
 _WallSlide.png::CompressedTexture2D::7603110979011575826::1714407580::1714407580::1::::<><>::
-::res://characters/assets/chara/Red hood free (zipped) Folder/::1714407580
-red hood itch free Copy-Sheet.png::CompressedTexture2D::6888538057349555770::1714407580::1714407580::1::::<><>::
+::res://characters/assets/chara/Red hood free (zipped) Folder/::1714454005
+red hood itch free Copy-Sheet.png::CompressedTexture2D::5074791914513638060::1714452925::1714452971::1::::<><>::
+::res://characters/assets/chara/Red hood free (zipped) Folder/idle and  alter/::1714452731
+idle sheet-Sheet.png::CompressedTexture2D::8379135050264588300::1714452679::1714452731::1::::<><>::
+itch hurt 2 sheet-Sheet.png::CompressedTexture2D::3262781826223815746::1714452679::1714452731::1::::<><>::
+itch jump sheet-Sheet.png::CompressedTexture2D::5813281882645587244::1714452679::1714452731::1::::<><>::
+itch light atk sheet-Sheet.png::CompressedTexture2D::6320385770821773997::1714452679::1714452731::1::::<><>::
+itch run-Sheet sheet.png::CompressedTexture2D::8239377896910085312::1714452679::1714452731::1::::<><>::
+::res://characters/assets/chara/Red hood free (zipped) Folder/NoBackgroundColor/::1714453999
+spr_ArcherAttack_strip_NoBkg.png::CompressedTexture2D::6647579006915080393::1583000724::1714454023::1::::<><>::
+spr_ArcherDash_strip_NoBkg.png::CompressedTexture2D::2227006187266417846::1583000732::1714454023::1::::<><>::
+spr_ArcherDeath_strip_NoBkg.png::CompressedTexture2D::4340397619915674807::1583000754::1714454023::1::::<><>::
+spr_ArcherIdle_strip_NoBkg.png::CompressedTexture2D::1990616488431189642::1583000125::1714454023::1::::<><>::
+spr_ArcherJumpAndFall_strip_NoBkg.png::CompressedTexture2D::4499785023371793012::1583000764::1714454023::1::::<><>::
+spr_ArcherMelee_strip_NoBkg.png::CompressedTexture2D::5413524810887293299::1583000708::1714454023::1::::<><>::
+spr_ArcherRun_strip_NoBkg.png::CompressedTexture2D::4855358113240659044::1583000741::1714454023::1::::<><>::
+::res://characters/assets/chara/Red hood free (zipped) Folder/Red hood free (zipped) Folder/::1714452731
+red hood itch free Copy-Sheet.png::CompressedTexture2D::8132495625154373304::1714452665::1714452731::1::::<><>::
 ::res://characters/assets/chara/Wizard Pack/::1714411035
-::res://characters/assets/chara/Wizard Pack/Wizard Pack/::1714411035
+::res://characters/assets/chara/Wizard Pack/Wizard Pack/::1714411244
 Attack1.png::CompressedTexture2D::3915305067488794096::1714411035::1714411244::1::::<><>::
 Attack2.png::CompressedTexture2D::2647859232698566063::1714411035::1714411244::1::::<><>::
 Death.png::CompressedTexture2D::5401167826482405836::1714411035::1714411244::1::::<><>::
@@ -304,15 +320,18 @@ TX Struct.png::CompressedTexture2D::284802678041057953::1714407580::1714407580::
 TX Tileset Grass.png::CompressedTexture2D::3668883976558682835::1714407580::1714407580::1::::<><>::
 TX Tileset Stone Ground.png::CompressedTexture2D::1299052221874490713::1714407580::1714407580::1::::<><>::
 TX Tileset Wall.png::CompressedTexture2D::6998391627416720639::1714407580::1714407580::1::::<><>::
-::res://characters/scenes/::1714410432
-boss_One.gd::GDScript::-1::1714407580::0::1::::<>CharacterBody2D<>::
+::res://characters/scenes/::1714453988
 boss_One.tscn::PackedScene::3614084318286147314::1714407580::0::1::::<><>::res://scenes/boss_One.gd
-chara_one.tscn::PackedScene::926578517064518706::1714410432::0::1::::<><>::res://characters/scripts/charaOne.gd<>uid://dwl6kuftanhh3::::res://characters/scenes/chara_one_hit_shader.tres<>uid://2xyoq2gp2kgs::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Dash.png<>uid://duo885wttv6a6::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Death.png<>uid://bm6eha8ca363i::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Fall.png<>uid://bffcsdma8nyd4::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Hit.png<>uid://c0nup2lsi1ldg::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Idle.png<>uid://cmpe0wxmnp008::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Jump.png<>uid://bx2hvdqi5uo5c::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Attack2NoMovement.png<>uid://cdonvuelktn7d::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Roll.png<>uid://dy0xhjxtawct7::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_AttackNoMovement.png<>uid://cduqi44xam3cg::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Run.png
-chara_one_hit_shader.tres::VisualShader::8728025910180299822::1714407902::0::1::::<><>::
-chara_two.gd::GDScript::-1::1714407580::0::1::::<>CharacterBody2D<>::
-chara_two.tscn::PackedScene::3744326627192285544::1714407580::0::1::::<><>::res://scenes/chara_two.gd
-::res://characters/scripts/::1714410285
-charaOne.gd::GDScript::-1::1714410285::0::1::::<>CharacterBody2D<>::
+chara_one.tscn::PackedScene::926578517064518706::1714452163::0::1::::<><>::res://characters/scripts/charaOne.gd<>uid://dwl6kuftanhh3::::res://characters/scenes/chara_one_hit_shader.tres<>uid://duo885wttv6a6::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Death.png<>uid://bm6eha8ca363i::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Fall.png<>uid://bffcsdma8nyd4::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Hit.png<>uid://c0nup2lsi1ldg::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Idle.png<>uid://cmpe0wxmnp008::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Jump.png<>uid://bx2hvdqi5uo5c::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Attack2NoMovement.png<>uid://dy0xhjxtawct7::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_AttackNoMovement.png<>uid://cduqi44xam3cg::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Run.png
+chara_one_hit_shader.tres::VisualShader::8728025910180299822::1714426434::0::1::::<><>::
+chara_three.tscn::PackedScene::8769496872476934911::1714448628::0::1::::<><>::res://characters/scripts/charaThree.gd<>uid://dwl6kuftanhh3::::res://characters/scenes/chara_one_hit_shader.tres<>uid://2xyoq2gp2kgs::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Dash.png<>uid://duo885wttv6a6::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Death.png<>uid://bm6eha8ca363i::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Fall.png<>uid://bffcsdma8nyd4::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Hit.png<>uid://c0nup2lsi1ldg::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Idle.png<>uid://cmpe0wxmnp008::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Jump.png<>uid://cdonvuelktn7d::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Roll.png<>uid://dy0xhjxtawct7::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_AttackNoMovement.png<>uid://bx2hvdqi5uo5c::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Attack2NoMovement.png<>uid://cduqi44xam3cg::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Run.png
+chara_two.tscn::PackedScene::3744326627192285544::1714453988::0::1::::<><>::res://characters/scripts/charaTwo.gd<>uid://dwl6kuftanhh3::::res://characters/scenes/chara_one_hit_shader.tres<>uid://cekjc1df7n3oy::::res://characters/assets/chara/Red hood free (zipped) Folder/red hood itch free Copy-Sheet.png<>uid://co285ygmk17jk::::res://characters/assets/chara/Red hood free (zipped) Folder/idle and  alter/itch jump sheet-Sheet.png<>uid://duo885wttv6a6::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Death.png<>uid://drm6eomko062s::::res://characters/assets/chara/Red hood free (zipped) Folder/idle and  alter/idle sheet-Sheet.png<>uid://bffcsdma8nyd4::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Hit.png<>uid://dpnhl52ibd80c::::res://characters/assets/chara/Red hood free (zipped) Folder/idle and  alter/itch run-Sheet sheet.png<>uid://bx2hvdqi5uo5c::::res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Attack2NoMovement.png
+::res://characters/scripts/::1714453989
+boss_One.gd::GDScript::-1::1714407580::0::1::::<>CharacterBody2D<>::
+charaOne.gd::GDScript::-1::1714448679::0::1::::<>CharacterBody2D<>::
+charaThree.gd::GDScript::-1::1714448679::0::1::::<>CharacterBody2D<>::
+charaTwo.gd::GDScript::-1::1714453989::0::1::::<>CharacterBody2D<>::
+globalchara.gd::GDScript::-1::1714446514::0::1::::<>CharacterBody2D<>::
 ::res://EarthRealmlvl2/::1714407579
 ::res://EarthRealmlvl2/Assetsforlvl2/::1714407579
 ::res://EarthRealmlvl2/Assetsforlvl2/Adve/::1714407579
@@ -320,8 +339,8 @@ tiles.png::CompressedTexture2D::3327090646006437457::1714407579::1714407579::1::
 tiles_preview.png::CompressedTexture2D::3705366627262578629::1714407579::1714407579::1::::<><>::
 ::res://EarthRealmlvl2/Assetsforlvl2/Carvernas/::1714407579
 cavesofgallet.png::CompressedTexture2D::5392497966933995445::1714407579::1714407579::1::::<><>::
-::res://EarthRealmlvl2/Level 2/::1714409231
-Level2.tscn::PackedScene::7172145228765963751::1714409231::0::1::::<><>::uid://bs1532edp0dqb::::res://EarthRealmlvl2/Assetsforlvl2/Adve/tiles_preview.png<>uid://bhtd30ci3xdej::::res://TestCharacter/TestCharacter.tscn
+::res://EarthRealmlvl2/Level 2/::1714448053
+Level2.tscn::PackedScene::7172145228765963751::1714448053::0::1::::<><>::uid://bs1532edp0dqb::::res://EarthRealmlvl2/Assetsforlvl2/Adve/tiles_preview.png<>uid://bhtd30ci3xdej::::res://TestCharacter/TestCharacter.tscn
 ::res://Enemies/::1714407579
 ::res://Enemies/Archer/::1714407579
 attack_state.gd::GDScript::-1::1714407579::0::1::::<>NodeState<>::
@@ -355,11 +374,11 @@ worm_2.tscn::PackedScene::7413172646145649084::1714407579::0::1::::<><>::uid://d
 ::res://MovingPlatforms/::1714407579
 moving_platforms.tscn::PackedScene::1664000319793242677::1714407579::0::1::::<><>::uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png
 moving_platform_r_down_up.tscn::PackedScene::4759400098671367994::1714407579::0::1::::<><>::uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png
-::res://MysticForest/::1714410432
+::res://MysticForest/::1714453989
 Mystic Forest.gd::GDScript::-1::1714407579::0::1::::<>ParallaxBackground<>::
-mystic_forest.gdshader::Shader::-1::1714410432::0::1::::<><>::
+mystic_forest.gdshader::Shader::-1::1714453989::0::1::::<><>::
 mystic_forest.tscn::PackedScene::5162453901501970199::1714407579::0::1::::<><>::res://MysticForest/Mystic Forest.gd<>uid://el3bqck5i52::::res://Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png<>uid://bydu6rxy1wnkm::::res://Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png<>uid://bn1hg77rihfkg::::res://Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png<>res://MysticForest/mystic_forest.gdshader
-Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1714409230::0::1::::<><>::uid://xyb3vsabuedp::::res://MovingPlatforms/moving_platforms.tscn<>uid://b82qvhwh5a2ti::::res://MovingPlatforms/moving_platform_r_down_up.tscn<>uid://cfsy4j565ash8::::res://MysticForest/mystic_forest.tscn<>uid://rlx1txhvu1ru::::res://Assets/Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://ddu84ugmedagy::::res://Enemies/Worm/worm_2.tscn<>uid://bmgqqjpf26mju::::res://Enemies/Tronchungo/enemy_tronchungo.tscn<>uid://ng3u3nsmbe71::::res://characters/scenes/chara_one.tscn<>uid://b8vh62pslfc61::::res://Enemies/NightBorne/enemy_night_borne.tscn<>uid://cas7xi871sxl0::::res://Enemies/Slime/enemy_slime.tscn<>uid://ba1hsj3kfbhmy::::res://Enemies/Archer/enemy_archer.tscn
+Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1714448051::0::1::::<><>::uid://xyb3vsabuedp::::res://MovingPlatforms/moving_platforms.tscn<>uid://b82qvhwh5a2ti::::res://MovingPlatforms/moving_platform_r_down_up.tscn<>uid://cfsy4j565ash8::::res://MysticForest/mystic_forest.tscn<>uid://rlx1txhvu1ru::::res://Assets/Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://ddu84ugmedagy::::res://Enemies/Worm/worm_2.tscn<>uid://bmgqqjpf26mju::::res://Enemies/Tronchungo/enemy_tronchungo.tscn<>uid://ng3u3nsmbe71::::res://characters/scenes/chara_one.tscn<>uid://b8vh62pslfc61::::res://Enemies/NightBorne/enemy_night_borne.tscn<>uid://cas7xi871sxl0::::res://Enemies/Slime/enemy_slime.tscn<>uid://ba1hsj3kfbhmy::::res://Enemies/Archer/enemy_archer.tscn
 ::res://Puzzle/::1714407579
 ::res://Puzzle/Assets/::1714407579
 Catpixelart.png::CompressedTexture2D::9006062310067575795::1714407579::1714407579::1::::<><>::
@@ -367,8 +386,8 @@ Catpixelart.png::CompressedTexture2D::9006062310067575795::1714407579::171440757
 ::res://Puzzle/Scenes/Board/::1714407579
 board.gd::GDScript::-1::1714407579::0::1::::<>Control<>::
 board.tscn::PackedScene::5740896651010713690::1714407579::0::1::::<><>::res://Puzzle/Scenes/Board/board.gd<>uid://cbvu2x25v4n0d::::res://Puzzle/Scenes/Tile/Tile.tscn
-::res://Puzzle/Scenes/Tile/::1714407902
-Tile.gd::GDScript::-1::1714407902::0::1::::<>TextureButton<>::
+::res://Puzzle/Scenes/Tile/::1714426434
+Tile.gd::GDScript::-1::1714426434::0::1::::<>TextureButton<>::
 Tile.tscn::PackedScene::4887645951289305281::1714407579::0::1::::<><>::res://Puzzle/Scenes/Tile/Tile.gd<>uid://d1kusbgujhynr::::res://Puzzle/Assets/Catpixelart.png
 ::res://RiddlePuzzle/::1714407579
 ::res://RiddlePuzzle/AssetsforRiddle/::1714407579

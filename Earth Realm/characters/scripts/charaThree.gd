@@ -1,11 +1,9 @@
 extends CharacterBody2D
 
 const GRAVITY : int = 1000
-@export var speed : int = 2000
-@export var jumpVert : int = -400
+@export var speed : int = 10000
+@export var jumpVert : int = -500
 @export var jumpHoriz : int = 100
-@export var dash : int = 200
-@export var roll : int = 300
 @export var maxhp : int = 1000
 var charaDead : bool = false
 var currenthp : int = 1000
@@ -13,36 +11,45 @@ var fallVel : int = 5
 var direction : int = 0
 var charaAttack : bool = false
 var enemyAttack : bool = false
+var attackCD : bool = false
+var damageCD : bool = false
 var coyote_frames : int = 6
 var coyote : bool = false 
 var last_floor : bool = false 
 var damage : int = 100
 
-@onready var anim : AnimatedSprite2D = $charaOneanim
+@onready var anim : AnimatedSprite2D = $charaThreeanim
+@onready var jumpTimer : Timer = $jumpTimer
 @onready var idlecollS : CollisionShape2D = $idlecollS
-@onready var rollcollS : CollisionShape2D = $rollcollS 
+@onready var lightBox : CollisionShape2D = $charaBox/hitBoxMagicLight
+@onready var heavyBox : CollisionShape2D = $charaBox/hitBoxMagicHeavy
 @onready var hurtanim : AnimationPlayer = $hurtanim
-@onready var coyoteTimer : Timer = $CoyoteTimer
+@onready var coyoteTimer : Timer = $coyoteTimer
 @onready var hpLabel : Label = $hpLabel
 @onready var hpBar : ProgressBar = $hpBar
 @onready var atkTimer : Timer = $attackTimer
+@onready var dmgTimer : Timer = $damageTimer
+@onready var rollTimer : Timer = $rollTimer
+@onready var dashTimer : Timer = $dashTimer
 
 
-func _ready():
+func _ready() -> void:
 	updatehpUI()
 	coyoteTimer.wait_time = coyote_frames / 60.0
+	atkTimer.wait_time = 0.5
+	dmgTimer.wait_time = 0.5
+	jumpTimer.wait_time = 0.4
 	
 	
 	
 	
-func _physics_process(delta : float):
+func _physics_process(delta : float) -> void:
 	CharaFall(delta)
 	CharaIdle(delta)
 	CharaWalk(delta)
 	CharaJump(delta)
-	CharaSlide(delta)
-	CharaSword(delta)
-	CharaBow(delta)
+	CharaSwordLight(delta)
+	CharaSwordHeavy(delta)
 	CharaDamage(delta)
 	CharaDeath(delta)
 	
@@ -63,19 +70,21 @@ func CharaFall(delta : float) -> void:
 
 
 func CharaIdle(delta : float) -> void:
-	if is_on_floor() && direction == 0:
+	if attackCD == false && is_on_floor() && direction == 0:
 		anim.play("idle")
 
 
 
 	
 func CharaWalk(delta : float) -> void:
-	if Input.is_action_pressed("moveLeft"):
-		anim.play("walk")
+	if Input.is_action_pressed("moveLeft") && !attackCD:
+		if is_on_floor():
+			anim.play("walk")
 		direction = -1
 		velocity.x = direction * speed * delta
-	elif Input.is_action_pressed("moveRight"):
-		anim.play("walk")
+	elif Input.is_action_pressed("moveRight") && !attackCD:
+		if is_on_floor():
+			anim.play("walk")
 		direction = 1
 		velocity.x = direction * speed * delta
 	else:
@@ -89,7 +98,7 @@ func CharaWalk(delta : float) -> void:
 
 
 func CharaJump(delta : float) -> void:
-	if Input.is_action_just_pressed("jump") and (is_on_floor() or coyote):
+	if !attackCD && Input.is_action_just_pressed("jump") and (is_on_floor() or coyote):
 		velocity.y = jumpVert
 		anim.play("jump")
 		velocity.x = direction * jumpHoriz * delta
@@ -107,32 +116,33 @@ func _on_coyote_timer_timeout() -> void:
 	
 	
 	
-func CharaSlide(delta : float) -> void:
-	if Input.is_action_just_pressed("dash"):
-		velocity.x = direction * dash
-		anim.play("dash")
 	
 	
 	
 	
-func CharaSword(delta : float) -> void:
-	if Input.is_action_just_pressed("sword") && is_on_floor():
-		charaAttack = true
+func CharaSwordLight(delta : float) -> void:
+	if !attackCD && Input.is_action_just_pressed("magicLight") && is_on_floor() && direction == 0:
 		atkTimer.start()
-		atkTimer.wait_time = 0.5
-		anim.play("sword")
-	
-func CharaBow(delta : float) -> void:
-	if Input.is_action_just_pressed("magic") && is_on_floor():
 		charaAttack = true
+		if charaAttack == true:
+			lightBox.set_deferred("Disabled", false)
+		attackCD = true
+		anim.play("magicLight")
+	
+func CharaSwordHeavy(delta : float) -> void:
+	if !attackCD && Input.is_action_just_pressed("magicHeavy") && is_on_floor() && direction == 0:
 		atkTimer.start()
-		atkTimer.wait_time = 0.5
-		anim.play("magic")
+		charaAttack = true
+		if charaAttack == true:
+			heavyBox.set_deferred("Disabled", false)
+		attackCD = true
+		anim.play("magicHeavy")
 
 
-func _on_attack_timer_timeout():
+func _on_attack_timer_timeout() -> void:
 	atkTimer.stop()
 	charaAttack = false
+	attackCD = false
 
 func _on_hurtbox_body_entered(body) -> void:
 	if body.has_method("enemy"):
@@ -156,7 +166,7 @@ func updatehpUI() -> void:
 
 
 func hpLabelSet() -> void:
-	hpLabel.text = "Health: %s" % currenthp
+	hpLabel.text = "HP: %s" % currenthp
 
 
 func hpBarSet() -> void:
@@ -166,12 +176,19 @@ func hpBarSet() -> void:
 	
 
 func CharaDamage(delta : float) -> void:
-	if Input.is_action_just_pressed("sword") || enemyAttack == true:
+	if damageCD == false && enemyAttack == true:
+		dmgTimer.start()
+		damageCD = true
 		currenthp -= damage
 	updatehpUI()
 
+func _on_damage_timer_timeout() -> void:
+	dmgTimer.stop()
+	enemyAttack = false
+	damageCD = false
+
 func CharaDeath(delta : float) -> void:
-	if maxhp == 0:
+	if currenthp == 0:
 		charaDead = true
 		anim.play("death")
 

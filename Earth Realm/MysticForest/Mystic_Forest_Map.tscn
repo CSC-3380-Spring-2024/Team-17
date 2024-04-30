@@ -2363,5 +2363,6 @@ position = Vector2(7368, 189)
 
 [node name="charaOne" parent="Player" instance=ExtResource("11_x2r41")]
 position = Vector2(100, 200)
+collision_mask = 1
 
 [editable path="Player/charaOne"]
