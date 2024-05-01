@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxr56r3gl43jt"]
+
+[ext_resource type="Script" path="res://Node2D.gd" id="1_b6b3n"]
+[ext_resource type="Texture2D" uid="uid://b46x148u8uhx3" path="res://Pause Screen.jpg" id="2_gv1rv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f43oe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0r265"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_b6b3n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("2_gv1rv")
+
+[node name="Resume" type="Button" parent="."]
+offset_left = 296.0
+offset_top = 307.0
+offset_right = 574.0
+offset_bottom = 453.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f43oe")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_f43oe")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_f43oe")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_f43oe")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_f43oe")
+
+[node name="Main Menu" type="Button" parent="."]
+offset_left = 596.0
+offset_top = 306.0
+offset_right = 825.0
+offset_bottom = 449.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0r265")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0r265")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0r265")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_0r265")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0r265")
+
+[connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]
