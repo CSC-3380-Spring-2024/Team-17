@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dagigi1ckud72"]
+[gd_scene load_steps=10 format=3 uid="uid://dagigi1ckud72"]
 
 [ext_resource type="Texture2D" uid="uid://bs1532edp0dqb" path="res://EarthRealmlvl2/Assetsforlvl2/Adve/tiles_preview.png" id="1_yr34e"]
 [ext_resource type="PackedScene" uid="uid://yr5jwd5foxil" path="res://EarthRealmlvl2/Platforms/moving_platform_up_down.tscn" id="3_qgj7l"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://cas7xi871sxl0" path="res://EarthRealmlvl1/Enemies/Slime/enemy_slime.tscn" id="5_d7pce"]
 [ext_resource type="PackedScene" uid="uid://du105rib5n7oj" path="res://EarthRealmlvl2/Riddlelvl2/Riddle2Collectable/riddle_collectable_lvl2.tscn" id="6_w8c3a"]
 [ext_resource type="PackedScene" uid="uid://iuv22mo8y0q3" path="res://EarthRealmlvl2/Pits_lvl2/pit_lvl2.tscn" id="7_7ssro"]
-[ext_resource type="PackedScene" uid="uid://ng3u3nsmbe71" path="res://character/characters/scenes/chara_one.tscn" id="7_o4m0k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hi0j6"]
 texture = ExtResource("1_yr34e")
@@ -15230,9 +15229,6 @@ position = Vector2(-141, 38)
 position = Vector2(294, 41)
 
 [node name="Player" type="Node2D" parent="."]
-
-[node name="charaOne" parent="Player" instance=ExtResource("7_o4m0k")]
-position = Vector2(1453, -1743)
 
 [node name="PaperRiddle" parent="." instance=ExtResource("6_w8c3a")]
 position = Vector2(1580, -1719)

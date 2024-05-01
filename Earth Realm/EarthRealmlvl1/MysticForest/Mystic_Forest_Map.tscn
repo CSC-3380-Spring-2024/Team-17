@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://301u56yytnq1"]
+[gd_scene load_steps=19 format=3 uid="uid://301u56yytnq1"]
 
 [ext_resource type="PackedScene" uid="uid://xyb3vsabuedp" path="res://EarthRealmlvl1/MovingPlatforms/moving_platforms.tscn" id="3_2ui0q"]
 [ext_resource type="PackedScene" uid="uid://b82qvhwh5a2ti" path="res://EarthRealmlvl1/MovingPlatforms/moving_platform_r_down_up.tscn" id="4_guwhk"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://bmgqqjpf26mju" path="res://EarthRealmlvl1/Enemies/Tronchungo/enemy_tronchungo.tscn" id="11_tluxn"]
 [ext_resource type="PackedScene" uid="uid://b8vh62pslfc61" path="res://EarthRealmlvl1/Enemies/NightBorne/enemy_night_borne.tscn" id="12_7mr4s"]
 [ext_resource type="PackedScene" uid="uid://cpqc7pj003gaa" path="res://EarthRealmlvl1/Pits/bottomless_pit.tscn" id="12_cl2x4"]
-[ext_resource type="PackedScene" uid="uid://ng3u3nsmbe71" path="res://character/characters/scenes/chara_one.tscn" id="12_u6uux"]
 [ext_resource type="PackedScene" uid="uid://ba1hsj3kfbhmy" path="res://EarthRealmlvl1/Enemies/Archer/enemy_archer.tscn" id="12_u17fh"]
 [ext_resource type="AudioStream" uid="uid://b6kasqm8khwp6" path="res://EarthRealmlvl1/Assets/Music/WE Light Outside Rain 1.wav" id="13_8rack"]
 [ext_resource type="PackedScene" uid="uid://vymawsiv0dq7" path="res://EarthRealmlvl1/Pits/mini_pit.tscn" id="13_rcpn5"]
@@ -2138,10 +2137,13 @@ layer_1/tile_data = PackedInt32Array(1441792, 393220, 268435457, 1507328, 393220
 [node name="Left_Down_Up" type="Node" parent="MovingPlatforms"]
 
 [node name="MovingPlatform-RDownUp3" parent="MovingPlatforms/Left_Down_Up" instance=ExtResource("4_guwhk")]
-position = Vector2(5511, 479)
+position = Vector2(5340, 487)
+
+[node name="MovingPlatform-RDownUp4" parent="MovingPlatforms/Left_Down_Up" instance=ExtResource("4_guwhk")]
+position = Vector2(5869, 328)
 
 [node name="MovingPlatform-RDownUp2" parent="MovingPlatforms/Left_Down_Up" instance=ExtResource("4_guwhk")]
-position = Vector2(5732, 751)
+position = Vector2(5638, 563)
 
 [node name="MovingPlatform-RDownUp" parent="MovingPlatforms/Left_Down_Up" instance=ExtResource("4_guwhk")]
 position = Vector2(4801, 513)
@@ -2149,7 +2151,7 @@ position = Vector2(4801, 513)
 [node name="Right_Up_Down" type="Node" parent="MovingPlatforms"]
 
 [node name="MovingPlatform-LUPR3" parent="MovingPlatforms/Right_Up_Down" instance=ExtResource("3_2ui0q")]
-position = Vector2(5663, 542)
+position = Vector2(5758, 518)
 
 [node name="MovingPlatform-LUPR2" parent="MovingPlatforms/Right_Up_Down" instance=ExtResource("3_2ui0q")]
 position = Vector2(4913, 596)
@@ -2325,9 +2327,6 @@ position = Vector2(378, 22)
 position = Vector2(7593, 353)
 
 [node name="Player" type="Node2D" parent="."]
-
-[node name="charaOne" parent="Player" groups=["Player"] instance=ExtResource("12_u6uux")]
-position = Vector2(7810, 193)
 
 [node name="Rain" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("13_8rack")

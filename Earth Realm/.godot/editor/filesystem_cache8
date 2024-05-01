@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714494651
+::res://::1714524049
 icon.svg::CompressedTexture2D::2995219347521462331::1709750338::1711691897::1::::<><>::
 Main.gd::GDScript::-1::1712465515::0::1::::<>Node2D<>::
 main.tscn::PackedScene::2509215929056746046::1713920522::0::1::::<><>::res://Main.gd<>uid://biw53b0vsuj8v::::res://icon.svg
@@ -161,11 +161,11 @@ TX Struct.png::CompressedTexture2D::284802678041057953::1714163843::1714163843::
 TX Tileset Grass.png::CompressedTexture2D::3668883976558682835::1714163843::1714163843::1::::<><>::
 TX Tileset Stone Ground.png::CompressedTexture2D::1299052221874490713::1714163843::1714163843::1::::<><>::
 TX Tileset Wall.png::CompressedTexture2D::6998391627416720639::1714163843::1714163843::1::::<><>::
-::res://character/characters/scenes/::1714494979
+::res://character/characters/scenes/::1714512755
 boss_One.gd::GDScript::-1::1714163843::0::1::::<>CharacterBody2D<>::
 boss_One.tscn::PackedScene::3614084318286147314::1714163843::0::1::::<><>::res://scenes/boss_One.gd
 chara_one.tscn::PackedScene::926578517064518706::1714493282::0::1::::<><>::res://character/characters/scripts/charaOne.gd<>uid://dwl6kuftanhh3::::res://character/characters/scenes/chara_one_hit_shader.tres<>uid://2xyoq2gp2kgs::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Dash.png<>uid://duo885wttv6a6::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Death.png<>uid://bm6eha8ca363i::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Fall.png<>uid://bffcsdma8nyd4::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Hit.png<>uid://c0nup2lsi1ldg::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Idle.png<>uid://cmpe0wxmnp008::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Jump.png<>uid://bx2hvdqi5uo5c::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Attack2NoMovement.png<>uid://cdonvuelktn7d::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Roll.png<>uid://dy0xhjxtawct7::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_AttackNoMovement.png<>uid://cduqi44xam3cg::::res://character/characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Run.png
-chara_one_hit_shader.tres::VisualShader::8728025910180299822::1714494979::0::1::::<><>::
+chara_one_hit_shader.tres::VisualShader::8728025910180299822::1714512755::0::1::::<><>::
 chara_two.gd::GDScript::-1::1714163843::0::1::::<>CharacterBody2D<>::
 chara_two.tscn::PackedScene::3744326627192285544::1714163843::0::1::::<><>::res://scenes/chara_two.gd
 ::res://character/characters/scripts/::1714478350
@@ -336,16 +336,16 @@ worm_2.tscn::PackedScene::7413172646145649084::1714014366::0::1::::<><>::uid://d
 ::res://EarthRealmlvl1/MovingPlatforms/::1714014353
 moving_platforms.tscn::PackedScene::1664000319793242677::1714014353::0::1::::<><>::uid://cx1v4ub40rll::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png
 moving_platform_r_down_up.tscn::PackedScene::4759400098671367994::1714014353::0::1::::<><>::uid://cx1v4ub40rll::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png
-::res://EarthRealmlvl1/MysticForest/::1714497739
+::res://EarthRealmlvl1/MysticForest/::1714513454
 Mystic Forest.gd::GDScript::-1::1714478776::0::1::::<>ParallaxBackground<>::
-mystic_forest.gdshader::Shader::-1::1714497739::0::1::::<><>::
+mystic_forest.gdshader::Shader::-1::1714513454::0::1::::<><>::
 mystic_forest.tscn::PackedScene::5162453901501970199::1714102145::0::1::::<><>::res://EarthRealmlvl1/MysticForest/Mystic Forest.gd<>uid://el3bqck5i52::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png<>uid://bydu6rxy1wnkm::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png<>uid://bn1hg77rihfkg::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png<>res://EarthRealmlvl1/MysticForest/mystic_forest.gdshader
-Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1714497355::0::1::::<><>::uid://xyb3vsabuedp::::res://EarthRealmlvl1/MovingPlatforms/moving_platforms.tscn<>uid://b82qvhwh5a2ti::::res://EarthRealmlvl1/MovingPlatforms/moving_platform_r_down_up.tscn<>uid://cfsy4j565ash8::::res://EarthRealmlvl1/MysticForest/mystic_forest.tscn<>uid://rlx1txhvu1ru::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://ddu84ugmedagy::::res://EarthRealmlvl1/Enemies/Worm/worm_2.tscn<>uid://bmgqqjpf26mju::::res://EarthRealmlvl1/Enemies/Tronchungo/enemy_tronchungo.tscn<>uid://b8vh62pslfc61::::res://EarthRealmlvl1/Enemies/NightBorne/enemy_night_borne.tscn<>uid://cpqc7pj003gaa::::res://EarthRealmlvl1/Pits/bottomless_pit.tscn<>uid://ng3u3nsmbe71::::res://character/characters/scenes/chara_one.tscn<>uid://ba1hsj3kfbhmy::::res://EarthRealmlvl1/Enemies/Archer/enemy_archer.tscn<>uid://b6kasqm8khwp6::::res://EarthRealmlvl1/Assets/Music/WE Light Outside Rain 1.wav<>uid://vymawsiv0dq7::::res://EarthRealmlvl1/Pits/mini_pit.tscn<>uid://cvw0k8b8apdkt::::res://EarthRealmlvl1/RiddlePuzzle/RiddleCollectable/paper.tscn
-::res://EarthRealmlvl1/Pits/::1714493292
+Mystic_Forest_Map.tscn::PackedScene::2018513048119152966::1714512875::0::1::::<><>::uid://xyb3vsabuedp::::res://EarthRealmlvl1/MovingPlatforms/moving_platforms.tscn<>uid://b82qvhwh5a2ti::::res://EarthRealmlvl1/MovingPlatforms/moving_platform_r_down_up.tscn<>uid://cfsy4j565ash8::::res://EarthRealmlvl1/MysticForest/mystic_forest.tscn<>uid://rlx1txhvu1ru::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/Terrain-and-Props-OLD.png<>uid://cx1v4ub40rll::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png<>uid://ddu84ugmedagy::::res://EarthRealmlvl1/Enemies/Worm/worm_2.tscn<>uid://bmgqqjpf26mju::::res://EarthRealmlvl1/Enemies/Tronchungo/enemy_tronchungo.tscn<>uid://b8vh62pslfc61::::res://EarthRealmlvl1/Enemies/NightBorne/enemy_night_borne.tscn<>uid://cpqc7pj003gaa::::res://EarthRealmlvl1/Pits/bottomless_pit.tscn<>uid://ng3u3nsmbe71::::res://character/characters/scenes/chara_one.tscn<>uid://ba1hsj3kfbhmy::::res://EarthRealmlvl1/Enemies/Archer/enemy_archer.tscn<>uid://b6kasqm8khwp6::::res://EarthRealmlvl1/Assets/Music/WE Light Outside Rain 1.wav<>uid://vymawsiv0dq7::::res://EarthRealmlvl1/Pits/mini_pit.tscn<>uid://cvw0k8b8apdkt::::res://EarthRealmlvl1/RiddlePuzzle/RiddleCollectable/paper.tscn
+::res://EarthRealmlvl1/Pits/::1714498901
 bottomless_pit.gd::GDScript::-1::1714478603::0::1::::<>Area2D<>::
 bottomless_pit.tscn::PackedScene::5858883448336027240::1714493292::0::1::::<><>::res://EarthRealmlvl1/Pits/bottomless_pit.gd
 mini_pit.gd::GDScript::-1::1714479108::0::1::::<>Area2D<>::
-mini_pit.tscn::PackedScene::1524240570122028004::1714479155::0::1::::<><>::res://EarthRealmlvl1/Pits/mini_pit.gd
+mini_pit.tscn::PackedScene::1524240570122028004::1714498901::0::1::::<><>::res://EarthRealmlvl1/Pits/mini_pit.gd
 ::res://EarthRealmlvl1/RiddlePuzzle/::1714492552
 ::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/::1714014381
 ButtonBackground.png::CompressedTexture2D::3734164850029075541::1713999423::1714014381::1::::<><>::
@@ -359,15 +359,17 @@ Message.gd::GDScript::-1::1714473089::0::1::::<>NinePatchRect<>::
 Paper.gd::GDScript::-1::1714102189::0::1::::<>NinePatchRect<>::
 Riddle.tscn::PackedScene::1663469873359202059::1714493288::0::1::::<><>::uid://c0jvuuxjq06wm::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/MenuBackground.png<>uid://bydu6rxy1wnkm::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png<>uid://el3bqck5i52::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png<>res://EarthRealmlvl1/RiddlePuzzle/Scenes/Paper.gd<>uid://bt4q418jqc5fc::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/m5x7.ttf<>uid://bn1hg77rihfkg::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png<>res://EarthRealmlvl1/MysticForest/mystic_forest.gdshader<>uid://b6kasqm8khwp6::::res://EarthRealmlvl1/Assets/Music/WE Light Outside Rain 1.wav
 Riddle_Wrong.tscn::PackedScene::5918148878976831534::1714493238::0::1::::<><>::uid://bydu6rxy1wnkm::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png<>res://EarthRealmlvl1/RiddlePuzzle/Scenes/Message.gd<>uid://el3bqck5i52::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png<>res://EarthRealmlvl1/MysticForest/mystic_forest.gdshader<>uid://bn1hg77rihfkg::::res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png<>uid://bt4q418jqc5fc::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/m5x7.ttf<>uid://btg4fc3n27v6t::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/ButtonBackground.png<>uid://b6kasqm8khwp6::::res://EarthRealmlvl1/Assets/Music/WE Light Outside Rain 1.wav
-::res://EarthRealmlvl2/::1714497843
+::res://EarthRealmlvl2/::1714497856
 ::res://EarthRealmlvl2/Assetsforlvl2/::1714473693
 ::res://EarthRealmlvl2/Assetsforlvl2/Adve/::1714473579
 map_preview.png::CompressedTexture2D::6310457295462797257::1714473539::1714473579::1::::<><>::
 tiles.png::CompressedTexture2D::3327090646006437457::1713369620::1713369620::1::::<><>::
 tiles_preview.png::CompressedTexture2D::3705366627262578629::1713369420::1713369420::1::::<><>::
-::res://EarthRealmlvl2/Level 2/::1714497739
-Level2.tscn::PackedScene::7172145228765963751::1714497739::0::1::::<><>::uid://bs1532edp0dqb::::res://EarthRealmlvl2/Assetsforlvl2/Adve/tiles_preview.png<>uid://yr5jwd5foxil::::res://EarthRealmlvl2/Platforms/moving_platform_up_down.tscn<>uid://h464cy4q1s6h::::res://EarthRealmlvl2/Platforms/main_platform.tscn<>uid://cas7xi871sxl0::::res://EarthRealmlvl1/Enemies/Slime/enemy_slime.tscn<>uid://du105rib5n7oj::::res://EarthRealmlvl2/Riddlelvl2/Riddle2Collectable/riddle_collectable_lvl2.tscn<>uid://ng3u3nsmbe71::::res://character/characters/scenes/chara_one.tscn
-::res://EarthRealmlvl2/pits/::1714497843
+::res://EarthRealmlvl2/Level 2/::1714512875
+Level2.tscn::PackedScene::7172145228765963751::1714512875::0::1::::<><>::uid://bs1532edp0dqb::::res://EarthRealmlvl2/Assetsforlvl2/Adve/tiles_preview.png<>uid://yr5jwd5foxil::::res://EarthRealmlvl2/Platforms/moving_platform_up_down.tscn<>uid://h464cy4q1s6h::::res://EarthRealmlvl2/Platforms/main_platform.tscn<>uid://cas7xi871sxl0::::res://EarthRealmlvl1/Enemies/Slime/enemy_slime.tscn<>uid://du105rib5n7oj::::res://EarthRealmlvl2/Riddlelvl2/Riddle2Collectable/riddle_collectable_lvl2.tscn<>uid://iuv22mo8y0q3::::res://EarthRealmlvl2/Pits_lvl2/pit_lvl2.tscn<>uid://ng3u3nsmbe71::::res://character/characters/scenes/chara_one.tscn
+::res://EarthRealmlvl2/Pits_lvl2/::1714512755
+pit_lvl2.gd::GDScript::-1::1714512755::0::1::::<>Area2D<>::
+pit_lvl2.tscn::PackedScene::604123014818257200::1714501762::0::1::::<><>::res://EarthRealmlvl2/Pits_lvl2/pit_lvl2.gd
 ::res://EarthRealmlvl2/Platforms/::1713934175
 main_platform.tscn::PackedScene::553123018595021277::1713934175::0::1::::<><>::uid://bs1532edp0dqb::::res://EarthRealmlvl2/Assetsforlvl2/Adve/tiles_preview.png
 moving_platform_up_down.tscn::PackedScene::1721465412578369335::1713932060::0::1::::<><>::uid://bs1532edp0dqb::::res://EarthRealmlvl2/Assetsforlvl2/Adve/tiles_preview.png
@@ -375,11 +377,11 @@ moving_platform_up_down.tscn::PackedScene::1721465412578369335::1713932060::0::1
 ::res://EarthRealmlvl2/Riddlelvl2/Riddle2Collectable/::1714497739
 riddle_collectable_lvl2.gd::GDScript::-1::1714497719::0::1::::<>Area2D<>::
 riddle_collectable_lvl2.tscn::PackedScene::8618285149423275213::1714497739::0::1::::<><>::uid://c0jvuuxjq06wm::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/MenuBackground.png<>res://EarthRealmlvl2/Riddlelvl2/Riddle2Collectable/riddle_collectable_lvl2.gd
-::res://EarthRealmlvl2/Riddlelvl2/scenes/::1714494651
-Message.gd::GDScript::-1::1714473010::0::1::::<>NinePatchRect<>::
-Paper.gd::GDScript::-1::1714473010::0::1::::<>NinePatchRect<>::
-riddle_earth_lvl2.tscn::PackedScene::8091340332880951649::1714494649::0::1::::<><>::uid://c0jvuuxjq06wm::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/MenuBackground.png<>uid://cv53kr861wfjt::::res://EarthRealmlvl2/Assetsforlvl2/Adve/map_preview.png<>res://EarthRealmlvl2/Riddlelvl2/scenes/Paper.gd<>uid://bt4q418jqc5fc::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/m5x7.ttf
-riddle_earth_lvl2_wrong.tscn::PackedScene::6137543841665730398::1714494647::0::1::::<><>::uid://btg4fc3n27v6t::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/ButtonBackground.png<>uid://cv53kr861wfjt::::res://EarthRealmlvl2/Assetsforlvl2/Adve/map_preview.png<>res://EarthRealmlvl2/Riddlelvl2/scenes/Message.gd<>uid://bt4q418jqc5fc::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/m5x7.ttf
+::res://EarthRealmlvl2/Riddlelvl2/scenes/::1714502532
+Message.gd::GDScript::-1::1714502532::0::1::::<>NinePatchRect<>::
+Paper.gd::GDScript::-1::1714502492::0::1::::<>NinePatchRect<>::
+riddle_earth_lvl2.tscn::PackedScene::8091340332880951649::1714502532::0::1::::<><>::uid://c0jvuuxjq06wm::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/MenuBackground.png<>uid://cv53kr861wfjt::::res://EarthRealmlvl2/Assetsforlvl2/Adve/map_preview.png<>res://EarthRealmlvl2/Riddlelvl2/scenes/Paper.gd<>uid://bt4q418jqc5fc::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/m5x7.ttf
+riddle_earth_lvl2_wrong.tscn::PackedScene::6137543841665730398::1714502532::0::1::::<><>::uid://btg4fc3n27v6t::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/ButtonBackground.png<>uid://cv53kr861wfjt::::res://EarthRealmlvl2/Assetsforlvl2/Adve/map_preview.png<>res://EarthRealmlvl2/Riddlelvl2/scenes/Message.gd<>uid://bt4q418jqc5fc::::res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/m5x7.ttf
 ::res://Scripts/::1713200800
 ::res://Scripts/StateMachine/::1713337682
 node_finite_state_machine.gd::GDScript::-1::1713337682::0::1::::NodeFiniteStateMachine<>Node<>::
