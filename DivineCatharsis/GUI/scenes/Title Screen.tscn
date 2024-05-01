@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://d3iix7dfrrs8u"]
+
+[ext_resource type="Script" path="res://GUI/scripts/Title Screen.gd" id="1_baady"]
+[ext_resource type="Texture2D" uid="uid://dcewh1wotbdcf" path="res://GUI/assets/Title Screen.jpg" id="2_ib3mi"]
+[ext_resource type="AudioStream" uid="uid://dpapteaifjnjs" path="res://GUI/assets/Smooth As Glass.ogg" id="3_en648"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ccdo2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_48dv1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_humq1"]
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource("1_baady")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.748, 324.217)
+scale = Vector2(0.998701, 1.00242)
+texture = ExtResource("2_ib3mi")
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 530.0
+offset_top = 498.0
+offset_right = 621.0
+offset_bottom = 586.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ccdo2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ccdo2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ccdo2")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ccdo2")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ccdo2")
+
+[node name="Instructions" type="Button" parent="."]
+offset_left = 611.0
+offset_top = 356.0
+offset_right = 775.0
+offset_bottom = 457.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_48dv1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_48dv1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_48dv1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_48dv1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_48dv1")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 373.0
+offset_top = 364.0
+offset_right = 535.0
+offset_bottom = 462.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_humq1")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_humq1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_humq1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_humq1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_humq1")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_en648")
+volume_db = 0.4
+autoplay = true
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Instructions" to="." method="_on_instructions_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_load_game_pressed"]

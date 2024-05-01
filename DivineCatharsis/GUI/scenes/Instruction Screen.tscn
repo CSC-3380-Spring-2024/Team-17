@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://d4j78sj8wml8u"]
+
+[ext_resource type="Script" path="res://GUI/scripts/Instruction Screen.gd" id="1_cyjll"]
+[ext_resource type="Texture2D" uid="uid://k6ww7gmjrnf0" path="res://GUI/assets/Instructions.jpg" id="1_i6btl"]
+[ext_resource type="AudioStream" uid="uid://dpapteaifjnjs" path="res://GUI/assets/Smooth As Glass.ogg" id="3_56amg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d5cmt"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_cyjll")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577.596, 324.171)
+scale = Vector2(1.0007, 1.00256)
+texture = ExtResource("1_i6btl")
+
+[node name="Go Back" type="Button" parent="."]
+offset_left = 494.0
+offset_top = 431.0
+offset_right = 661.0
+offset_bottom = 487.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d5cmt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_d5cmt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_d5cmt")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_d5cmt")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_d5cmt")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_56amg")
+autoplay = true
+
+[connection signal="pressed" from="Go Back" to="." method="_on_go_back_pressed"]
