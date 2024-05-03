@@ -31,8 +31,6 @@ var damage : int = 100
 @onready var hpBar : ProgressBar = $hpBar
 @onready var atkTimer : Timer = $attackTimer
 @onready var dmgTimer : Timer = $damageTimer
-@onready var rollTimer : Timer = $rollTimer
-@onready var dashTimer : Timer = $dashTimer
 
 
 func _ready() -> void:

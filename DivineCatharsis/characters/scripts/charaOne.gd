@@ -17,6 +17,7 @@ var coyote_frames : int = 6
 var coyote : bool = false 
 var last_floor : bool = false 
 var damage : int = 100
+var damage_amount : int = 15
 
 @onready var anim : AnimatedSprite2D = $charaOneanim
 @onready var jumpTimer : Timer = $jumpTimer
@@ -29,8 +30,6 @@ var damage : int = 100
 @onready var hpBar : ProgressBar = $hpBar
 @onready var atkTimer : Timer = $attackTimer
 @onready var dmgTimer : Timer = $damageTimer
-@onready var rollTimer : Timer = $rollTimer
-@onready var dashTimer : Timer = $dashTimer
 
 
 func _ready() -> void:
@@ -187,10 +186,16 @@ func _on_damage_timer_timeout() -> void:
 	enemyAttack = false
 	damageCD = false
 
+func get_damage_amount() -> int:
+	return damage_amount
+
+
 func CharaDeath(delta : float) -> void:
 	if currenthp == 0:
 		charaDead = true
+		if charaDead == true:
+			get_tree().reload_current_scene()
 		anim.play("death")
 
-func CharaRespawn(delta : float) -> void:
+func player() -> void:
 	pass
