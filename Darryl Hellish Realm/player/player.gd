@@ -1,12 +1,12 @@
 extends CharacterBody2D
-@onready var animated_sprite_2d = $AnimatedSprite2D
+@onready var animated_sprite_2d :AnimatedSprite2D = $AnimatedSprite2D
 
 
-const GRAVITY = 1000
+const GRAVITY : int = 1000
 @export var speed : int = 300
 @export var jump : int = -500
 @export var jump_horizontal : int = 100
-
+var delta : float
 
 enum State { Idle, Run, Jump}
 
@@ -49,7 +49,7 @@ func player_run(delta : float):
 	if !is_on_floor():
 		return
 	
-	var direction = input_movement()
+	var direction : float = input_movement()
 	
 	if direction:
 		velocity.x = direction * speed
@@ -67,7 +67,7 @@ func player_jump(delta : float):
 		current_state = State.Jump
 
 	if !is_on_floor() and current_state == State.Jump:
-		var direction = input_movement()
+		var direction : float = input_movement()
 		velocity.x += direction * jump_horizontal * delta
 
 
