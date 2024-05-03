@@ -1,13 +1,13 @@
 extends NinePatchRect
 
-@onready var Fire = $VBoxContainer/Fire
-@onready var Echo = $VBoxContainer/Echo
-@onready var Shadow = $VBoxContainer/Shadow
-@onready var Lightning = $VBoxContainer/Lightning
-@onready var checkButton = $VBoxContainer/Check
+@onready var Fire : Button = $VBoxContainer/Fire
+@onready var Echo : Button = $VBoxContainer/Echo
+@onready var Shadow : Button = $VBoxContainer/Shadow
+@onready var Lightning : Button = $VBoxContainer/Lightning
+@onready var checkButton : Button = $VBoxContainer/Check
 
-var tracked = false
-var correct = false
+var tracked : bool = false
+var correct : bool = false
 var self_opened = false
 
 func _input(event):

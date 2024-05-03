@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://c5knobm8ynkiy"]
+
+[ext_resource type="Texture2D" uid="uid://c0jvuuxjq06wm" path="res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/MenuBackground.png" id="1_i0xmh"]
+[ext_resource type="FontFile" uid="uid://bt4q418jqc5fc" path="res://EarthRealmlvl1/RiddlePuzzle/AssetsforRiddle/m5x7.ttf" id="2_urgnl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w5tra"]
+size = Vector2(105, 22)
+
+[node name="FindMessage" type="Area2D"]
+
+[node name="FindRiddle" type="NinePatchRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = -10.5
+offset_right = 52.0
+offset_bottom = 10.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_i0xmh")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="FindRiddle"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = -8.5
+offset_right = 51.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="FindRiddle/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_fonts/font = ExtResource("2_urgnl")
+theme_override_font_sizes/font_size = 20
+text = "Find the Riddle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_w5tra")

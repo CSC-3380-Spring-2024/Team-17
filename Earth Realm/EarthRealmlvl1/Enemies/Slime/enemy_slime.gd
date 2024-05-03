@@ -97,10 +97,12 @@ func enemy_animations():
 func _on_timer_timeout():	
 	can_walk = true
 
+func enemy() -> void:
+	pass
 
 func _on_hurt_box_area_entered(area : Area2D):
 	print("Area Hurt box entered")
-	if area.get_parent().has_method("get_damaged_amount"):
+	if area.get_parent().has_method("get_damage_amount"):
 		var node = area.get_parent() as Node
 		health_amount -= node.damage
 		print("Health amount", health_amount)

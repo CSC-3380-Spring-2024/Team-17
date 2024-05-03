@@ -10,6 +10,7 @@ extends Area2D
 
 func _on_body_entered(body):
 	if "charaOne" in body.name:
+		
 		respawn()
 
 func respawn():

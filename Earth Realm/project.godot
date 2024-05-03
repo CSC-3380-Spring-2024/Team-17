@@ -17,7 +17,8 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/mode=3
+window/size/window_width_override=960
+window/size/window_height_override=540
 window/stretch/mode="viewport"
 
 [dotnet]
@@ -34,8 +35,7 @@ folder_colors={
 "res://EarthRealmlvl1/MysticForest/": "purple",
 "res://EarthRealmlvl1/RiddlePuzzle/": "green",
 "res://EarthRealmlvl2/": "yellow",
-"res://Scripts/": "purple",
-"res://TestCharacter/": "blue"
+"res://Scripts/": "purple"
 }
 
 [filesystem]

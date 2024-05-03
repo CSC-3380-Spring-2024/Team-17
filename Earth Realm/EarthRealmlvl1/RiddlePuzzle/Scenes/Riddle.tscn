@@ -96,7 +96,6 @@ grow_horizontal = 2
 [node name="Label" type="Label" parent="Paper/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 0
-size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.6, 0.6, 0.6, 1)
 theme_override_fonts/font = ExtResource("3_ect5o")

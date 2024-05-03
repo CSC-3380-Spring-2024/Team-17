@@ -98,10 +98,10 @@ func _on_timer_timeout():
 	can_walk = true
 
 
+
 func _on_hurtbox_area_entered(area : Area2D):
 	print("Hurt Box area entered")
-	#if area.get_parent().has_method("get_damaged_amount"):
-	if area.get_parent().has_method("CharaSwordLight"):
+	if area.get_parent().has_method("get_damage_amount"):
 		var node = area.get_parent() as Node
 		health_amount -= node.damage
 		print("Health amount", health_amount)
@@ -111,4 +111,7 @@ func _on_hurtbox_area_entered(area : Area2D):
 			enemy_tronchungo_death_effect_instance.global_position = global_position
 			get_parent().add_child(enemy_tronchungo_death_effect_instance)
 			queue_free()
+			
+func enemy() -> void:
+	pass
 	

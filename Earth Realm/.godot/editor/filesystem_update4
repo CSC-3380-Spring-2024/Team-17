@@ -1,6 +1,6 @@
 res://EarthRealmlvl1/MysticForest/Mystic_Forest_Map.tscn
 res://EarthRealmlvl2/Pits_lvl2/pit_lvl2.gd
-res://character/characters/scenes/chara_one_hit_shader.tres
 res://EarthRealmlvl1/MysticForest/mystic_forest.gdshader
-res://EarthRealmlvl1/RiddlePuzzle/Scenes/Paper.gd
+res://EarthRealmlvl1/Enemies/NightBorne/enemy_night_borne.tscn
+res://EarthRealmlvl1/Enemies/Worm/worm_2.tscn
 res://EarthRealmlvl2/Level 2/Level2.tscn

@@ -176,6 +176,8 @@ animations = [{
 }]
 
 [node name="enemy_nightborne_death_effect" type="AnimatedSprite2D"]
+position = Vector2(-0.999996, -1)
+scale = Vector2(2.0625, 1.9375)
 sprite_frames = SubResource("SpriteFrames_0nm1e")
 autoplay = "default"
 frame = 23
