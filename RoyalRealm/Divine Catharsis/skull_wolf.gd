@@ -34,3 +34,11 @@ func flip():
 func _ready():
 	if velocity.x != 0:
 		animation.play("Attack")
+		
+func _on_hurtbox_area_entered(area):
+	animation.play("Death")
+	
+func _on_body_entered(body):
+	if body.name == "user player":
+		animation.play("Death")
+		queue_free()
