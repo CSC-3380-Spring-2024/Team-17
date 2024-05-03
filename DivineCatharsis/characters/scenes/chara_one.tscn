@@ -1,7 +1,7 @@
-[gd_scene load_steps=68 format=3 uid="uid://ng3u3nsmbe71"]
+[gd_scene load_steps=70 format=3 uid="uid://ng3u3nsmbe71"]
 
 [ext_resource type="Script" path="res://characters/scripts/charaOne.gd" id="1_esgsd"]
-[ext_resource type="Shader" uid="uid://dwl6kuftanhh3" path="res://characters/scenes/chara_one_hit_shader.tres" id="2_bbvkj"]
+[ext_resource type="Shader" path="res://characters/scenes/chara_one_hit_shader.tres" id="2_bbvkj"]
 [ext_resource type="Texture2D" uid="uid://duo885wttv6a6" path="res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Death.png" id="3_ou3dw"]
 [ext_resource type="Texture2D" uid="uid://bm6eha8ca363i" path="res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Fall.png" id="4_6krkc"]
 [ext_resource type="Texture2D" uid="uid://bffcsdma8nyd4" path="res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Hit.png" id="5_q5h18"]
@@ -9,7 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://cmpe0wxmnp008" path="res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Jump.png" id="7_7djf0"]
 [ext_resource type="Texture2D" uid="uid://bx2hvdqi5uo5c" path="res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Attack2NoMovement.png" id="8_mxp5u"]
 [ext_resource type="Texture2D" uid="uid://dy0xhjxtawct7" path="res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_AttackNoMovement.png" id="10_qdlr4"]
+[ext_resource type="Script" path="res://characters/scripts/hitBoxSwordLight.gd" id="11_6froj"]
 [ext_resource type="Texture2D" uid="uid://cduqi44xam3cg" path="res://characters/assets/chara/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Run.png" id="11_ekasr"]
+[ext_resource type="Script" path="res://characters/scripts/hitBoxSwordHeavy.gd" id="12_ltgcr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0w80e"]
 size = Vector2(16, 37)
@@ -466,12 +468,14 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_vb6j5")
 disabled = true
 debug_color = Color(0, 1, 0, 0.419608)
+script = ExtResource("11_6froj")
 
 [node name="hitBoxSwordHeavy" type="CollisionShape2D" parent="charaBox"]
 position = Vector2(29, 42)
 shape = SubResource("CapsuleShape2D_nq0op")
 disabled = true
 debug_color = Color(0, 1, 0, 0.419608)
+script = ExtResource("12_ltgcr")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)

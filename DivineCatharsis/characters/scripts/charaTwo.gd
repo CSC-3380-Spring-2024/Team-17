@@ -1,4 +1,5 @@
 extends CharacterBody2D
+
 const GRAVITY : int = 1000
 @export var speed : int = 12000
 @export var jumpVert : int = -500
