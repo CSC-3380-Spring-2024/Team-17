@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bb0qojh40jmvm"]
+
+[ext_resource type="Script" path="res://main/Main.gd" id="1_j36yk"]
+[ext_resource type="PackedScene" uid="uid://cnkm6yffxty2" path="res://GUI/scenes/Fade_in_and_out_animations.tscn" id="2_1kw4h"]
+[ext_resource type="PackedScene" uid="uid://301u56yytnq1" path="res://Earth Realm/level 1/scenes/Mystic_Forest_Map.tscn" id="3_fckbm"]
+[ext_resource type="PackedScene" uid="uid://dagigi1ckud72" path="res://Earth Realm/level 2/scenes/Level2.tscn" id="4_miovc"]
+[ext_resource type="PackedScene" uid="uid://dqvo4c2erw6dt" path="res://Royal Realm/scenes/world.tscn" id="5_wk0w3"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_j36yk")
+
+[node name="GUI" type="Node2D" parent="."]
+
+[node name="Start" parent="GUI" instance=ExtResource("2_1kw4h")]
+
+[node name="Realms" type="Node2D" parent="."]
+
+[node name="Earth" type="Node2D" parent="Realms"]
+
+[node name="lvl1" type="Node2D" parent="Realms/Earth"]
+
+[node name="Level1" parent="Realms/Earth/lvl1" instance=ExtResource("3_fckbm")]
+
+[node name="lvl2" type="Node2D" parent="Realms/Earth"]
+
+[node name="Level2" parent="Realms/Earth/lvl2" instance=ExtResource("4_miovc")]
+
+[node name="Royal" type="Node2D" parent="Realms"]
+
+[node name="World" parent="Realms/Royal" instance=ExtResource("5_wk0w3")]

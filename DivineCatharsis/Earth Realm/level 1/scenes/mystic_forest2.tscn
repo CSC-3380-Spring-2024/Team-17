@@ -1,0 +1,90 @@
+[gd_scene load_steps=6 format=3 uid="uid://ctgim433h3awf"]
+
+[ext_resource type="Texture2D" uid="uid://bydu6rxy1wnkm" path="res://Earth Realm/level 1/assets/Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png" id="1_7s26i"]
+[ext_resource type="Texture2D" uid="uid://el3bqck5i52" path="res://Earth Realm/level 1/assets/Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png" id="3_1kkmo"]
+[ext_resource type="Shader" path="res://Earth Realm/level 1/scripts/mystic_forest.gdshader" id="4_up7au"]
+[ext_resource type="Texture2D" uid="uid://bn1hg77rihfkg" path="res://Earth Realm/level 1/assets/Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png" id="5_cy0gd"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_skdhe"]
+shader = ExtResource("4_up7au")
+shader_parameter/rain_amount = 600.0
+shader_parameter/near_rain_length = 0.068
+shader_parameter/far_rain_length = 0.046
+shader_parameter/near_rain_width = 0.205
+shader_parameter/far_rain_width = 0.36
+shader_parameter/near_rain_transparency = 0.383
+shader_parameter/far_rain_transparency = 0.411
+shader_parameter/rain_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+shader_parameter/base_rain_speed = 0.445
+shader_parameter/additional_rain_speed = 0.434
+shader_parameter/slant = 0.109
+
+[node name="MysticForest" type="ParallaxBackground"]
+
+[node name="fog" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(4000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="fog"]
+position = Vector2(2014.5, 497.5)
+scale = Vector2(1.96729, 2.4875)
+texture = ExtResource("1_7s26i")
+
+[node name="Sprite2D2" type="Sprite2D" parent="fog"]
+position = Vector2(6000, 497.5)
+scale = Vector2(1.96729, 2.4875)
+texture = ExtResource("1_7s26i")
+
+[node name="treeshadow" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="treeshadow"]
+show_behind_parent = true
+top_level = true
+texture_filter = 1
+texture_repeat = 1
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("3_1kkmo")
+centered = false
+flip_h = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="treeshadow"]
+show_behind_parent = true
+top_level = true
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(5766, 0)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("3_1kkmo")
+centered = false
+flip_h = true
+
+[node name="rain" type="ParallaxLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="rain"]
+show_behind_parent = true
+top_level = true
+material = SubResource("ShaderMaterial_skdhe")
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 12014.0
+offset_bottom = 946.0
+color = Color(1, 1, 1, 0)
+
+[node name="treeshadow2" type="ParallaxLayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="treeshadow2"]
+position = Vector2(2000, 484.5)
+scale = Vector2(2.074, 2.631)
+texture = ExtResource("5_cy0gd")
+flip_h = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="treeshadow2"]
+position = Vector2(6000, 484.5)
+scale = Vector2(2.074, 2.631)
+texture = ExtResource("5_cy0gd")
+flip_h = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="treeshadow2"]
+position = Vector2(10000, 485)
+scale = Vector2(2.074, 2.631)
+texture = ExtResource("5_cy0gd")
+flip_h = true

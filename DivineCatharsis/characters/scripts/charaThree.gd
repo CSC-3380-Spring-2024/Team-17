@@ -16,7 +16,8 @@ var damageCD : bool = false
 var coyote_frames : int = 6
 var coyote : bool = false 
 var last_floor : bool = false 
-var damage : int = 100
+var damage : int = 200
+var damage_amount : int = 0
 
 @onready var anim : AnimatedSprite2D = $charaThreeanim
 @onready var mlanim : AnimatedSprite2D = $charaBox/hitBoxMagicLight/magicLightanim
@@ -36,7 +37,7 @@ var damage : int = 100
 func _ready() -> void:
 	updatehpUI()
 	coyoteTimer.wait_time = coyote_frames / 60.0
-	atkTimer.wait_time = 0.5
+	atkTimer.wait_time = 0.7
 	dmgTimer.wait_time = 0.5
 	jumpTimer.wait_time = 0.4
 	
@@ -48,8 +49,8 @@ func _physics_process(delta : float) -> void:
 	CharaIdle(delta)
 	CharaWalk(delta)
 	CharaJump(delta)
-	CharaSwordLight(delta)
-	CharaSwordHeavy(delta)
+	CharaMagicLight(delta)
+	CharaMagicHeavy(delta)
 	CharaDamage(delta)
 	CharaDeath(delta)
 	
@@ -93,6 +94,8 @@ func CharaWalk(delta : float) -> void:
 		
 	if direction != 0:
 		anim.flip_h = false if direction > 0 else true
+		mlanim.flip_h = false if direction > 0 else true
+		mhanim.flip_h = false if direction > 0 else true
 
 
 
@@ -120,28 +123,34 @@ func _on_coyote_timer_timeout() -> void:
 	
 	
 	
-func CharaSwordLight(delta : float) -> void:
+func CharaMagicLight(delta : float) -> void:
 	if !attackCD && Input.is_action_just_pressed("magicLight") && is_on_floor() && direction == 0:
 		atkTimer.start()
 		charaAttack = true
+		damage_amount = 25
 		if charaAttack == true:
 			lightBox.set_deferred("Disabled", false)
 			attackCD = true
 			anim.play("magicLight")
 			mlanim.play("beam")
+	
 		
 		
 	
-func CharaSwordHeavy(delta : float) -> void:
+func CharaMagicHeavy(delta : float) -> void:
 	if !attackCD && Input.is_action_just_pressed("magicHeavy") && is_on_floor() && direction == 0:
 		atkTimer.start()
 		charaAttack = true
+		damage_amount = 50
 		if charaAttack == true:
 			heavyBox.set_deferred("Disabled", false)
 			attackCD = true
 			anim.play("magicHeavy")
 			mhanim.play("ball")
 
+
+func get_damage_amount() -> int:
+	return damage_amount
 
 func _on_attack_timer_timeout() -> void:
 	atkTimer.stop()

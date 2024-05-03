@@ -1,0 +1,65 @@
+[gd_scene load_steps=9 format=3 uid="uid://bldro56qp3f65"]
+
+[ext_resource type="Texture2D" uid="uid://bectuaybgym4a" path="res://Earth Realm/level 1/assets/Assets/Tronchungo/tronchungo3.png" id="1_wyj27"]
+[ext_resource type="Script" path="res://Earth Realm/level 1/scripts/enemy_tronchungo_death_effect.gd" id="2_raalc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ratlb"]
+atlas = ExtResource("1_wyj27")
+region = Rect2(0, 220, 46, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4cbkt"]
+atlas = ExtResource("1_wyj27")
+region = Rect2(46, 220, 46, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5e14"]
+atlas = ExtResource("1_wyj27")
+region = Rect2(92, 220, 46, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b53a6"]
+atlas = ExtResource("1_wyj27")
+region = Rect2(138, 220, 46, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lb45k"]
+atlas = ExtResource("1_wyj27")
+region = Rect2(184, 220, 46, 44)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_th4a6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ratlb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4cbkt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b5e14")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b53a6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lb45k")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"Death",
+"speed": 6.0
+}]
+
+[node name="EnemyTronchungoDeathEffect" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_th4a6")
+animation = &"Death"
+autoplay = "Death"
+frame = 5
+frame_progress = 1.0
+script = ExtResource("2_raalc")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -16,7 +16,8 @@ var damageCD : bool = false
 var coyote_frames : int = 6
 var coyote : bool = false 
 var last_floor : bool = false 
-var damage : int = 100
+var damage : int = 50
+var damage_amount : int = 0
 
 @onready var anim : AnimatedSprite2D = $charaTwoanim
 @onready var jumpTimer : Timer = $jumpTimer
@@ -122,20 +123,25 @@ func CharaBowLight(delta : float) -> void:
 	if !attackCD && Input.is_action_just_pressed("bowLight") && is_on_floor() && direction == 0:
 		atkTimer.start()
 		charaAttack = true
+		damage_amount = 10
 		if charaAttack == true:
 			lightBox.set_deferred("Disabled", false)
 		attackCD = true
 		anim.play("bowLight")
+
 	
 func CharaBowHeavy(delta : float) -> void:
 	if !attackCD && Input.is_action_just_pressed("bowHeavy") && is_on_floor() && direction == 0:
 		atkTimer.start()
 		charaAttack = true
+		damage_amount = 20
 		if charaAttack == true:
 			heavyBox.set_deferred("Disabled", false)
 		attackCD = true
 		anim.play("bowHeavy")
 
+func get_damage_amount() -> int:
+	return damage_amount
 
 func _on_attack_timer_timeout() -> void:
 	atkTimer.stop()
@@ -189,6 +195,3 @@ func CharaDeath(delta : float) -> void:
 	if currenthp == 0:
 		charaDead = true
 		anim.play("death")
-
-func CharaRespawn(delta : float) -> void:
-	pass

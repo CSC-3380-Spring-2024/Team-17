@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://iuv22mo8y0q3"]
+
+[ext_resource type="Script" path="res://Earth Realm/level 2/scripts/pit_lvl2.gd" id="1_p6ooq"]
+
+[node name="Pittss" type="Area2D"]
+script = ExtResource("1_p6ooq")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

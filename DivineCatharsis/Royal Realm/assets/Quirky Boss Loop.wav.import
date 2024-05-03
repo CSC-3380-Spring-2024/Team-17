@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bgib7uwujwwqa"
+path="res://.godot/imported/Quirky Boss Loop.wav-ed6dbf5ab92836faa4b889b0b778f4c5.sample"
+
+[deps]
+
+source_file="res://Royal Realm/assets/Quirky Boss Loop.wav"
+dest_files=["res://.godot/imported/Quirky Boss Loop.wav-ed6dbf5ab92836faa4b889b0b778f4c5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

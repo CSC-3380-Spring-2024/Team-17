@@ -17,13 +17,13 @@ var coyote_frames : int = 6
 var coyote : bool = false 
 var last_floor : bool = false 
 var damage : int = 100
-var damage_amount : int = 15
+var damage_amount : int = 0
 
 @onready var anim : AnimatedSprite2D = $charaOneanim
 @onready var jumpTimer : Timer = $jumpTimer
 @onready var idlecollS : CollisionShape2D = $idlecollS
-@onready var lightBox : CollisionShape2D = $charaBox/hitBoxSwordLight
-@onready var heavyBox : CollisionShape2D = $charaBox/hitBoxSwordHeavy
+@onready var lightBox : Area2D = $swordLight
+@onready var heavyBox : Area2D = $swordHeavy
 @onready var hurtanim : AnimationPlayer = $hurtanim
 @onready var coyoteTimer : Timer = $coyoteTimer
 @onready var hpLabel : Label = $hpLabel
@@ -123,8 +123,9 @@ func CharaSwordLight(delta : float) -> void:
 	if !attackCD && Input.is_action_just_pressed("swordLight") && is_on_floor() && direction == 0:
 		atkTimer.start()
 		charaAttack = true
+		damage_amount = 10
 		if charaAttack == true:
-			lightBox.set_deferred("Disabled", false)
+			lightBox.set_deferred("Monitoring", false)
 		attackCD = true
 		anim.play("swordLight")
 	
@@ -132,10 +133,12 @@ func CharaSwordHeavy(delta : float) -> void:
 	if !attackCD && Input.is_action_just_pressed("swordHeavy") && is_on_floor() && direction == 0:
 		atkTimer.start()
 		charaAttack = true
+		damage_amount = 20
 		if charaAttack == true:
-			heavyBox.set_deferred("Disabled", false)
+			heavyBox.set_deferred("Monitoring", true)
 		attackCD = true
 		anim.play("swordHeavy")
+	
 
 
 func _on_attack_timer_timeout() -> void:
@@ -188,7 +191,6 @@ func _on_damage_timer_timeout() -> void:
 
 func get_damage_amount() -> int:
 	return damage_amount
-
 
 func CharaDeath(delta : float) -> void:
 	if currenthp == 0:

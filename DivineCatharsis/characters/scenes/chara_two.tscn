@@ -1,7 +1,7 @@
 [gd_scene load_steps=97 format=3 uid="uid://btl1ropgbrna3"]
 
 [ext_resource type="Script" path="res://characters/scripts/charaTwo.gd" id="1_nq18o"]
-[ext_resource type="Shader" uid="uid://dwl6kuftanhh3" path="res://characters/scenes/chara_one_hit_shader.tres" id="2_pe1ea"]
+[ext_resource type="Shader" uid="uid://kx0ap3lnijkm" path="res://characters/scenes/chara_one_hit_shader.tres" id="2_pe1ea"]
 [ext_resource type="Texture2D" uid="uid://b5dy2jagxfpkm" path="res://characters/assets/chara/NoBackgroundColor/spr_ArcherJumpAndFall_strip_NoBkg.png" id="5_s0d8f"]
 [ext_resource type="Texture2D" uid="uid://b23ryke84ldr8" path="res://characters/assets/chara/NoBackgroundColor/spr_ArcherDeath_strip_NoBkg.png" id="6_wjkdu"]
 [ext_resource type="Texture2D" uid="uid://cbf8bk1734rwm" path="res://characters/assets/chara/NoBackgroundColor/spr_ArcherRun_strip_NoBkg.png" id="7_lllrd"]
@@ -693,7 +693,7 @@ shape = SubResource("CapsuleShape2D_v8hws")
 debug_color = Color(0, 1, 0, 0.419608)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3, 3)
+zoom = Vector2(1.2, 1.2)
 
 [node name="hurtanim" type="AnimationPlayer" parent="."]
 libraries = {
@@ -713,20 +713,22 @@ one_shot = true
 
 [node name="hpBar" type="ProgressBar" parent="."]
 z_index = 1
-offset_left = -176.0
-offset_top = -77.0
-offset_right = -120.0
-offset_bottom = -60.0
+texture_filter = 1
+offset_left = -468.0
+offset_top = -232.0
+offset_right = -412.0
+offset_bottom = -215.0
 theme_override_styles/background = SubResource("StyleBoxFlat_tdd15")
 theme_override_styles/fill = SubResource("StyleBoxFlat_wh0kg")
 value = 50.0
 show_percentage = false
 
 [node name="hpLabel" type="Label" parent="."]
-offset_left = -175.0
-offset_top = -101.0
-offset_right = -153.0
-offset_bottom = -78.0
+texture_filter = 1
+offset_left = -471.0
+offset_top = -257.0
+offset_right = -405.0
+offset_bottom = -233.0
 theme = SubResource("Theme_uvsei")
 text = "Hp"
 

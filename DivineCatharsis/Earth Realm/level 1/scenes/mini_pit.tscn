@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://vymawsiv0dq7"]
+
+[ext_resource type="Script" path="res://Earth Realm/level 1/scripts/mini_pit.gd" id="1_i3cnl"]
+
+[node name="MiniPit" type="Area2D"]
+script = ExtResource("1_i3cnl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

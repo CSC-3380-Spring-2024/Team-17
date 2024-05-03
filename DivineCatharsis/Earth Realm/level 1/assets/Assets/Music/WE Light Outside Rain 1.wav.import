@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b6kasqm8khwp6"
+path="res://.godot/imported/WE Light Outside Rain 1.wav-ced64927eb8f6b42ddf637b2a74d47a4.sample"
+
+[deps]
+
+source_file="res://Earth Realm/level 1/assets/Assets/Music/WE Light Outside Rain 1.wav"
+dest_files=["res://.godot/imported/WE Light Outside Rain 1.wav-ced64927eb8f6b42ddf637b2a74d47a4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=3
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

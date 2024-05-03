@@ -6,4 +6,7 @@
 # Adrianne created everything in the GUI folder. 
 # Kaleb created everything in the characters folder.
 # -- How To Run Divine Catharsis -- 
-#
+# Unzip the Godot Engine folder and opend the Godot application. 
+# Import the project.godot in the DivineCarthasis folder.
+# At the top right, click the run button. 
+# If it doesn't start at the 
