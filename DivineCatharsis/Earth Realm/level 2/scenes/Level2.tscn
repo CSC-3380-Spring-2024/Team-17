@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://yr5jwd5foxil" path="res://Earth Realm/level 2/scenes/moving_platform_up_down_lvl2.tscn" id="3_qgj7l"]
 [ext_resource type="PackedScene" uid="uid://h464cy4q1s6h" path="res://Earth Realm/level 2/scenes/main_platform_lvl2.tscn" id="4_7axe6"]
 [ext_resource type="PackedScene" uid="uid://cas7xi871sxl0" path="res://Earth Realm/level 1/scenes/enemy_slime.tscn" id="5_d7pce"]
-[ext_resource type="PackedScene" uid="uid://btl1ropgbrna3" path="res://characters/scenes/chara_two.tscn" id="5_dtyt0"]
+[ext_resource type="PackedScene" uid="uid://ng3u3nsmbe71" path="res://characters/scenes/chara_one.tscn" id="5_xpx8j"]
 [ext_resource type="PackedScene" uid="uid://du105rib5n7oj" path="res://Earth Realm/level 2/scenes/riddle_collectable_lvl2.tscn" id="6_w8c3a"]
 [ext_resource type="PackedScene" uid="uid://iuv22mo8y0q3" path="res://Earth Realm/level 2/scenes/pit_lvl2.tscn" id="7_7ssro"]
 [ext_resource type="AudioStream" uid="uid://t0oejv7erukv" path="res://Earth Realm/level 2/assets/Track 1 - Cubiculacetophobie.wav" id="8_lvjba"]
@@ -15285,7 +15285,8 @@ position = Vector2(294, 41)
 
 [node name="Player" type="Node2D" parent="."]
 
-[node name="charaTwo" parent="Player" instance=ExtResource("5_dtyt0")]
+[node name="charaOne" parent="Player" instance=ExtResource("5_xpx8j")]
+position = Vector2(1200, -2000)
 
 [node name="PaperRiddle" parent="." instance=ExtResource("6_w8c3a")]
 position = Vector2(1580, -1719)

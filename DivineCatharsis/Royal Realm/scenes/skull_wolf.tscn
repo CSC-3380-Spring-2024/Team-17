@@ -199,3 +199,5 @@ shape = SubResource("RectangleShape2D_winyf")
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2(-30, 26)
 target_position = Vector2(0, 15)
+
+[node name="hurtbox" type="Area2D" parent="."]

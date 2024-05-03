@@ -77,6 +77,6 @@ func _on_check_pressed():
 	if tracked == true:
 		get_tree().change_scene_to_file("res://Earth Realm/level 2/scenes/riddle_earth_lvl2_wrong.tscn")
 	if correct == true:
-		#get_tree().change_scene_to_file("res://EarthRealmlvl2/Level 2/Level2.tscn") # second realm
+		get_tree().change_scene_to_file("res://Hellish Realm/scenes/base_level.tscn") 
 		pass
 
