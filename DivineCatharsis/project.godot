@@ -19,7 +19,3 @@ config/icon="res://icon.svg"
 
 window/size/mode=3
 window/stretch/mode="viewport"
-
-[dotnet]
-
-project/assembly_name="Starting Screen"
