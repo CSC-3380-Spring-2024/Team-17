@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 const GRAVITY : int = 1000
-@export var speed : int = 8000
-@export var jumpVert : int = -500
+@export var speed : int = 9000
+@export var jumpVert : int = -550
 @export var jumpHoriz : int = 100
 @export var maxhp : int = 1000
 var charaDead : bool = false
@@ -16,7 +16,7 @@ var damageCD : bool = false
 var coyote_frames : int = 6
 var coyote : bool = false 
 var last_floor : bool = false 
-var damage : int = 200
+var damage : int = 100
 var damage_amount : int = 0
 
 @onready var anim : AnimatedSprite2D = $charaThreeanim
@@ -203,7 +203,6 @@ func _on_damage_timer_timeout() -> void:
 func CharaDeath(delta : float) -> void:
 	if currenthp == 0:
 		charaDead = true
-		anim.play("death")
-
-func CharaRespawn(delta : float) -> void:
-	pass
+		if charaDead == true:
+			anim.play("death")
+			get_tree().reload_current_scene()

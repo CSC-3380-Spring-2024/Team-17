@@ -194,4 +194,5 @@ func _on_damage_timer_timeout() -> void:
 func CharaDeath(delta : float) -> void:
 	if currenthp == 0:
 		charaDead = true
+		get_tree().reload_current_scene()
 		anim.play("death")

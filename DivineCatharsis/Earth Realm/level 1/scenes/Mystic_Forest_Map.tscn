@@ -2395,7 +2395,7 @@ position = Vector2(378, 22)
 [node name="charaOne" parent="Player" instance=ExtResource("9_sk0k5")]
 show_behind_parent = true
 top_level = true
-position = Vector2(8000, 100)
+position = Vector2(100, 200)
 
 [node name="Rain" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("13_8rack")

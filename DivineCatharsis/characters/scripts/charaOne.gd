@@ -196,8 +196,9 @@ func CharaDeath(delta : float) -> void:
 	if currenthp == 0:
 		charaDead = true
 		if charaDead == true:
+			anim.play("death")
 			get_tree().reload_current_scene()
-		anim.play("death")
+		
 
 func player() -> void:
 	pass

@@ -11,7 +11,7 @@ func _on_instructions_pressed() -> void:
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://GUI//senes//Load Game.tscn")
+	get_tree().change_scene_to_file("res://Earth Realm/level 1/scenes/Mystic_Forest_Map.tscn")
 
 
 

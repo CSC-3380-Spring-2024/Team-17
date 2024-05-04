@@ -192,12 +192,18 @@ animation = &"Idle"
 frame_progress = 0.873506
 speed_scale = 1.5
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 19.5)
-shape = SubResource("RectangleShape2D_winyf")
-
 [node name="RayCast2D" type="RayCast2D" parent="."]
 position = Vector2(-30, 26)
 target_position = Vector2(0, 15)
 
 [node name="hurtbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
+position = Vector2(0, 19.5)
+shape = SubResource("RectangleShape2D_winyf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 19.5)
+shape = SubResource("RectangleShape2D_winyf")
+
+[connection signal="area_shape_entered" from="hurtbox" to="." method="_on_hurtbox_area_shape_entered"]

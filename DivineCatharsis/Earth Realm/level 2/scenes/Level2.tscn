@@ -15286,7 +15286,7 @@ position = Vector2(294, 41)
 [node name="Player" type="Node2D" parent="."]
 
 [node name="charaOne" parent="Player" instance=ExtResource("5_xpx8j")]
-position = Vector2(1200, -2000)
+position = Vector2(150, 200)
 
 [node name="PaperRiddle" parent="." instance=ExtResource("6_w8c3a")]
 position = Vector2(1580, -1719)
