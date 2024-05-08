@@ -1,0 +1,179 @@
+[gd_scene load_steps=10 format=3 uid="uid://xx2dujrjabep"]
+
+[ext_resource type="Texture2D" uid="uid://c0jvuuxjq06wm" path="res://Earth Realm/level 1/assets/AssetsforRiddle/MenuBackground.png" id="1_38hy4"]
+[ext_resource type="Texture2D" uid="uid://bydu6rxy1wnkm" path="res://Earth Realm/level 1/assets/Assets/Fantasy Swamp Forest/Free/BG_3/BG_3.png" id="1_cm66i"]
+[ext_resource type="Texture2D" uid="uid://el3bqck5i52" path="res://Earth Realm/level 1/assets/Assets/Fantasy Swamp Forest/Free/BG_2/BG_2.png" id="2_fddgv"]
+[ext_resource type="Script" path="res://Earth Realm/level 1/scripts/Paper.gd" id="2_gyel5"]
+[ext_resource type="FontFile" uid="uid://bt4q418jqc5fc" path="res://Earth Realm/level 1/assets/AssetsforRiddle/m5x7.ttf" id="3_ect5o"]
+[ext_resource type="Texture2D" uid="uid://bn1hg77rihfkg" path="res://Earth Realm/level 1/assets/Assets/Fantasy Swamp Forest/Free/BG_1/BG_1.png" id="3_xxhhl"]
+[ext_resource type="Shader" path="res://Earth Realm/level 1/scripts/mystic_forest.gdshader" id="4_d7wup"]
+[ext_resource type="AudioStream" uid="uid://b6kasqm8khwp6" path="res://Earth Realm/level 1/assets/Assets/Music/WE Light Outside Rain 1.wav" id="8_ch2vm"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ubknv"]
+shader = ExtResource("4_d7wup")
+shader_parameter/rain_amount = 400.0
+shader_parameter/near_rain_length = 0.01
+shader_parameter/far_rain_length = 0.01
+shader_parameter/near_rain_width = 1.0
+shader_parameter/far_rain_width = 0.5
+shader_parameter/near_rain_transparency = 0.31
+shader_parameter/far_rain_transparency = 0.5
+shader_parameter/rain_color = Color(0.0392157, 0.0392157, 0.0392157, 1)
+shader_parameter/base_rain_speed = 0.605
+shader_parameter/additional_rain_speed = 0.5
+shader_parameter/slant = 0.38
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Bg3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(573, 322)
+scale = Vector2(0.55957, 1.61)
+texture = ExtResource("1_cm66i")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Bg2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(458.002, 320.5)
+scale = Vector2(1.27463, 1.6175)
+texture = ExtResource("2_fddgv")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Bg1" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(531.25, 329)
+scale = Vector2(1.4212, 1.655)
+texture = ExtResource("3_xxhhl")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(685, 2.08165e-12)
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxBackground/ParallaxLayer4"]
+material = SubResource("ShaderMaterial_ubknv")
+offset_right = 695.0
+offset_bottom = 642.0
+color = Color(1, 1, 1, 0)
+
+[node name="Paper" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -213.5
+offset_top = -245.0
+offset_right = 213.5
+offset_bottom = 245.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_38hy4")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 3
+script = ExtResource("2_gyel5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Paper"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -207.0
+offset_right = 207.0
+offset_bottom = 469.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Paper/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_fonts/font = ExtResource("3_ect5o")
+theme_override_font_sizes/font_size = 25
+text = "
+I've been watching you, tracing the contours
+of your journey with keen interest. Every 
+step you've taken, every choice you've made—I've 
+been there, silently observing from the shadows.
+
+Now complete this riddle to enter the next stage.
+
+I speak without a mouth and hear without ears.
+I have no body, but I come alive with the wind.
+What am I?"
+
+[node name="Fire" type="CheckButton" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_colors/font_hover_color = Color(0.984314, 0.227451, 0.152941, 1)
+theme_override_fonts/font = ExtResource("3_ect5o")
+theme_override_font_sizes/font_size = 35
+text = "Fire"
+
+[node name="Echo" type="CheckButton" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.866667, 0.447059, 0.188235, 1)
+theme_override_colors/font_hover_color = Color(0.866667, 0.447059, 0.188235, 1)
+theme_override_fonts/font = ExtResource("3_ect5o")
+theme_override_font_sizes/font_size = 35
+text = "Echo"
+
+[node name="Shadow" type="CheckButton" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.113725, 0.176471, 0.207843, 1)
+theme_override_colors/font_hover_color = Color(0.113725, 0.176471, 0.207843, 1)
+theme_override_fonts/font = ExtResource("3_ect5o")
+theme_override_font_sizes/font_size = 35
+text = "Shadow"
+
+[node name="Lightning" type="CheckButton" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.317647, 0.564706, 0.556863, 1)
+theme_override_colors/font_hover_color = Color(0.317647, 0.564706, 0.556863, 1)
+theme_override_fonts/font = ExtResource("3_ect5o")
+theme_override_font_sizes/font_size = 35
+text = "Lightning"
+
+[node name="Check" type="Button" parent="Paper/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.968627, 0.968627, 0.968627, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_ect5o")
+theme_override_font_sizes/font_size = 33
+text = "Check your answer."
+
+[node name="Background" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Rain" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_ch2vm")
+volume_db = -20.0
+autoplay = true
+
+[connection signal="pressed" from="Paper/VBoxContainer/Fire" to="Paper" method="_on_fire_pressed"]
+[connection signal="pressed" from="Paper/VBoxContainer/Echo" to="Paper" method="_on_echo_pressed"]
+[connection signal="pressed" from="Paper/VBoxContainer/Shadow" to="Paper" method="_on_shadow_pressed"]
+[connection signal="pressed" from="Paper/VBoxContainer/Lightning" to="Paper" method="_on_lightning_pressed"]
+[connection signal="pressed" from="Paper/VBoxContainer/Check" to="Paper" method="_on_check_pressed"]

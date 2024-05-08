@@ -1,0 +1,78 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctpcpkvgdw0tu"]
+
+[ext_resource type="Texture2D" uid="uid://btg4fc3n27v6t" path="res://Earth Realm/level 1/assets/AssetsforRiddle/ButtonBackground.png" id="1_cgmd8"]
+[ext_resource type="Texture2D" uid="uid://cv53kr861wfjt" path="res://Earth Realm/level 2/assets/map_preview.png" id="1_fq48b"]
+[ext_resource type="Script" path="res://Earth Realm/level 2/scripts/message_lvl2.gd" id="2_q7j75"]
+[ext_resource type="FontFile" uid="uid://bt4q418jqc5fc" path="res://Earth Realm/level 1/assets/AssetsforRiddle/m5x7.ttf" id="3_tgb12"]
+
+[node name="RiddleWrong" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MapPreview" type="Sprite2D" parent="."]
+position = Vector2(674, 433)
+scale = Vector2(1.18229, 1.18651)
+texture = ExtResource("1_fq48b")
+
+[node name="Message" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -255.0
+offset_top = -113.5
+offset_right = 255.0
+offset_bottom = 113.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cgmd8")
+script = ExtResource("2_q7j75")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Message"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -221.0
+offset_top = -98.5
+offset_right = 220.0
+offset_bottom = 95.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Wrong" type="Label" parent="Message/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_fonts/font = ExtResource("3_tgb12")
+theme_override_font_sizes/font_size = 30
+text = "
+Not quite hitting the mark, but fear not,
+ for the path to enlightenment is often 
+paved with challenges.
+ Let's try again, shall we?
+
+"
+horizontal_alignment = 1
+
+[node name="TryAgain" type="Button" parent="Message/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.980392, 0.968627, 0.980392, 1)
+theme_override_fonts/font = ExtResource("3_tgb12")
+theme_override_font_sizes/font_size = 33
+text = "Try again?"
+
+[connection signal="pressed" from="Message/VBoxContainer/TryAgain" to="Message" method="_on_try_again_pressed"]
