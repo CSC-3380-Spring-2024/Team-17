@@ -1,5 +1,5 @@
 # Team-17
-# This is the master branch which holds a working version of our Divine Cartharsis game.
+# This is the main branch which holds the current complete version of our Divine Cartharsis game.
 # Jennifer created both levels and the enemies in the Earth Realm. 
 # Darryl created the Hellish Realm. 
 # Jarrold created the Royal Realm and its enemies.
@@ -10,7 +10,7 @@
 #
 # -- How To Run Divine Catharsis -- 
 #
-# Unzip the Godot Engine folder and open the Godot application for MacOS/win64. 
+# Install and run the Godot application from https://godotengine.org/download .
 # Import the project.godot file in the DivineCarthasis folder.
 # If you wish to run the full game, click the run button at the right and the game will start. 
 # If you wish to run a specific level, click the edit button. Under the scene tab, select open in editor for whichever level you wish to start from. Then click run current scene at the top right, or instead, press F6.
