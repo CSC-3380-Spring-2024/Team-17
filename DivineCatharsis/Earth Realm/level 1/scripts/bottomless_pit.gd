@@ -6,13 +6,13 @@ extends Area2D
 #	pass 
 	
 
-@onready var respawnPosition := Vector2(4171, 157)
+@onready var respawnPosition : Vector2 = Vector2(4171, 157)
 
-func _on_body_entered(body):
+func _on_body_entered(body : CharacterBody2D) -> void:
 	if "charaOne" in body.name:
 		
 		respawn()
 
-func respawn():
+func respawn() -> void:
 	if $"../Player/charaOne":
 		$"../Player/charaOne".global_position = respawnPosition

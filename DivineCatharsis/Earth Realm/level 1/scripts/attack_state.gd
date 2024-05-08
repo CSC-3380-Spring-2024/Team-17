@@ -11,11 +11,11 @@ var is_attacking : bool = false
 var player : CharacterBody2D
 var max_speed : int
 
-func on_process(delta: float):
+func on_process(delta: float) -> void:
 	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func on_physics_process(delta : float):
+func on_physics_process(delta : float) -> void:
 	
 	
 	if is_attacking == false:
@@ -43,8 +43,8 @@ func on_physics_process(delta : float):
 	
 	
 
-func enter():
+func enter() -> void:
 	player = get_tree().get_nodes_in_group("Player")[0] as CharacterBody2D
 	max_speed = speed+20
-func exit():
+func exit() -> void:
 	pass

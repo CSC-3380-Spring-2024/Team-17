@@ -480,7 +480,6 @@ shape = SubResource("CapsuleShape2D_vb6j5")
 debug_color = Color(0, 1, 0, 0.419608)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.2, 1.2)
 
 [node name="hurtanim" type="AnimationPlayer" parent="."]
 libraries = {
@@ -500,10 +499,10 @@ one_shot = true
 
 [node name="hpBar" type="ProgressBar" parent="."]
 z_index = 1
-offset_left = -468.0
-offset_top = -249.0
-offset_right = -412.0
-offset_bottom = -232.0
+offset_left = -560.0
+offset_top = -284.0
+offset_right = -504.0
+offset_bottom = -267.0
 theme_override_styles/background = SubResource("StyleBoxFlat_og71p")
 theme_override_styles/fill = SubResource("StyleBoxFlat_hk8qm")
 value = 50.0
@@ -511,10 +510,10 @@ show_percentage = false
 
 [node name="hpLabel" type="Label" parent="."]
 texture_filter = 1
-offset_left = -469.0
-offset_top = -267.0
-offset_right = -447.0
-offset_bottom = -244.0
+offset_left = -560.0
+offset_top = -312.0
+offset_right = -538.0
+offset_bottom = -289.0
 theme = SubResource("Theme_sn575")
 text = "Hp"
 

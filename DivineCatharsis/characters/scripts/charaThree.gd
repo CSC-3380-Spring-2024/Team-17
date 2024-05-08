@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 const GRAVITY : int = 1000
-@export var speed : int = 9000
-@export var jumpVert : int = -550
+@export var speed : int = 6000
+@export var jumpVert : int = -400
 @export var jumpHoriz : int = 100
 @export var maxhp : int = 1000
 var charaDead : bool = false
@@ -157,7 +157,7 @@ func _on_attack_timer_timeout() -> void:
 	charaAttack = false
 	attackCD = false
 
-func _on_hurtbox_body_entered(body) -> void:
+func _on_hurtbox_body_entered(body : CharacterBody2D) -> void:
 	if body.has_method("enemy"):
 		enemyAttack = true
 		anim.play("hurt")
@@ -165,7 +165,7 @@ func _on_hurtbox_body_entered(body) -> void:
 	 
 
 
-func _on_hurtbox_body_exited(body) -> void:
+func _on_hurtbox_body_exited(body : CharacterBody2D) -> void:
 	if body.has_method("enemy"):
 		enemyAttack = false
 

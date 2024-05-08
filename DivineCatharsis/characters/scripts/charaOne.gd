@@ -17,7 +17,7 @@ var coyote_frames : int = 6
 var coyote : bool = false 
 var last_floor : bool = false 
 var damage : int = 100
-var damage_amount : int = 0
+var damage_amount : int = 5
 
 @onready var anim : AnimatedSprite2D = $charaOneanim
 @onready var jumpTimer : Timer = $jumpTimer
@@ -146,7 +146,7 @@ func _on_attack_timer_timeout() -> void:
 	charaAttack = false
 	attackCD = false
 
-func _on_hurtbox_body_entered(body) -> void:
+func _on_hurtbox_body_entered(body : CharacterBody2D) -> void:
 	if body.has_method("enemy"):
 		enemyAttack = true
 		anim.play("hurt")
@@ -154,7 +154,7 @@ func _on_hurtbox_body_entered(body) -> void:
 	 
 
 
-func _on_hurtbox_body_exited(body) -> void:
+func _on_hurtbox_body_exited(body : CharacterBody2D) -> void:
 	if body.has_method("enemy"):
 		enemyAttack = false
 

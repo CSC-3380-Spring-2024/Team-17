@@ -8,13 +8,13 @@ extends NinePatchRect
 
 var tracked : bool = false
 var correct : bool = false
-var self_opened = false
+var self_opened : bool = false
 
-func _input(event):
+func _input(event : InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"):
 		toggle_menu()
 		
-func toggle_menu(): # by pressing enter the paper disappers
+func toggle_menu() -> void: # by pressing enter the paper disappers
 	self_opened = !self_opened
 	if self_opened:
 		self.visible = true
@@ -22,23 +22,23 @@ func toggle_menu(): # by pressing enter the paper disappers
 		self.visible = false
 		
 
-func _on_fire_pressed():
+func _on_fire_pressed() -> void:
 	handleButtonPress("1")
 	
 
 
-func _on_echo_pressed():
+func _on_echo_pressed() -> void:
 	handleButtonPress("2")
 
 
-func _on_shadow_pressed():
+func _on_shadow_pressed() -> void:
 	handleButtonPress("3")
 
 
-func _on_lightning_pressed():
+func _on_lightning_pressed() -> void:
 	handleButtonPress("4")
 	
-func handleButtonPress(button):
+func handleButtonPress(button : String) -> void:
 	if button == "1":
 		print("Wrong")
 		Echo.set_pressed_no_signal(false)
@@ -71,7 +71,7 @@ func handleButtonPress(button):
 		tracked =  true
 
 
-func _on_check_pressed():
+func _on_check_pressed() -> void:
 	if tracked == true:
 		get_tree().change_scene_to_file("res://Earth Realm/level 1/scenes/Riddle_Wrong.tscn")
 	if correct == true:

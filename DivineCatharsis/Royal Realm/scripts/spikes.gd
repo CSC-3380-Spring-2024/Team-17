@@ -7,11 +7,11 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta) -> void:
+func _process(delta : float) -> void:
 	pass
 
 
-func _on_body_entered(body) -> void:
-	if "charaThree" in body.name:
+func _on_body_entered(body : CharacterBody2D) -> void:
+	if "charaTwo" in body.name:
 		get_tree().change_scene_to_file("res://Royal Realm/scenes/world.tscn")
 	

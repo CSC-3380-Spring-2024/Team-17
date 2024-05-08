@@ -12,6 +12,6 @@ func _process(delta: float) -> void :
 
 
 
-func _on_body_entered(body) -> void:
-	if "charaTwo" in body.name:
+func _on_body_entered(body : CharacterBody2D) -> void:
+	if "charaThree" in body.name:
 		get_tree().change_scene_to_file("res://Royal Realm/scenes/world.tscn")

@@ -1,20 +1,20 @@
 extends NinePatchRect
 
-@onready var Anguish = $VBoxContainer/Anguish
-@onready var Flame = $VBoxContainer/Flame
-@onready var Pain = $VBoxContainer/Pain
-@onready var Shadow = $VBoxContainer/Shadow
-@onready var checkButton = $VBoxContainer/Check
+@onready var Anguish : Button = $VBoxContainer/Anguish
+@onready var Flame : Button = $VBoxContainer/Flame
+@onready var Pain : Button = $VBoxContainer/Pain
+@onready var Shadow : Button = $VBoxContainer/Shadow
+@onready var checkButton : Button = $VBoxContainer/Check
 
-var tracked = false
-var correct = false
-var self_opened = false
+var tracked : bool = false
+var correct : bool = false
+var self_opened : bool = false
 
-func _input(event):
+func _input(event : InputEvent) -> void:
 	if event.is_action_pressed("ui_accept"):
 		toggle_menu()
 		
-func toggle_menu(): # by pressing enter the paper disappers
+func toggle_menu() -> void: # by pressing enter the paper disappers
 	self_opened = !self_opened
 	if self_opened:
 		self.visible = true
@@ -22,24 +22,24 @@ func toggle_menu(): # by pressing enter the paper disappers
 		self.visible = false
 		
 
-func _on_anguish_pressed():
+func _on_anguish_pressed() -> void:
 	handleButtonPress("1")
 
 
 
-func _on_flame_pressed():
+func _on_flame_pressed() -> void:
 	handleButtonPress("2")
 
 
-func _on_pain_pressed():
+func _on_pain_pressed() -> void:
 	handleButtonPress("3")
 	
 	
-func _on_shadow_pressed():
+func _on_shadow_pressed() -> void:
 	handleButtonPress("4")
 
 	
-func handleButtonPress(button):
+func handleButtonPress(button : String) -> void:
 	if button == "1":
 		print("Wrong")
 		Flame.set_pressed_no_signal(false)
@@ -73,7 +73,7 @@ func handleButtonPress(button):
 
 
 
-func _on_check_pressed():
+func _on_check_pressed() -> void:
 	if tracked == true:
 		get_tree().change_scene_to_file("res://Earth Realm/level 2/scenes/riddle_earth_lvl2_wrong.tscn")
 	if correct == true:

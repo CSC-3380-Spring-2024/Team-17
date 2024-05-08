@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://gsmy2oe3f3wl"]
 
+[ext_resource type="PackedScene" uid="uid://dw7alkc04hydr" path="res://characters/scenes/chara_three.tscn" id="1_cwngm"]
 [ext_resource type="PackedScene" uid="uid://bp2icou8ruane" path="res://Hellish Realm/scenes/parallax_background.tscn" id="1_kkuf4"]
-[ext_resource type="PackedScene" uid="uid://btl1ropgbrna3" path="res://characters/scenes/chara_two.tscn" id="1_ov683"]
 [ext_resource type="Texture2D" uid="uid://1lmxwk6h3mc2" path="res://Hellish Realm/assets/game_tilesets_1.png" id="1_scy1n"]
 [ext_resource type="Texture2D" uid="uid://bqo8y4yucnji4" path="res://Hellish Realm/assets/walls.png" id="3_ryxan"]
 [ext_resource type="Texture2D" uid="uid://cjrpvrny7ebgs" path="res://Hellish Realm/assets/props.png" id="4_jvl6o"]
@@ -659,11 +659,11 @@ radius = 58.1808
 
 [node name="BaseLevel" type="Node2D"]
 
-[node name="charaTwo" parent="." instance=ExtResource("1_ov683")]
+[node name="charaThree" parent="." instance=ExtResource("1_cwngm")]
 show_behind_parent = true
 top_level = true
-position = Vector2(50, -230)
-scale = Vector2(0.85, 0.85)
+position = Vector2(140, -230)
+scale = Vector2(0.75, 0.75)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_kkuf4")]
 offset = Vector2(0, -264)
@@ -681,12 +681,12 @@ layer_2/name = "Foreground"
 layer_2/z_index = 1
 layer_2/tile_data = PackedInt32Array(-327669, 65536, 7, -262133, 65536, 8, -327656, 65536, 7, -262120, 65536, 8, -327647, 65536, 7, -262111, 65536, 8, -393205, 65536, 6, -393192, 65536, 6, -393183, 65536, 6, -589806, 524288, 3, -524270, 524288, 4, -1048555, 524288, 3, -983019, 524288, 4, -1114103, 524288, 3, -1048567, 524288, 4, -983036, 524288, 3, -917500, 524288, 4, -1179581, 524288, 3, -1114045, 524288, 4, -524233, 1179648, 7, -458697, 1179648, 8, -393161, 1179648, 9, -327625, 1179648, 10, -524232, 1245184, 7, -458696, 1245184, 8, -393160, 1245184, 9, -327624, 1245184, 10, -458717, 1179648, 7, -393181, 1179648, 8, -327645, 1179648, 9, -458716, 1245184, 7, -393180, 1245184, 8, -327644, 1245184, 9, -917492, 1179648, 7, -851956, 1179648, 8, -786420, 1179648, 9, -917491, 1245184, 7, -851955, 1245184, 8, -786419, 1245184, 9, -262086, 1441792, 3, -196550, 1441792, 4, -262085, 1441792, 3, -196549, 1441792, 4, -262084, 1441792, 3, -196548, 1441792, 4, -262083, 1441792, 3, -196547, 1441792, 4, -262082, 1441792, 3, -196546, 1441792, 4, -262081, 1441792, 3, -196545, 1441792, 4, -262066, 1441792, 3, -196530, 1441792, 4, -262065, 1441792, 3, -196529, 1441792, 4, -262064, 1441792, 3, -196528, 1441792, 4, -262063, 1441792, 3, -196527, 1441792, 4, -262062, 1441792, 3, -196526, 1441792, 4, -262061, 1441792, 3, -196525, 1441792, 4, -327628, 65536, 6, -262092, 65536, 7, -327613, 65536, 6, -262077, 65536, 7, -982981, 65536, 6, -917445, 65536, 7)
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Portal" type="Area2D" parent="."]
 script = ExtResource("6_7igl0")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal"]
 position = Vector2(1320, -107)
 shape = SubResource("CircleShape2D_l5j2h")
 debug_color = Color(0.878431, 0.313726, 0.341176, 0.419608)
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]

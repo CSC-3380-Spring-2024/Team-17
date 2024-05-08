@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://xyb3vsabuedp"]
 
-[ext_resource type="Texture2D" uid="uid://cx1v4ub40rll" path="res://EarthRealmlvl1/Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png" id="1_8as26"]
+[ext_resource type="Texture2D" uid="uid://cx1v4ub40rll" path="res://Earth Realm/level 1/assets/Assets/Fantasy Swamp Forest/Free/Terrain_and_Props.png" id="1_8as26"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vdah4"]
 size = Vector2(78, 11)

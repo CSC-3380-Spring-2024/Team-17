@@ -1,16 +1,16 @@
 extends CharacterBody2D
 
-var enemy_nightborne_death_effect = preload("res://Earth Realm/level 1/scenes/enemy_nightborne_death_effect.tscn")
+var enemy_nightborne_death_effect : PackedScene = preload("res://Earth Realm/level 1/scenes/enemy_nightborne_death_effect.tscn")
 
 @export var patrol_points : Node
 @export var speed : int = 1500
 @export var wait_time : int = 3
 @export var health_amount: int = 100
 
-@onready var animated_sprite_2d = $AnimatedSprite2D
-@onready var timer = $Timer
+@onready var animated_sprite_2d : AnimatedSprite2D = $AnimatedSprite2D
+@onready var timer : Timer = $Timer
 
-const GRAVITY = 1000
+const GRAVITY : int = 1000
 
 enum State {Idle, Walk, Attack, Death, GetHit}
 var current_state : State
@@ -24,7 +24,7 @@ var can_walk : bool
 var charainarea : bool
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func _ready() -> void:
 	if patrol_points != null:
 		number_of_points = patrol_points.get_children().size()
 		for point in patrol_points.get_children():
@@ -41,7 +41,7 @@ func _ready():
 	charainarea = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta : float):
+func _physics_process(delta : float) -> void:
 	enemy_gravity(delta)
 	match current_state:
 		State.Idle:
@@ -56,22 +56,22 @@ func _physics_process(delta : float):
 	move_and_slide() # Adjust the floor normal according to your game setup
 	enemy_animations()
 
-func enemy_get_hit(delta : float):
+func enemy_get_hit(delta : float) -> void:
 	pass
 
-func enemy_gravity(delta : float):
+func enemy_gravity(delta : float) -> void:
 	velocity.y += GRAVITY * delta
 
-func enemy_idle(delta : float):
+func enemy_idle(delta : float) -> void:
 	if !can_walk:
 		velocity.x = move_toward(velocity.x, 0, speed * delta)
 		current_state = State.Idle
 
-func enemy_attack(delta : float):
+func enemy_attack(delta : float) -> void:
 	if !can_walk:
 		return
 
-func enemy_walk(delta : float):
+func enemy_walk(delta : float) -> void:
 	if !can_walk:
 		return
 
@@ -96,7 +96,7 @@ func enemy_walk(delta : float):
 
 	animated_sprite_2d.flip_h = direction.x < 0
 
-func enemy_animations():
+func enemy_animations() -> void:
 	match current_state:
 		State.Idle:
 			if !can_walk:
@@ -110,36 +110,36 @@ func enemy_animations():
 
 
 
-func _on_timer_timeout():
+func _on_timer_timeout() -> void:
 	can_walk = true
 	current_state = State.Walk
 	charainarea = false
 
-func _on_sword_hit(body : Node):
+func _on_sword_hit(body : Node) -> void:
 	# Called when the enemy is hit by the main character's sword
 	if body.has_method("get_damage_amount"):
 		body.deal_damage()  # Assuming the main character's sword has a "deal_damage" method
 		health_amount -= body.get_damage_amount
 		
 		
-func _on_hurtbox_area_entered(area : Area2D):
+func _on_hurtbox_area_entered(area : Area2D) -> void:
 	print("Area Hurtbox entered NightBorne")
 	animated_sprite_2d.play("Attack")
 	current_state = State.Attack
 	charainarea = true
 	if area.get_parent().has_method("get_damage_amount"):
-		var node = area.get_parent() as Node
+		var node : Node = area.get_parent() as Node
 		health_amount -= node.damage_amount
 		print("Health amount", health_amount)
 
 		if health_amount <= 0:
-			var enemy_nightborne_death_effect_instance = enemy_nightborne_death_effect.instantiate() as Node2D
+			var enemy_nightborne_death_effect_instance : Node2D = enemy_nightborne_death_effect.instantiate() as Node2D
 			enemy_nightborne_death_effect_instance.global_position = global_position
 			get_parent().add_child(enemy_nightborne_death_effect_instance)
 			queue_free()
 
 
-func _on_hurtbox_area_exited(area):
+func _on_hurtbox_area_exited(area : Area2D) -> void:
 	charainarea = false
 	current_state = State.Walk
 	

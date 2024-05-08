@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://dqvo4c2erw6dt"]
 
-[ext_resource type="PackedScene" uid="uid://dw7alkc04hydr" path="res://characters/scenes/chara_three.tscn" id="2_gc6yd"]
+[ext_resource type="PackedScene" uid="uid://btl1ropgbrna3" path="res://characters/scenes/chara_two.tscn" id="1_07d13"]
 [ext_resource type="Texture2D" uid="uid://bi7sqwwbvn32n" path="res://Royal Realm/assets/dungeon_sidescroller-Raou/Tilesetv3.png" id="2_tkwna"]
 [ext_resource type="PackedScene" uid="uid://q221aivqeb2j" path="res://Royal Realm/scenes/tile_map_2.tscn" id="3_i33xa"]
 [ext_resource type="PackedScene" uid="uid://c7spb5k73n5" path="res://Royal Realm/scenes/skull_wolf.tscn" id="3_pknie"]
@@ -829,17 +829,15 @@ size = Vector2(711, 20)
 
 [node name="World" type="Node2D"]
 
+[node name="charaTwo" parent="." instance=ExtResource("1_07d13")]
+position = Vector2(50, 400)
+
 [node name="Background" type="Sprite2D" parent="."]
 modulate = Color(0.431373, 0.431373, 0.431373, 1)
 z_index = -10
 position = Vector2(1915, 321)
 scale = Vector2(21.8803, 10.25)
 texture = ExtResource("13_bc3kt")
-
-[node name="charaThree" parent="." instance=ExtResource("2_gc6yd")]
-show_behind_parent = true
-top_level = true
-position = Vector2(100, 300)
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -3

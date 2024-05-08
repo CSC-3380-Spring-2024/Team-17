@@ -4,8 +4,8 @@
 [ext_resource type="Script" path="res://Royal Realm/scripts/riddle_boss.gd" id="1_dyrvg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2i2k2"]
-radius = 43.0
-height = 112.0
+radius = 17.0
+height = 74.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sv16x"]
 atlas = ExtResource("1_3mb5f")

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Starting Screen"
+config/name="Divine Catharsis"
 run/main_scene="res://GUI/scenes/Fade_in_and_out_animations.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://GUI/icon.svg"

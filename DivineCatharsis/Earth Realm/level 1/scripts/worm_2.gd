@@ -1,21 +1,21 @@
 extends CharacterBody2D
 
-var enemy_worm_death_effect = preload("res://Earth Realm/level 1/scenes/enemy_worm_death_effect.tscn")
+var enemy_worm_death_effect : PackedScene = preload("res://Earth Realm/level 1/scenes/enemy_worm_death_effect.tscn")
 
 @export var patrol_points : Node
 @export var speed : int = 1500
 @export var wait_time : int = 3
 @export var health_amount : int = 50
 
-@onready var animated_sprite_2d = $AnimatedSprite2D
-@onready var timer = $Timer
+@onready var animated_sprite_2d : AnimatedSprite2D = $AnimatedSprite2D
+@onready var timer : Timer = $Timer
 
 
 
-const GRAVITY = 1000
+const GRAVITY : int = 1000
 
 
-enum State{ Idle, Walk, Attack, Death, GetHit}
+enum State { Idle, Walk, Attack, Death, GetHit}
 var current_state : State
 var direction : Vector2 = Vector2.LEFT
 var number_of_points : int
@@ -27,7 +27,7 @@ var can_walk : bool
 
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
+func _ready() -> void:
 	if patrol_points != null:
 		number_of_points = patrol_points.get_children().size()
 		for point in patrol_points.get_children():
@@ -42,7 +42,7 @@ func _ready():
 	current_state = State.Idle
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _physics_process(delta : float):
+func _physics_process(delta : float) -> void:
 	enemy_gravity(delta)
 	enemy_idle(delta)
 	enemy_walk(delta)
@@ -52,15 +52,15 @@ func _physics_process(delta : float):
 	enemy_animations()
 	
 	
-func enemy_gravity(delta : float):
+func enemy_gravity(delta : float) -> void:
 	velocity.y +=  GRAVITY * delta
 	
-func enemy_idle(delta : float):
+func enemy_idle(delta : float) -> void:
 	if !can_walk:
 		velocity.x = move_toward(velocity.x, 0, speed * delta)
 		current_state = State.Idle
 
-func enemy_walk(delta : float):
+func enemy_walk(delta : float) -> void:
 	if !can_walk:
 		return
 	
@@ -85,27 +85,27 @@ func enemy_walk(delta : float):
 	
 	animated_sprite_2d.flip_h = direction.x < 0
 	
-func enemy_animations():
+func enemy_animations() -> void:
 	if current_state == State.Idle && !can_walk:
 		animated_sprite_2d.play("Idle")
 	elif current_state == State.Walk && can_walk:
 		animated_sprite_2d.play("Walk")
 
-func _on_timer_timeout():
+func _on_timer_timeout() -> void:
 	can_walk = true
 	
 func enemy() -> void:
 	pass
 
-func _on_hurtbox_area_entered(area : Area2D):
+func _on_hurtbox_area_entered(area : Area2D) -> void:
 	print("Hurtbox area entered")
 	if area.get_parent().has_method("get_damage_amount") :
 		print("in here")
-		var node = area.get_parent() as Node
+		var node : Node = area.get_parent() as Node
 		health_amount -= node.damage_amount
 		print("Health amount ", health_amount)
 		if health_amount <= 0:
-			var enemy_worm_death_effect_instance  = enemy_worm_death_effect.instantiate() as Node2D
+			var enemy_worm_death_effect_instance : Node2D = enemy_worm_death_effect.instantiate() as Node2D
 			enemy_worm_death_effect_instance.global_position = global_position
 			get_parent().add_child(enemy_worm_death_effect_instance)
 			queue_free()

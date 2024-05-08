@@ -2138,6 +2138,7 @@ layer_1/tile_data = PackedInt32Array(1441792, 393220, 268435457, 1507328, 393220
 [node name="Left_Down_Up" type="Node" parent="MovingPlatforms"]
 
 [node name="MovingPlatform-RDownUp3" parent="MovingPlatforms/Left_Down_Up" instance=ExtResource("4_guwhk")]
+visibility_layer = 1023
 position = Vector2(5340, 487)
 
 [node name="MovingPlatform-RDownUp4" parent="MovingPlatforms/Left_Down_Up" instance=ExtResource("4_guwhk")]
